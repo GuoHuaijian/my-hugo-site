@@ -63,9 +63,10 @@ smartTOCHideUnfocusedChildren = false
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showTaxonomies = false
+  showTaxonomies = true
   showAuthorsBadges = false
   showWordCount = true
+  showComments = true
   showSummary = true
   sharingLinks = [ "linkedin", "twitter", "whatsapp", "pinterest", "reddit", "facebook", "email"]
 
