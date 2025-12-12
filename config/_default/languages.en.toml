@@ -1,23 +1,24 @@
-languageCode = "en-us"
+languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Guo's Notes"
+title = "SlothCoder"
 
 [params]
-displayName = "EN"
-isoCode = "en-us"
+displayName = "English"
+isoCode = "en-US"
 rtl = false
 logo = "img/logo.png"
-description = "My personal website"
-dateFormat = "January 2, 2006"
+description = "My personal tech blog"
+copyright = "© 2019-{ year } SlothCoder"
+dateFormat = "Jan 2, 2006"
 
 [params.author]
-name = "Guo"
+name = "Sloth"
 image = "img/avatar.png"
-headline = "Coding • Writing • Living"
-bio = "Backend developer & open-source enthusiast"
+headline = "Writing code daily, writing thoughts occasionally"
+bio = "Java Backend Developer | System Design | Engineering Practice"
 links = [
-  { link = "https://guohuaijian.github.io" },
-  { github = "https://github.com/GuoHuaijian" },
-  { email = "guohuaijian9527@gmail.com" }
+    { link = "https://slothcoder.cn" },
+    { github = "https://github.com/GuoHuaijian" },
+    { email = "guohuaijian9527@gmail.com" }
 ]
