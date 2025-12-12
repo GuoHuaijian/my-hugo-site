@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 深入学习网络编程与BIO、NIO、AIO模型
 date: 2025-06-12
 author: Guo

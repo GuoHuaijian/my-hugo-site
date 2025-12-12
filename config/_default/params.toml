@@ -75,10 +75,10 @@ smartTOCHideUnfocusedChildren = false
   heroStyle = "background" # valid options: basic, big, background
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = false
-  showSummary = true
+  showSummary = false
   showTableOfContents = false
   showCards = true
-  groupByYear = true
+  groupByYear = false
   cardView = true
   cardViewScreenWidth = false
 

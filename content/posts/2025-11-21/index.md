@@ -1,5 +1,5 @@
 ---
-title: "深入理解 ConcurrentHashMap 源码（基于 JDK 1.8）——从设计到实现"
+title: "深入理解ConcurrentHashMap源码——从设计到实现"
 date: 2025-11-21
 author: "Guo"
 tags: ["学习笔记", "并发"]
