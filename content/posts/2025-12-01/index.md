@@ -2711,9 +2711,9 @@ if (cl == null) {
 
 1. 打印出参与强转的两个对象的 Class 信息：
 
-   ```java
+```java
 System.out.println(obj.getClass() + "@" + obj.getClass().getClassLoader());
-   ```
+```
 
 2. 使用 `-verbose:class` 查看该类到底是由哪个 ClassLoader 从哪儿加载的；
 
@@ -3445,9 +3445,9 @@ ThreadLocal 正常使用：
 
    - 可使用：
 
-     ```bash
+   ```bash
    jmap -dump:format=b,file=heap.hprof <pid>
-     ```
+   ```
 
    - 或在 OOM 时通过 `-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/path` 自动生成。
    
@@ -6841,7 +6841,7 @@ new ThreadFactoryBuilder().setNameFormat("biz-worker-%d").build()
 
 1. 用 `jstack` 导出线程：
 
-   ```bash
+```bash
 jstack -l 12345 > thread.dump
    ```
 
@@ -6867,7 +6867,7 @@ jstack -l 12345 > thread.dump
 
 2. 将线程 ID（十进制）转换为十六进制（nid）：
 
-   ```bash
+```bash
 printf "%x\n" <tid>
    ```
 
@@ -7128,7 +7128,7 @@ jcmd <pid> VM.system_properties
 
 3. 把线程 ID 转十六进制：
 
-   ```bash
+```bash
 printf "%x\n" <tid>
    ```
 
@@ -7921,7 +7921,7 @@ JDK9 带来两大对 JVM 行为有明显影响的变化：
 
 - 在 Server 模式下，默认使用：
 
-  ```bash
+```bash
 -XX:+UseG1GC
   ```
 
@@ -7931,7 +7931,7 @@ JDK9 带来两大对 JVM 行为有明显影响的变化：
 
 - 一些与 G1 相关的新参数开始成为调优重点，例如：
 
-  ```bash
+```bash
 -XX:MaxGCPauseMillis=200
   -XX:InitiatingHeapOccupancyPercent=45
 ```
@@ -7960,7 +7960,7 @@ JDK11 是继 JDK8 后的下一个 LTS（长期支持）版本，现今大部分�
 
 2. **ZGC 以实验特性引入（Linux/x64 首发）**
 
-   ```bash
+```bash
 -XX:+UnlockExperimentalVMOptions
    -XX:+UseZGC
 ```
@@ -8044,7 +8044,7 @@ JDK21 是最新 LTS，主要趋势：
 
 - CMS 仍可用，很多系统使用：
 
-  ```bash
+```bash
 -XX:+UseConcMarkSweepGC
   -XX:+UseParNewGC
 ```
