@@ -13,7 +13,7 @@ title = "SlothCoder"
     dateFormat = "2006年1月2日"
 
 [params.author]
-    name = "Sloth"
+    name = "云上笔记"
     image = "img/avatar.png"
     headline = "日常写 Bug、偶尔写点博客"
     bio = "Java后端开发｜全栈工程师"
