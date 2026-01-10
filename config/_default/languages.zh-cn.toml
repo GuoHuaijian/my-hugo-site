@@ -18,7 +18,8 @@ title = "SlothCoder"
     headline = "日常写 Bug、偶尔写点博客"
     bio = "Java后端开发｜全栈工程师"
     links = [
-        { link = "https://guohuaijian.github.io" },
         { github = "https://github.com/GuoHuaijian" },
-        { email = "guohuaijian9527@gmail.com" }
+        { twitter = "https://twitter.com/xx-x" },
+        { email = "guohuaijian9527@gmail.com" },
+        { rss = "/index.xml" }
     ]
