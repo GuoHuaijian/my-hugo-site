@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+
+<div class="music-player-container my-8">
+
+    <div class="aplayer-wrapper rounded-md overflow-hidden shadow-sm
+              ring-1 ring-neutral-200 dark:ring-neutral-700/50">
+        <meting-js
+                server="netease"
+                type="artist"
+                id="{{ .Get "id" | default "11127" }}"
+        autoplay="{{ .Get "autoplay" | default "false" }}"
+        volume="0.6"
+        order="list"
+        loop="all"
+        list-folded="false"
+        theme="var(--color-primary-500)">
+        </meting-js>
+    </div>
+
+</div>
+
+
+<style>
+    /* ========== APlayer 深度定制 (强制适配 Blowfish) ========== */
+
+    /* 1. 背景色：强制透明，让父容器颜色透出来，或者使用主题背景 */
+    .aplayer {
+        background: rgba(255, 255, 255, 0.6) !important;
+        backdrop-filter: blur(10px); /* 磨砂玻璃效果 */
+        border: none !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        border-radius: 0 !important; /* 圆角由外层 wrapper 控制 */
+        font-family: inherit !important; /* 继承博客字体 */
+    }
+
+    /* 深色模式适配 */
+    html.dark .aplayer {
+        background: rgba(30, 30, 30, 0.6) !important;
+        color: #e5e7eb !important; /* neutral-200 */
+    }
+
+    /* 2. 文字颜色适配 */
+    html.dark .aplayer .aplayer-info .aplayer-music .aplayer-title {
+        color: #f3f4f6 !important; /* neutral-100 */
+    }
+    html.dark .aplayer .aplayer-info .aplayer-music .aplayer-author {
+        color: #9ca3af !important; /* neutral-400 */
+    }
+
+    /* 3. 列表区域适配 */
+    html.dark .aplayer .aplayer-list {
+        border-color: rgba(255,255,255,0.1) !important;
+    }
+    html.dark .aplayer .aplayer-list ol li {
+        border-top: 1px solid rgba(255,255,255,0.1) !important;
+    }
+    html.dark .aplayer .aplayer-list ol li:hover {
+        background: rgba(255,255,255,0.05) !important;
+    }
+    html.dark .aplayer .aplayer-list ol li.aplayer-list-light {
+        background: rgba(var(--color-primary-500), 0.1) !important; /* 高亮选中项 */
+    }
+    html.dark .aplayer .aplayer-list ol li .aplayer-list-title {
+        color: #e5e7eb !important;
+    }
+    html.dark .aplayer .aplayer-list ol li .aplayer-list-author {
+        color: #9ca3af !important;
+    }
+
+    /* 4. 歌词样式 */
+    html.dark .aplayer .aplayer-lrc {
+        text-shadow: none !important;
+    }
+    html.dark .aplayer .aplayer-lrc:before,
+    html.dark .aplayer .aplayer-lrc:after {
+        background: linear-gradient(180deg, rgba(30,30,30,0.8) 0, rgba(30,30,30,0) 100%) !important;
+    }
+    html.dark .aplayer .aplayer-lrc:after {
+        background: linear-gradient(180deg, rgba(30,30,30,0) 0, rgba(30,30,30,0.8) 100%) !important;
+    }
+
+    /* 修正播放按钮颜色 */
+    html.dark .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+        fill: #e5e7eb !important;
+    }
+</style>

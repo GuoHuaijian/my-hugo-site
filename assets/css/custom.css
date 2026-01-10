@@ -14,6 +14,41 @@
 :lang(zh-cn) h1, h2, h3, h4, h5, h6,
 :lang(en) h1, h2, h3, h4, h5, h6,
 
+.max-w-prose {
+    max-width: none !important;
+}
+
+/* 浅色模式 */
+body {
+    background-image:
+            linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.04) 1px,
+                    transparent 1px
+            ),
+            linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.04) 1px,
+                    transparent 1px
+            );
+    background-size: 10px 10px;
+}
+
+/* 深色模式 */
+html.dark body {
+    background-image:
+            linear-gradient(
+                    0deg,
+                    rgba(255, 255, 255, 0.04) 1px,
+                    transparent 1px
+            ),
+            linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.04) 1px,
+                    transparent 1px
+            );
+}
+
 /* 卡片悬停 */
 .card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
