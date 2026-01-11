@@ -59,22 +59,10 @@ html.dark body {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* 按钮间距 */
-.btn {
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-/* 相册图片悬停 */
-.gallery img {
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.02);
-}
-
-/* 归档列表 */
-.archives-list a:hover {
-    color: var(--color-primary-500);
+/* 当页面没有目录时，文章内容居中显示 */
+article:not(:has(#TableOfContents)) .prose,
+.single:not(:has(#TableOfContents)) .prose {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
 }

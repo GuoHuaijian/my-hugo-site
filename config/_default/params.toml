@@ -15,7 +15,7 @@ enableCodeCopy = true
 mainSections = ["posts"]
 # robots = ""
 
-defaultBackgroundImage = "/img/cover.png"
+#defaultBackgroundImage = "/img/cover.png"
 defaultFeaturedImage = "/img/cover.png"
 defaultSocialImage = "/img/blowfish_banner.png"
 
