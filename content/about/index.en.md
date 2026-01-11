@@ -1,6 +1,16 @@
 ---
 title: "👋 About Me"
 description: "Backend Developer · Java · System Design"
+showTableOfContents: false
+showDate: false
+showAuthor: false
+showWordCount: false
+sharingLinks: false
+showReadingTime: false
+showPagination: false
+showHero: true
+heroStyle: background
+layoutBackgroundHeaderSpace: false
 ---
 
 ## Hi, I'm Sloth

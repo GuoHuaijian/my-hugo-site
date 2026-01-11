@@ -1,6 +1,16 @@
 ---
 title: "👋 关于我"
 description: "About Me"
+showTableOfContents: false
+showDate: false
+showAuthor: false
+showWordCount: false
+sharingLinks: false
+showReadingTime: false
+showPagination: false
+showHero: true
+heroStyle: background
+layoutBackgroundHeaderSpace: false
 ---
 
 ## Hi，我是 Sloth

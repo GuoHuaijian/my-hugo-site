@@ -1,6 +1,16 @@
 ---
 title: "🚀 Projects"
 description: "Open-source projects & technical work"
+showTableOfContents: false
+showDate: false
+showAuthor: false
+showWordCount: false
+sharingLinks: false
+showReadingTime: false
+showPagination: false
+showHero: true
+heroStyle: background
+layoutBackgroundHeaderSpace: false
 ---
 
 ### 🌥 Spring Cloud Alibaba Demo Project

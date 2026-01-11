@@ -1,6 +1,16 @@
 ---
 title: "🚀 项目"
 description: "我的开源项目与作品"
+showTableOfContents: false
+showDate: false
+showAuthor: false
+showWordCount: false
+sharingLinks: false
+showReadingTime: false
+showPagination: false
+showHero: true
+heroStyle: background
+layoutBackgroundHeaderSpace: false
 ---
 
 
