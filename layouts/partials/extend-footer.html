@@ -1,0 +1,75 @@
+{{ if .Site.Params.analytics.enable }}
+<div id="visit-stats" class="text-center text-sm text-neutral-500 dark:text-neutral-400 mt-4 py-4">
+  <span class="inline-flex items-center gap-1">
+    📊 总访问量 <span id="site-pv" class="font-bold text-primary-600 dark:text-primary-400">--</span> 次
+  </span>
+  <span class="mx-2">|</span>
+  <span class="inline-flex items-center gap-1">
+    👥 访客数 <span id="site-uv" class="font-bold text-primary-600 dark:text-primary-400">--</span> 人
+  </span>
+</div>
+
+<script>
+  (function () {
+    const API_BASE = "{{ .Site.Params.analytics.baseApi }}";
+
+    function getVisitorId() {
+      let id = localStorage.getItem("visitor_id");
+      if (!id) {
+        id = "v_" + Math.random().toString(36).slice(2) + Date.now().toString(36);
+        localStorage.setItem("visitor_id", id);
+      }
+      return id;
+    }
+
+    async function recordVisit() {
+      try {
+        await fetch(`${API_BASE}/api/visit`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            page: window.location.pathname,
+            visitorId: getVisitorId(),
+          }),
+        });
+      } catch (e) {}
+    }
+
+    async function getSiteStats() {
+      try {
+        const r = await fetch(`${API_BASE}/api/site-stats`);
+        return await r.json();
+      } catch {
+        return null;
+      }
+    }
+
+    function format(n) {
+      if (n >= 10000) return (n / 10000).toFixed(1) + "w";
+      if (n >= 1000) return (n / 1000).toFixed(1) + "k";
+      return n;
+    }
+
+    async function init() {
+      await recordVisit();
+      const stats = await getSiteStats();
+      if (stats) {
+        document.getElementById("site-pv").textContent = format(stats.pv);
+        document.getElementById("site-uv").textContent = format(stats.uv);
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+  })();
+</script>
+
+<style>
+  #visit-stats {
+    border-top: 1px solid rgba(156, 163, 175, 0.2);
+  }
+</style>
+{{ end }}
