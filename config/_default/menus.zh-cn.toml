@@ -55,6 +55,127 @@
   pre = "github"
   weight = 20
 
+# ========== 智慧书店（一级菜单）==========
+[[main]]
+identifier = "smart-bookstore"
+name = "智慧书店"
+pageRef = "projects/smart-bookstore"
+pre = "book"
+weight = 50
+
+# ---------- 架构设计（二级）----------
+[[main]]
+name = "🏗️ 系统架构设计"
+pageRef = "projects/smart-bookstore/architecture/system-architecture"
+parent = "smart-bookstore"
+weight = 10
+
+[[main]]
+name = "🛠️ 技术栈详解"
+pageRef = "projects/smart-bookstore/architecture/tech-stack"
+parent = "smart-bookstore"
+weight = 11
+
+[[main]]
+name = "💾 数据库设计"
+pageRef = "projects/smart-bookstore/architecture/database-design"
+parent = "smart-bookstore"
+weight = 12
+
+# ---------- 业务流程（二级）----------
+[[main]]
+name = "🔄 秒杀全流程详解"
+pageRef = "projects/smart-bookstore/flow/seckill-flow"
+parent = "smart-bookstore"
+weight = 20
+
+[[main]]
+name = "📋 订单流程详解"
+pageRef = "projects/smart-bookstore/flow/order-flow"
+parent = "smart-bookstore"
+weight = 21
+
+[[main]]
+name = "🔄 数据流转图"
+pageRef = "projects/smart-bookstore/flow/data-flow"
+parent = "smart-bookstore"
+weight = 22
+
+# ---------- 分布式技术（二级）----------
+[[main]]
+name = "🔐 分布式锁详解"
+pageRef = "projects/smart-bookstore/distributed/distributed-lock"
+parent = "smart-bookstore"
+weight = 30
+
+[[main]]
+name = "🔄 分布式事务详解"
+pageRef = "projects/smart-bookstore/distributed/distributed-transaction"
+parent = "smart-bookstore"
+weight = 31
+
+[[main]]
+name = "📊 分库分表详解"
+pageRef = "projects/smart-bookstore/distributed/sharding"
+parent = "smart-bookstore"
+weight = 32
+
+[[main]]
+name = "📨 消息队列详解"
+pageRef = "projects/smart-bookstore/distributed/message-queue"
+parent = "smart-bookstore"
+weight = 33
+
+[[main]]
+name = "⚡ 限流降级详解"
+pageRef = "projects/smart-bookstore/distributed/rate-limiting"
+parent = "smart-bookstore"
+weight = 34
+
+[[main]]
+name = "👁️ 可观测性详解"
+pageRef = "projects/smart-bookstore/distributed/observability"
+parent = "smart-bookstore"
+weight = 35
+
+# ---------- 面试准备（二级）----------
+[[main]]
+name = "💼 面试讲解指南"
+pageRef = "projects/smart-bookstore/interview/interview-guide"
+parent = "smart-bookstore"
+weight = 40
+
+[[main]]
+name = "❓ 高频面试题"
+pageRef = "projects/smart-bookstore/interview/common-questions"
+parent = "smart-bookstore"
+weight = 41
+
+[[main]]
+name = "🎯 深度追问应对"
+pageRef = "projects/smart-bookstore/interview/deep-dive"
+parent = "smart-bookstore"
+weight = 42
+
+# ---------- 部署运维（二级）----------
+[[main]]
+name = "🚀 快速开始"
+pageRef = "projects/smart-bookstore/deployment/quick-start"
+parent = "smart-bookstore"
+weight = 50
+
+[[main]]
+name = "🐳 Docker部署"
+pageRef = "projects/smart-bookstore/deployment/docker-deploy"
+parent = "smart-bookstore"
+weight = 51
+
+[[main]]
+name = "🔍 问题排查"
+pageRef = "projects/smart-bookstore/deployment/troubleshooting"
+parent = "smart-bookstore"
+weight = 52
+
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
