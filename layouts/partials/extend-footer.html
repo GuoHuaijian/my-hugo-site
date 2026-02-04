@@ -45,9 +45,9 @@
     }
 
     function format(n) {
-      if (n >= 10000) return (n / 10000).toFixed(1) + "w";
-      if (n >= 1000) return (n / 1000).toFixed(1) + "k";
-      return n;
+      // if (n >= 10000) return (n / 10000).toFixed(1) + "w";
+      // if (n >= 1000) return (n / 1000).toFixed(1) + "k";
+      return Number(n).toLocaleString("zh-CN");;
     }
 
     async function init() {
