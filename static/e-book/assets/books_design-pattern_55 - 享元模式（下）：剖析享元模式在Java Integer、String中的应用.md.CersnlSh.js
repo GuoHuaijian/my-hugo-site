@@ -1,0 +1,133 @@
+import{_ as n,o as e,c as s,ae as p}from"./chunks/framework.Iv6F95cJ.js";const u=JSON.parse('{"title":"作业","description":"","frontmatter":{},"headers":[],"relativePath":"books/design-pattern/55 - 享元模式（下）：剖析享元模式在Java Integer、String中的应用.md","filePath":"books/design-pattern/55 - 享元模式（下）：剖析享元模式在Java Integer、String中的应用.md"}'),t={name:"books/design-pattern/55 - 享元模式（下）：剖析享元模式在Java Integer、String中的应用.md"};function i(l,a,r,c,g,o){return e(),s("div",null,[...a[0]||(a[0]=[p(`<p>上一节课，我们通过棋牌游戏和文本编辑器这样两个实际的例子，学习了享元模式的原理、实现以及应用场景。用一句话总结一下，享元模式中的“享元”指被共享的单元。享元模式通过复用对象，以达到节省内存的目的。</p><p>今天，我再用一节课的时间带你剖析一下，享元模式在Java Integer、String中的应用。如果你不熟悉Java编程语言，那也不用担心看不懂，因为今天的内容主要还是介绍设计思路，跟语言本身关系不大。</p><p>话不多说，让我们正式开始今天的学习吧！</p><h2 id="享元模式在java-integer中的应用" tabindex="-1">享元模式在Java Integer中的应用 <a class="header-anchor" href="#享元模式在java-integer中的应用" aria-label="Permalink to &quot;享元模式在Java Integer中的应用&quot;">&amp;ZeroWidthSpace;</a></h2><p>我们先来看下面这样一段代码。你可以先思考下，这段代码会输出什么样的结果。</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>Integer i1 = 56;</span></span>
+<span class="line"><span>Integer i2 = 56;</span></span>
+<span class="line"><span>Integer i3 = 129;</span></span>
+<span class="line"><span>Integer i4 = 129;</span></span>
+<span class="line"><span>System.out.println(i1 == i2);</span></span>
+<span class="line"><span>System.out.println(i3 == i4);</span></span></code></pre></div><p>如果不熟悉Java语言，你可能会觉得，i1和i2值都是56，i3和i4值都是129，i1跟i2值相等，i3跟i4值相等，所以输出结果应该是两个true。这样的分析是不对的，主要还是因为你对Java语法不熟悉。要正确地分析上面的代码，我们需要弄清楚下面两个问题：</p><ul><li>如何判定两个Java对象是否相等（也就代码中的“==”操作符的含义）？</li><li>什么是自动装箱（Autoboxing）和自动拆箱（Unboxing）？</li></ul><p>在<a href="https://time.geekbang.org/column/article/166698" target="_blank" rel="noreferrer">加餐一</a>中，我们讲到，Java为基本数据类型提供了对应的包装器类型。具体如下所示：</p><p><img src="https://static001.geekbang.org/resource/image/5f/a0/5f93c0412c9ee8b563383c3583693ba0.jpg?wh=1543%2A1303" alt="" loading="lazy" referrerpolicy="no-referrer"></p><p>所谓的自动装箱，就是自动将基本数据类型转换为包装器类型。所谓的自动拆箱，也就是自动将包装器类型转化为基本数据类型。具体的代码示例如下所示：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>Integer i = 56; //自动装箱</span></span>
+<span class="line"><span>int j = i; //自动拆箱</span></span></code></pre></div><p>数值56是基本数据类型int，当赋值给包装器类型（Integer）变量的时候，触发自动装箱操作，创建一个Integer类型的对象，并且赋值给变量i。其底层相当于执行了下面这条语句：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>Integer i = 59；底层执行了：Integer i = Integer.valueOf(59);</span></span></code></pre></div><p>反过来，当把包装器类型的变量i，赋值给基本数据类型变量j的时候，触发自动拆箱操作，将i中的数据取出，赋值给j。其底层相当于执行了下面这条语句：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>int j = i; 底层执行了：int j = i.intValue();</span></span></code></pre></div><p>弄清楚了自动装箱和自动拆箱，我们再来看，如何判定两个对象是否相等？不过，在此之前，我们先要搞清楚，Java对象在内存中是如何存储的。我们通过下面这个例子来说明一下。</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>User a = new User(123, 23); // id=123, age=23</span></span></code></pre></div><p>针对这条语句，我画了一张内存存储结构图，如下所示。a存储的值是User对象的内存地址，在图中就表现为a指向User对象。</p><p><img src="https://static001.geekbang.org/resource/image/04/dc/04f879d7d72b96965f4e06a21ff13bdc.jpg?wh=2103%2A524" alt="" loading="lazy" referrerpolicy="no-referrer"></p><p>当我们通过“==”来判定两个对象是否相等的时候，实际上是在判断两个局部变量存储的地址是否相同，换句话说，是在判断两个局部变量是否指向相同的对象。</p><p>了解了Java的这几个语法之后，我们重新看一下开头的那段代码。</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>Integer i1 = 56;</span></span>
+<span class="line"><span>Integer i2 = 56;</span></span>
+<span class="line"><span>Integer i3 = 129;</span></span>
+<span class="line"><span>Integer i4 = 129;</span></span>
+<span class="line"><span>System.out.println(i1 == i2);</span></span>
+<span class="line"><span>System.out.println(i3 == i4);</span></span></code></pre></div><p>前4行赋值语句都会触发自动装箱操作，也就是会创建Integer对象并且赋值给i1、i2、i3、i4这四个变量。根据刚刚的讲解，i1、i2尽管存储的数值相同，都是56，但是指向不同的Integer对象，所以通过“==”来判定是否相同的时候，会返回false。同理，i3==i4判定语句也会返回false。</p><p>不过，上面的分析还是不对，答案并非是两个false，而是一个true，一个false。看到这里，你可能会比较纳闷了。实际上，这正是因为Integer用到了享元模式来复用对象，才导致了这样的运行结果。当我们通过自动装箱，也就是调用valueOf()来创建Integer对象的时候，如果要创建的Integer对象的值在-128到127之间，会从IntegerCache类中直接返回，否则才调用new方法创建。看代码更加清晰一些，Integer类的valueOf()函数的具体代码如下所示：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>public static Integer valueOf(int i) {</span></span>
+<span class="line"><span>    if (i &gt;= IntegerCache.low &amp;&amp; i &lt;= IntegerCache.high)</span></span>
+<span class="line"><span>        return IntegerCache.cache[i + (-IntegerCache.low)];</span></span>
+<span class="line"><span>    return new Integer(i);</span></span>
+<span class="line"><span>}</span></span></code></pre></div><p>实际上，这里的IntegerCache相当于，我们上一节课中讲的生成享元对象的工厂类，只不过名字不叫xxxFactory而已。我们来看它的具体代码实现。这个类是Integer的内部类，你也可以自行查看JDK源码。</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>/**</span></span>
+<span class="line"><span> * Cache to support the object identity semantics of autoboxing for values between</span></span>
+<span class="line"><span> * -128 and 127 (inclusive) as required by JLS.</span></span>
+<span class="line"><span> *</span></span>
+<span class="line"><span> * The cache is initialized on first usage.  The size of the cache</span></span>
+<span class="line"><span> * may be controlled by the {@code -XX:AutoBoxCacheMax=&lt;size&gt;} option.</span></span>
+<span class="line"><span> * During VM initialization, java.lang.Integer.IntegerCache.high property</span></span>
+<span class="line"><span> * may be set and saved in the private system properties in the</span></span>
+<span class="line"><span> * sun.misc.VM class.</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>private static class IntegerCache {</span></span>
+<span class="line"><span>    static final int low = -128;</span></span>
+<span class="line"><span>    static final int high;</span></span>
+<span class="line"><span>    static final Integer cache[];</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    static {</span></span>
+<span class="line"><span>        // high value may be configured by property</span></span>
+<span class="line"><span>        int h = 127;</span></span>
+<span class="line"><span>        String integerCacheHighPropValue =</span></span>
+<span class="line"><span>            sun.misc.VM.getSavedProperty(&quot;java.lang.Integer.IntegerCache.high&quot;);</span></span>
+<span class="line"><span>        if (integerCacheHighPropValue != null) {</span></span>
+<span class="line"><span>            try {</span></span>
+<span class="line"><span>                int i = parseInt(integerCacheHighPropValue);</span></span>
+<span class="line"><span>                i = Math.max(i, 127);</span></span>
+<span class="line"><span>                // Maximum array size is Integer.MAX_VALUE</span></span>
+<span class="line"><span>                h = Math.min(i, Integer.MAX_VALUE - (-low) -1);</span></span>
+<span class="line"><span>            } catch( NumberFormatException nfe) {</span></span>
+<span class="line"><span>                // If the property cannot be parsed into an int, ignore it.</span></span>
+<span class="line"><span>            }</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>        high = h;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        cache = new Integer[(high - low) + 1];</span></span>
+<span class="line"><span>        int j = low;</span></span>
+<span class="line"><span>        for(int k = 0; k &lt; cache.length; k++)</span></span>
+<span class="line"><span>            cache[k] = new Integer(j++);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        // range [-128, 127] must be interned (JLS7 5.1.7)</span></span>
+<span class="line"><span>        assert IntegerCache.high &gt;= 127;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    private IntegerCache() {}</span></span>
+<span class="line"><span>}</span></span></code></pre></div><p>为什么IntegerCache只缓存-128到127之间的整型值呢？</p><p>在IntegerCache的代码实现中，当这个类被加载的时候，缓存的享元对象会被集中一次性创建好。毕竟整型值太多了，我们不可能在IntegerCache类中预先创建好所有的整型值，这样既占用太多内存，也使得加载IntegerCache类的时间过长。所以，我们只能选择缓存对于大部分应用来说最常用的整型值，也就是一个字节的大小（-128到127之间的数据）。</p><p>实际上，JDK也提供了方法来让我们可以自定义缓存的最大值，有下面两种方式。如果你通过分析应用的JVM内存占用情况，发现-128到255之间的数据占用的内存比较多，你就可以用如下方式，将缓存的最大值从127调整到255。不过，这里注意一下，JDK并没有提供设置最小值的方法。</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>//方法一：</span></span>
+<span class="line"><span>-Djava.lang.Integer.IntegerCache.high=255</span></span>
+<span class="line"><span>//方法二：</span></span>
+<span class="line"><span>-XX:AutoBoxCacheMax=255</span></span></code></pre></div><p>现在，让我们再回到最开始的问题，因为56处于-128和127之间，i1和i2会指向相同的享元对象，所以i1==i2返回true。而129大于127，并不会被缓存，每次都会创建一个全新的对象，也就是说，i3和i4指向不同的Integer对象，所以i3==i4返回false。</p><p>实际上，除了Integer类型之外，其他包装器类型，比如Long、Short、Byte等，也都利用了享元模式来缓存-128到127之间的数据。比如，Long类型对应的LongCache享元工厂类及valueOf()函数代码如下所示：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>private static class LongCache {</span></span>
+<span class="line"><span>    private LongCache(){}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    static final Long cache[] = new Long[-(-128) + 127 + 1];</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    static {</span></span>
+<span class="line"><span>        for(int i = 0; i &lt; cache.length; i++)</span></span>
+<span class="line"><span>            cache[i] = new Long(i - 128);</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>public static Long valueOf(long l) {</span></span>
+<span class="line"><span>    final int offset = 128;</span></span>
+<span class="line"><span>    if (l &gt;= -128 &amp;&amp; l &lt;= 127) { // will cache</span></span>
+<span class="line"><span>        return LongCache.cache[(int)l + offset];</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    return new Long(l);</span></span>
+<span class="line"><span>}</span></span></code></pre></div><p>在我们平时的开发中，对于下面这样三种创建整型对象的方式，我们优先使用后两种。</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>Integer a = new Integer(123);</span></span>
+<span class="line"><span>Integer a = 123;</span></span>
+<span class="line"><span>Integer a = Integer.valueOf(123);</span></span></code></pre></div><p>第一种创建方式并不会使用到IntegerCache，而后面两种创建方法可以利用IntegerCache缓存，返回共享的对象，以达到节省内存的目的。举一个极端一点的例子，假设程序需要创建1万个-128到127之间的Integer对象。使用第一种创建方式，我们需要分配1万个Integer对象的内存空间；使用后两种创建方式，我们最多只需要分配256个Integer对象的内存空间。</p><h2 id="享元模式在java-string中的应用" tabindex="-1">享元模式在Java String中的应用 <a class="header-anchor" href="#享元模式在java-string中的应用" aria-label="Permalink to &quot;享元模式在Java String中的应用&quot;">&amp;ZeroWidthSpace;</a></h2><p>刚刚我们讲了享元模式在Java Integer类中的应用，现在，我们再来看下，享元模式在Java String类中的应用。同样，我们还是先来看一段代码，你觉得这段代码输出的结果是什么呢？</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>String s1 = &quot;小争哥&quot;;</span></span>
+<span class="line"><span>String s2 = &quot;小争哥&quot;;</span></span>
+<span class="line"><span>String s3 = new String(&quot;小争哥&quot;);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>System.out.println(s1 == s2);</span></span>
+<span class="line"><span>System.out.println(s1 == s3);</span></span></code></pre></div><p>上面代码的运行结果是：一个true，一个false。跟Integer类的设计思路相似，String类利用享元模式来复用相同的字符串常量（也就是代码中的“小争哥”）。JVM会专门开辟一块存储区来存储字符串常量，这块存储区叫作“字符串常量池”。上面代码对应的内存存储结构如下所示：</p><p><img src="https://static001.geekbang.org/resource/image/2d/2d/2dfc18575c22efccca191c566b24a22d.jpg?wh=1963%2A1393" alt="" loading="lazy" referrerpolicy="no-referrer"></p><p>不过，String类的享元模式的设计，跟Integer类稍微有些不同。Integer类中要共享的对象，是在类加载的时候，就集中一次性创建好的。但是，对于字符串来说，我们没法事先知道要共享哪些字符串常量，所以没办法事先创建好，只能在某个字符串常量第一次被用到的时候，存储到常量池中，当之后再用到的时候，直接引用常量池中已经存在的即可，就不需要再重新创建了。</p><h2 id="重点回顾" tabindex="-1">重点回顾 <a class="header-anchor" href="#重点回顾" aria-label="Permalink to &quot;重点回顾&quot;">&amp;ZeroWidthSpace;</a></h2><p>好了，今天的内容到此就讲完了。我们一块来总结回顾一下，你需要重点掌握的内容。</p><p>在Java Integer的实现中，-128到127之间的整型对象会被事先创建好，缓存在IntegerCache类中。当我们使用自动装箱或者valueOf()来创建这个数值区间的整型对象时，会复用IntegerCache类事先创建好的对象。这里的IntegerCache类就是享元工厂类，事先创建好的整型对象就是享元对象。</p><p>在Java String类的实现中，JVM开辟一块存储区专门存储字符串常量，这块存储区叫作字符串常量池，类似于Integer中的IntegerCache。不过，跟IntegerCache不同的是，它并非事先创建好需要共享的对象，而是在程序的运行期间，根据需要来创建和缓存字符串常量。</p><p>除此之外，这里我再补充强调一下。</p><p>实际上，享元模式对JVM的垃圾回收并不友好。因为享元工厂类一直保存了对享元对象的引用，这就导致享元对象在没有任何代码使用的情况下，也并不会被JVM垃圾回收机制自动回收掉。因此，在某些情况下，如果对象的生命周期很短，也不会被密集使用，利用享元模式反倒可能会浪费更多的内存。所以，除非经过线上验证，利用享元模式真的可以大大节省内存，否则，就不要过度使用这个模式，为了一点点内存的节省而引入一个复杂的设计模式，得不偿失啊。</p><h2 id="课堂讨论" tabindex="-1">课堂讨论 <a class="header-anchor" href="#课堂讨论" aria-label="Permalink to &quot;课堂讨论&quot;">&amp;ZeroWidthSpace;</a></h2><p>IntegerCache只能缓存事先指定好的整型对象，那我们是否可以借鉴String的设计思路，不事先指定需要缓存哪些整型对象，而是在程序的运行过程中，当用到某个整型对象的时候，创建好放置到IntegerCache，下次再被用到的时候，直接从IntegerCache中返回呢？</p><p>如果可以这么做，请你按照这个思路重新实现一下IntegerCache类，并且能够做到在某个对象没有任何代码使用的时候，能被JVM垃圾回收机制回收掉。</p><p>欢迎留言和我分享你的想法，如果有收获，欢迎你把这篇文章分享给你的朋友。 精选留言（15） 一丨丿丶乙 👍（1） 💬（1）享元---&gt;复用，线程池等。通过复用对象，以达到节省内存的目的 1.懒加载，dubble check 2.weak reference持有享元对象2020-11-18张三丰 👍（1） 💬（1）为什么说垃圾回收的时候如果保存了对象的&quot;引用&quot;就不友好，垃圾回收的依据不是只看这个对象还有没有被&quot;使用&quot;吗？ 2020-07-31Liam 👍（76） 💬（7）享元池用weak reference持有享元对象2020-03-09小晏子 👍（52） 💬（8）如果IntegerCache不事先指定缓存哪些整形对象，那么每次用到的时候去new一个，这样会稍微影响一些效率，尤其在某些情况下如果常用到-128~127之间的数，可能会不停的new/delete, 不过这个性能问题在大部分时候影响不是很大，所以按照string的设计思路也是可行的， 按照这个思路设计IntegerCache类的话，如下 private static class IntegerCache {</p><pre><code>public static final WeakHashMap&amp;lt;Integer, WeakReference&amp;lt;Integer&amp;gt;&amp;gt; cache = 
+    new WeakHashMap&amp;lt;Integer, WeakReference&amp;lt;Integer&amp;gt;&amp;gt;(); &amp;#47;&amp;#47;也可以提前分配容量
+
+private IntegerCache(){}
+</code></pre><p>}</p><p>public static Integer valueOf(int i) { final WeakReference&lt;Integer&gt; cached = IntegerCache.cache.get(i); if (cached != null) { final Integer value = cached.get(i); if (value != null) { return value; } } WeakReference&lt;Integer&gt; val = new WeakReference&lt;Integer&gt;(i); IntegerCache.cache.put(i, val); return val.get(); }2020-03-09辣么大 👍（48） 💬（7）谢谢各位的讨论，今天学到了软引用，弱引用，和WeakHashMap。内存吃紧的时候可以考虑使用WeakHashMap。 https://www.baeldung.com/java-weakhashmap https://www.baeldung.com/java-soft-references https://www.baeldung.com/java-weak-reference2020-03-11李小四 👍（32） 💬（0）设计模式_55:</p><h1 id="作业" tabindex="-1">作业 <a class="header-anchor" href="#作业" aria-label="Permalink to &quot;作业&quot;">&amp;ZeroWidthSpace;</a></h1><p>原来还有个WeakHashMap，学习了。</p><h1 id="感想" tabindex="-1">感想 <a class="header-anchor" href="#感想" aria-label="Permalink to &quot;感想&quot;">&amp;ZeroWidthSpace;</a></h1><p>自己尝试了写了一个，然后分别测试了10,000次、100,000次，1,000,000次创建，value从1-100，100-200，10000-10100，发现不管哪个场景，总是JVM的Integer时间更短，我写的要3倍左右的时间，不禁感叹，Java二十几年了，大部分的优化应该都做了，不要期望自己花20分钟能改出超过JVM的性能。2020-03-173Spiders 👍（25） 💬（1）课后题。因为整型对象长度固定，且内容固定，可以直接申请一块连续的内存地址，可以加快访问，节省内存？而String类不行。2020-03-09Geek_41d472 👍（14） 💬（0）我勒个擦 ,这好像是我碰到的两道面试题,包装和拆箱这道题简直就是个坑,有踩坑的举个手2020-03-10webmin 👍（10） 💬（1）抛砖引玉实现了一个有限范围的缓存（-128~2048383(127 * 127 * 127)） public class IntegerCache { private static final int bucketSize = 127; private static final int level1Max = bucketSize * bucketSize; private static final int max = bucketSize * bucketSize * bucketSize; private static final WeakHashMap&lt;Integer, WeakHashMap&lt;Integer, WeakHashMap&lt;Integer,WeakReference&lt;Integer&gt;&gt;&gt;&gt; CACHE = new WeakHashMap&lt;&gt;();</p><pre><code>public static Integer intern(int integer) {
+    if (integer &amp;lt;= 127) {
+        return integer;
+    }
+
+    if (integer &amp;gt; max) {
+        return integer;
+    }
+
+    synchronized (CACHE) {
+        Integer l1 = 0;
+        int tmp = integer;
+        if(integer &amp;gt;= level1Max){
+            l1 = integer &amp;#47; level1Max;
+            integer -= level1Max;
+        }
+        Integer l2 = integer &amp;#47; bucketSize;
+        Integer mod = integer % bucketSize;
+        WeakHashMap&amp;lt;Integer, WeakHashMap&amp;lt;Integer,WeakReference&amp;lt;Integer&amp;gt;&amp;gt;&amp;gt; level1 = CACHE.computeIfAbsent(l1, val -&amp;gt; new WeakHashMap&amp;lt;&amp;gt;());
+        WeakHashMap&amp;lt;Integer,WeakReference&amp;lt;Integer&amp;gt;&amp;gt; level2 =  level1.computeIfAbsent(l2, val -&amp;gt; new WeakHashMap&amp;lt;&amp;gt;());
+        WeakReference&amp;lt;Integer&amp;gt; cache = level2.computeIfAbsent(mod, val -&amp;gt; new WeakReference&amp;lt;&amp;gt;(tmp));
+        Integer val = cache.get();
+        if (val == null) {
+            val = integer;
+            level2.put(mod, new WeakReference&amp;lt;&amp;gt;(val));
+        }
+        return val;
+    }
+
+}
+
+public static int integersInCache() {
+    synchronized (CACHE) {
+        int sum = CACHE.size();
+        for (Integer key : CACHE.keySet()) {
+            WeakHashMap&amp;lt;Integer, WeakHashMap&amp;lt;Integer,WeakReference&amp;lt;Integer&amp;gt;&amp;gt;&amp;gt; tmp = CACHE.get(key);
+            sum += tmp.size();
+            for(Integer l2Key : tmp.keySet()) {
+                sum += tmp.get(l2Key).size();
+            }
+        }
+        return sum;
+    }
+}
+</code></pre><p>}2020-03-09Eden Ma 👍（9） 💬（2）突然理解OC中NSString等也用到了享元设计模式.2020-03-09， 👍（7） 💬（9）补充 深入理解java虚拟机 里的两道有意思的题,请思考输出结果: 自动装箱 拆箱: public static void main(String[] args){ Integer a = 1; Integer b = 2; Integer c = 3; Integer d = 3; Integer e = 321; Integer f = 321; Long g = 3L; System.out.println(c==d); System.out.println(e==f); System.out.println(c==(a+b)); System.out.println(c.equals(a+b)); System.out.println(g ==(a+b)); System.out.println(g.equals(a+b)); }</p><p>考察知识点:Integer缓存,equals和== 字符串: public static void main(String[] args) { String str1 = new StringBuilder(&quot;计算机&quot;).append(&quot;软件&quot;).toString(); System.out.println(str1==str1.intern()); String str2 = new StringBuilder(&quot;ja&quot;).append(&quot;va&quot;).toString(); System.out.println(str2==str2.intern()); } 考察知识点:1.intern的作用;2.玩2020-03-09柠檬C 👍（5） 💬（0）可以使用weakReference，当没有其他变量引用时，被JVM回收2020-03-14Jackey 👍（5） 💬（0）这节的例子可以拿来做笔试的题目😃2020-03-09Q罗 👍（4） 💬（0）享元模式讲解很透彻，赞👍2020-03-24李德政 👍（3） 💬（0）终于明白了Python中[-5,256)之间的整数的地址id都是一样的2020-06-19</p>`,64)])])}const d=n(t,[["render",i]]);export{u as __pageData,d as default};

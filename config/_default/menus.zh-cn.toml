@@ -31,6 +31,12 @@
   weight = 40
 
 [[main]]
+ name = "电子书库"
+ url = "/e-book"
+ pageRef = "e-book"
+ weight = 45
+
+[[main]]
   name = "关于"
   pageRef = "about"
   weight = 60
