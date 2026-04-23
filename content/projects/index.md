@@ -23,7 +23,7 @@ layoutBackgroundHeaderSpace: false
 - 分布式事务（Seata）
 - 熔断、限流、负载均衡
 
-{{< github repo="GuoHuaijian/SpringCloudAlibaba" >}}
+{{< github repo="GuoHuaijian/SlothBoot" >}}
 
 ---
 
