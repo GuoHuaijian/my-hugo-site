@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import HeroParticles from '../components/HeroParticles.vue'
-import defaultHeroBg from '../assets/images/background.png'
+import defaultHeroBg from '../assets/images/background.webp'
 import { publicPath } from '../utils/publicPath'
 import siteConfig from '../../content/site-config.json'
 const { site, home } = siteConfig
@@ -54,7 +54,7 @@ const heroStyle = computed(() => {
 
   background:
       linear-gradient(rgba(var(--color-bg-primary-rgb), 0.75), rgba(var(--color-bg-primary-rgb), 0.75)),
-      url('../assets/images/background.png');
+      url('../assets/images/background.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

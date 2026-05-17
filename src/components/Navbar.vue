@@ -5,7 +5,7 @@ import SearchModal from './SearchModal.vue'
 import ThemeToggle from './ThemeToggle.vue'
 
 // 导入 Logo 图片
-import logoImage from '../assets/images/logo.png'
+import logoImage from '../assets/images/logo.webp'
 
 // 导入站点配置
 import siteConfig from '../../content/site-config.json'

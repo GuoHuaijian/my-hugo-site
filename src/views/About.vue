@@ -12,7 +12,7 @@ import {
   Twitter
 } from 'lucide-vue-next'
 
-import portraitImage from '../assets/images/portrait.png'
+import portraitImage from '../assets/images/portrait.webp'
 
 const profileTags = ['全栈开发', '云边小卖部', '夜晚写代码']
 
