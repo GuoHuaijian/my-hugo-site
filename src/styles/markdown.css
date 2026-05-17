@@ -23,6 +23,12 @@
   margin-bottom: var(--space-4);
 }
 
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
 .markdown-body a {
   color: var(--color-accent);
 }
