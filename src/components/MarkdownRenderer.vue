@@ -17,6 +17,14 @@ async function renderDiagrams() {
   if (!props.html) return
   await nextTick()
 
+  // Add lazy loading and bypass referrer for external images
+  document.querySelectorAll('.markdown-body img').forEach((img) => {
+    if (!img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy')
+    }
+    img.setAttribute('referrerpolicy', 'no-referrer')
+  })
+
   const elements = document.querySelectorAll('.mermaid')
   if (!elements.length) return
 

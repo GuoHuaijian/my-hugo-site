@@ -54,7 +54,7 @@ const heroStyle = computed(() => {
 
   background:
       linear-gradient(rgba(var(--color-bg-primary-rgb), 0.75), rgba(var(--color-bg-primary-rgb), 0.75)),
-      url('../assets/images/img3.png');
+      url('../assets/images/background.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
