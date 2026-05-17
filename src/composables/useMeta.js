@@ -4,7 +4,7 @@
 import { watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-const SITE_URL = 'https://guohuaijian.github.io/my-hugo-site'
+const SITE_URL = 'https://slothcoder.cn'
 const SITE_NAME = '云边小卖部'
 const DEFAULT_DESC = '贩卖代码、笔记与偶尔的胡思乱想。'
 const DEFAULT_OG_IMAGE = `${SITE_URL}/favicon.png`

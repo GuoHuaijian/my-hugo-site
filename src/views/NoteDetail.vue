@@ -60,7 +60,7 @@ function observeHeadings() {
   headings.forEach((heading) => observer.observe(heading))
 }
 
-const SITE_URL = 'https://guohuaijian.github.io/my-hugo-site'
+const SITE_URL = 'https://slothcoder.cn'
 
 function updateMeta() {
   const n = note.value

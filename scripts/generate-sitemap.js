@@ -7,7 +7,7 @@ const publicDir = path.join(root, 'public')
 const indexFile = path.join(publicDir, 'content-index.json')
 const outFile = path.join(publicDir, 'sitemap.xml')
 
-const SITE_URL = 'https://guohuaijian.github.io/my-hugo-site'
+const SITE_URL = 'https://slothcoder.cn'
 
 // Priority map: home > list pages > detail pages
 const STATIC_ROUTES = [
