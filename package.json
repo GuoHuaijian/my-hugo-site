@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npm run generate && node node_modules/vite/bin/vite.js --host 0.0.0.0",
     "generate": "node scripts/generate-index.js",
-    "build": "npm run generate && node scripts/optimize-images.js && node node_modules/vite/bin/vite.js build",
+    "build": "npm run generate && node scripts/optimize-images.js && node scripts/generate-sitemap.js && node node_modules/vite/bin/vite.js build",
     "preview": "node node_modules/vite/bin/vite.js preview --host 0.0.0.0"
   },
   "dependencies": {

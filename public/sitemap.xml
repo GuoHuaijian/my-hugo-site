@@ -1,0 +1,4197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/toolbox</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2026-03-25-Agent 基础学习笔记</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2026-02-01-Claude Code 技能扩展指南让你</loc>
+    <lastmod>2026-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2026-01-09-2026版Go语言基础学习指北</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-12-25-Elasticsearch 入门到实战学</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-12-13-MySQL InnoDB 事务隔离实战篇</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-12-12-数据库事务隔离性的实现机制</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-12-09-Spring IoC容器初始化与Bean</loc>
+    <lastmod>2025-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-12-05-Kafka入门学习指南</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-12-04-MyBatis工作原理笔记</loc>
+    <lastmod>2025-12-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-12-02-深入理解Java并发编程从硬件原理到JM</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-12-02-理解 JVM 的类加载与对象创建</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-12-01-JVM 深度笔记深入理解 Java 虚拟</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-11-28-今天我离开了奋斗五年的公司</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-11-21-深入理解ConcurrentHashMa</loc>
+    <lastmod>2025-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-09-26-从零开始学Java锁并发控制的基石</loc>
+    <lastmod>2025-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-06-12-深入学习网络编程与BIONIOAIO模型</loc>
+    <lastmod>2025-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-03-22-利用DeepSeek  Ollama  </loc>
+    <lastmod>2025-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-03-03-MySQL数据查询之旅一条SQL背后的秘</loc>
+    <lastmod>2025-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-02-28-Redis详解从入门到精通</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-02-24-Redis持久化机制AOF日志与RDB快</loc>
+    <lastmod>2025-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-02-21-Redis数据存储和查询过程的详细分析</loc>
+    <lastmod>2025-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-02-21-Redis数据结构底层实现原理与常用场景</loc>
+    <lastmod>2025-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-01-24-23种经典设计模式的原理背后的思想应用场</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-01-24-算法与数据结构之美读书总结</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-01-24-网络包旅程</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-01-24-面试攻略按知识点顺序整理</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2025-01-23-总结回顾面向对象设计原则编程规范与重构技</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2023-09-16-Docker网络学习指南</loc>
+    <lastmod>2023-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2021-08-08-Spring Security注解权限指</loc>
+    <lastmod>2021-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2020-06-01-Redis详解从入门到精通构建高性能数据</loc>
+    <lastmod>2020-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2019-10-08-数据库查询一</loc>
+    <lastmod>2019-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2019-09-30-富文本编辑器踩坑</loc>
+    <lastmod>2019-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2019-09-24-Spring MVC 表单标签库</loc>
+    <lastmod>2019-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/notes/2019-09-23-一个菜鸟程序员的自我修养</loc>
+    <lastmod>2019-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/01-cloud-edge-blog</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/01-cloud-edge-blog/overview</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/01-cloud-edge-blog/installation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/01-cloud-edge-blog/architecture</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/01-cloud-edge-blog/content-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/01-cloud-edge-blog/customization</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/01-cloud-edge-blog/deployment</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/01-cloud-edge-blog/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/02-sloth-boot</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/02-sloth-boot/overview</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/02-sloth-boot/installation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/02-sloth-boot/architecture</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/02-sloth-boot/configuration</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/02-sloth-boot/migration-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/02-sloth-boot/testing-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/02-sloth-boot/error-codes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/02-sloth-boot/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/overview</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/system-architecture</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/database-design</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/seckill-flow</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/order-flow</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/flow/data-flow</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/distributed-tech</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/monitor/overview</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/monitor/metrics-collection</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/monitor/alert-system</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/monitor/visualization</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/monitor/skywalking-integration</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/monitor/deployment</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/monitor/troubleshooting</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/deployment</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/deployment/troubleshooting</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/interview-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/interview/common-questions</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/03-smart-bookstore/interview/deep-dive</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/04-agent-forge</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/04-agent-forge/overview</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/05-spider-nest</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/projects/05-spider-nest/overview</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/cloud-edge-shop</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/cloud-edge-shop/chapter-01</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/cloud-edge-shop/pdf/test-chapter</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/数据结构与算法之美</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/开篇词 - 从今天起，跨过“数据结构与算法”这道坎</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/01 - 为什么要学习数据结构和算法？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/02 - 如何抓住重点，系统高效地学习数据结构与算法？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/03 - 复杂度分析（上）：如何分析、统计算法的执行效率和资源消耗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/04 - 复杂度分析（下）：浅析最好、最坏、平均、均摊时间复杂度</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/05 - 数组：为什么很多编程语言中数组都从0开始编号？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/06 - 链表（上）：如何实现LRU缓存淘汰算法？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/07 - 链表（下）：如何轻松写出正确的链表代码？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/08 - 栈：如何实现浏览器的前进和后退功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/09 - 队列：队列在线程池等有限资源池中的应用</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/10 -  递归：如何用三行代码找到“最终推荐人”？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/11 - 排序（上）：为什么插入排序比冒泡排序更受欢迎？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/12 - 排序（下）：如何用快排思想在O(n)内查找第K大元素？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/13 - 线性排序：如何根据年龄给100万用户数据排序？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/14 - 排序优化：如何实现一个通用的、高性能的排序函数？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/15 - 二分查找（上）：如何用最省内存的方式实现快速查找功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/16 - 二分查找（下）：如何快速定位IP对应的省份地址？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/17 - 跳表：为什么Redis一定要用跳表来实现有序集合？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/18 - 散列表（上）：Word文档中的单词拼写检查功能是如何实现的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/19 - 散列表（中）：如何打造一个工业级水平的散列表？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/20 - 散列表（下）：为什么散列表和链表经常会一起使用？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/21 - 哈希算法（上）：如何防止数据库中的用户信息被脱库？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/22 - 哈希算法（下）：哈希算法在分布式系统中有哪些应用？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/23 - 二叉树基础（上）：什么样的二叉树适合用数组来存储？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/24 - 二叉树基础（下）：有了如此高效的散列表，为什么还需要二叉树？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/25 - 红黑树（上）：为什么工程中都用红黑树这种二叉树？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/26 - 红黑树（下）：掌握这些技巧，你也可以实现一个红黑树</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/27 - 递归树：如何借助树来求解递归算法的时间复杂度？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/28 - 堆和堆排序：为什么说堆排序没有快速排序快？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/29 - 堆的应用：如何快速获取到Top 10最热门的搜索关键词？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/30 - 图的表示：如何存储微博、微信等社交网络中的好友关系？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/31 - 深度和广度优先搜索：如何找出社交网络中的三度好友关系？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/32 - 字符串匹配基础（上）：如何借助哈希算法实现高效字符串匹配？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/33 - 字符串匹配基础（中）：如何实现文本编辑器中的查找功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/34 - 字符串匹配基础（下）：如何借助BM算法轻松理解KMP算法？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/35 - Trie树：如何实现搜索引擎的搜索关键词提示功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/36 - AC自动机：如何用多模式串匹配实现敏感词过滤功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/37 - 贪心算法：如何用贪心算法实现Huffman压缩编码？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/38 - 分治算法：谈一谈大规模计算框架MapReduce中的分治思想</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/39 - 回溯算法：从电影《蝴蝶效应》中学习回溯算法的核心思想</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/40 - 初识动态规划：如何巧妙解决“双十一”购物时的凑单问题？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/41 - 动态规划理论：一篇文章带你彻底搞懂最优子结构、无后效性和重复子问题</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/42 - 动态规划实战：如何实现搜索引擎中的拼写纠错功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/43 - 拓扑排序：如何确定代码源文件的编译依赖关系？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/44 - 最短路径：地图软件是如何计算出最优出行路径的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/45 - 位图：如何实现网页爬虫中的URL去重功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/46 - 概率统计：如何利用朴素贝叶斯算法过滤垃圾短信？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/47 - 向量空间：如何实现一个简单的音乐推荐系统？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/48 - B+树：MySQL数据库索引是如何实现的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/50 - 索引：如何在海量数据中快速查找某个数据？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/51 - 并行算法：如何利用并行处理提高算法的执行效率？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/52 - 算法实战（一）：剖析Redis常用数据类型对应的数据结构</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/53 - 算法实战（二）：剖析搜索引擎背后的经典数据结构和算法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/54 - 算法实战（三）：剖析高性能队列Disruptor背后的数据结构和算法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/55 - 算法实战（四）：剖析微服务接口鉴权限流背后的数据结构和算法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/56 - 算法实战（五）：如何用学过的数据结构和算法实现一个短网址系统？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/不定期福利第一期 - 数据结构与算法学习书单</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/不定期福利第二期 - 王争：羁绊前行的，不是肆虐的狂风，而是内心的迷茫</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/不定期福利第三期 - 测一测你的算法阶段学习成果</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/不定期福利第四期 - 刘超：我是怎么学习《数据结构与算法之美》的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/总结课 - 在实际开发中，如何权衡选择使用哪种数据结构和算法？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/《数据结构与算法之美》学习指导手册</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/春节7天练 - Day 1：数组和链表</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/春节7天练 - Day 2：栈、队列和递归</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/春节7天练 - Day 3：排序和二分查找</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/春节7天练 - Day 4：散列表和字符串</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/春节7天练 - Day 5：二叉树和堆</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/春节7天练 - Day 6：图</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/春节7天练 - Day 7：贪心、分治、回溯和动态规划</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/用户故事 - Jerry银银：这一年我的脑海里只有算法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/用户故事 - zixuan：站在思维的高处，才有足够的视野和能力欣赏“美”</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/结束语 - 送君千里，终须一别</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/第2季回归 - 这一次，我们一起拿下设计模式！</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/结课测试-这些数据结构与算法，你真的掌握了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/课程迭代-全新交付71讲音频</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/打卡召集令 - 60 天攻克数据结构与算法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/打卡召集令 - 第一阶段知识总结</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/打卡召集令 - 第二阶段知识总结</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/打卡召集令 - 第三阶段知识总结</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/打卡召集令 - 第四阶段知识总结</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/data-structures-algorithms/49 - 搜索：如何用A_搜索算法实现游戏中的寻路功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/设计模式之美</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/开篇词 - 一对一的设计与编码集训，让你告别没有成长的烂代码！</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/01 - 为什么说每个程序员都要尽早地学习并掌握设计模式相关知识？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/02 - 从哪些维度评判代码质量的好坏？如何具备写出高质量代码的能力？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/03 - 面向对象、设计原则、设计模式、编程规范、重构，这五者有何关系？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/04 - 理论一：当谈论面向对象的时候，我们到底在谈论什么？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/05 - 理论二：封装、抽象、继承、多态分别可以解决哪些编程问题？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/06 - 理论三：面向对象相比面向过程有哪些优势？面向过程真的过时了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/07 - 理论四：哪些代码设计看似是面向对象，实际是面向过程的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/08 - 理论五：接口vs抽象类的区别？如何用普通的类模拟抽象类和接口？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/09 - 理论六：为什么基于接口而非实现编程？有必要为每个类都定义接口吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/10 - 理论七：为何说要多用组合少用继承？如何决定该用组合还是继承？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/11 - 实战一（上）：业务开发常用的基于贫血模型的MVC架构违背OOP吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/12 - 实战一（下）：如何利用基于充血模型的DDD开发一个虚拟钱包系统？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/13 - 实战二（上）：如何对接口鉴权这样一个功能开发做面向对象分析？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/14 - 实战二（下）：如何利用面向对象设计和编程开发接口鉴权功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/15 - 理论一：对于单一职责原则，如何判定某个类的职责是否够“单一”？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/16 - 理论二：如何做到“对扩展开放、修改关闭”？扩展和修改各指什么？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/17 - 理论三：里式替换（LSP）跟多态有何区别？哪些代码违背了LSP？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/18 - 理论四：接口隔离原则有哪三种应用？原则中的“接口”该如何理解？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/19 - 理论五：控制反转、依赖反转、依赖注入，这三者有何区别和联系？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/20 - 理论六：我为何说KISS、YAGNI原则看似简单，却经常被用错？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/21 - 理论七：重复的代码就一定违背DRY吗？如何提高代码的复用性？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/22 - 理论八：如何用迪米特法则（LOD）实现“高内聚、松耦合”？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/23 - 实战一（上）：针对业务系统的开发，如何做需求分析和设计？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/24 - 实战一（下）：如何实现一个遵从设计原则的积分兑换系统？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/25 - 实战二（上）：针对非业务的通用框架开发，如何做需求分析和设计？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/26 - 实战二（下）：如何实现一个支持各种统计规则的性能计数器？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/27 - 理论一：什么情况下要重构？到底重构什么？又该如何重构？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/28 - 理论二：为了保证重构不出错，有哪些非常能落地的技术手段？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/29 - 理论三：什么是代码的可测试性？如何写出可测试性好的代码？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/30 - 理论四：如何通过封装、抽象、模块化、中间层等解耦代码？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/31 - 理论五：让你最快速地改善代码质量的20条编程规范（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/32 - 理论五：让你最快速地改善代码质量的20条编程规范（中）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/33 - 理论五：让你最快速地改善代码质量的20条编程规范（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/34 - 实战一（上）：通过一段ID生成器代码，学习如何发现代码质量问题</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/35 - 实战一（下）：手把手带你将ID生成器代码从“能用”重构为“好用”</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/36 - 实战二（上）：程序出错该返回啥？NULL、异常、错误码、空对象？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/37 - 实战二（下）：重构ID生成器项目中各函数的异常处理代码</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/38 - 总结回顾面向对象、设计原则、编程规范、重构技巧等知识点</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/39 - 运用学过的设计原则和思想完善之前讲的性能计数器项目（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/40 - 运用学过的设计原则和思想完善之前讲的性能计数器项目（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/41 - 单例模式（上）：为什么说支持懒加载的双重检测不比饿汉式更优？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/42 - 单例模式（中）：我为什么不推荐使用单例模式？又有何替代方案？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/43 - 单例模式（下）：如何设计实现一个集群环境下的分布式单例模式？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/44 - 工厂模式（上）：我为什么说没事不要随便用工厂模式创建对象？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/45 - 工厂模式（下）：如何设计实现一个Dependency Injection框架？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/46 - 建造者模式：详解构造函数、set方法、建造者模式三种对象创建方式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/47 - 原型模式：如何最快速地clone一个HashMap散列表？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/48 - 代理模式：代理在RPC、缓存、监控等场景中的应用</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/49 - 桥接模式：如何实现支持不同类型和渠道的消息推送系统？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/50 - 装饰器模式：通过剖析Java IO类库源码学习装饰器模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/51 - 适配器模式：代理、适配器、桥接、装饰，这四个模式有何区别？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/52 - 门面模式：如何设计合理的接口粒度以兼顾接口的易用性和通用性？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/53 - 组合模式：如何设计实现支持递归遍历的文件系统目录树结构？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/54 - 享元模式（上）：如何利用享元模式优化文本编辑器的内存占用？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/55 - 享元模式（下）：剖析享元模式在Java Integer、String中的应用</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/56 - 观察者模式（上）：详解各种应用场景下观察者模式的不同实现方式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/57 - 观察者模式（下）：如何实现一个异步非阻塞的EventBus框架？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/58 - 模板模式（上）：剖析模板模式在JDK、Servlet、JUnit等中的应用</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/59 - 模板模式（下）：模板模式与Callback回调函数有何区别和联系？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/60 - 策略模式（上）：如何避免冗长的if-else-switch分支判断代码？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/61 - 策略模式（下）：如何实现一个支持给不同大小文件排序的小程序？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/62 - 职责链模式（上）：如何实现可灵活扩展算法的敏感信息过滤框架？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/63 - 职责链模式（下）：框架中常用的过滤器、拦截器是如何实现的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/64 - 状态模式：游戏、工作流引擎中常用的状态机是如何实现的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/65 - 迭代器模式（上）：相比直接遍历集合数据，使用迭代器有哪些优势？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/66 - 迭代器模式（中）：遍历集合的同时，为什么不能增删集合元素？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/67 - 迭代器模式（下）：如何设计实现一个支持“快照”功能的iterator？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/68 - 访问者模式（上）：手把手带你还原访问者模式诞生的思维过程</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/69 - 访问者模式（下）：为什么支持双分派的语言不需要访问者模式？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/70 - 备忘录模式：对于大对象的备份和恢复，如何优化内存和时间的消耗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/71 - 命令模式：如何利用命令模式实现一个手游后端架构？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/72 - 解释器模式：如何设计实现一个自定义接口告警规则功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/73 - 中介模式：什么时候用中介模式？什么时候用观察者模式？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/74 - 总结回顾23种经典设计模式的原理、背后的思想、应用场景等</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/75 - 在实际的项目开发中，如何避免过度设计？又如何避免设计不足？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/76 -  开源实战一（上）：通过剖析Java JDK源码学习灵活应用设计模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/77 - 开源实战一（下）：通过剖析Java JDK源码学习灵活应用设计模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/78 - 开源实战二（上）：从Unix开源开发学习应对大型复杂项目开发</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/79 - 开源实战二（中）：从Unix开源开发学习应对大型复杂项目开发</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/80 - 开源实战二（下）：从Unix开源开发学习应对大型复杂项目开发</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/81 - 开源实战三（上）：借Google Guava学习发现和开发通用功能模块</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/82 - 开源实战三（中）：剖析Google Guava中用到的几种设计模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/83 - 开源实战三（下）：借Google Guava学习三大编程范式中的函数式编程</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/84 - 开源实战四（上）：剖析Spring框架中蕴含的经典设计思想或原则</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/85 - 开源实战四（中）：剖析Spring框架中用来支持扩展的两种设计模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/86 - 开源实战四（下）：总结Spring框架用到的11种设计模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/87 - 开源实战五（上）：MyBatis如何权衡易用性、性能和灵活性？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/88 - 开源实战五（中）：如何利用职责链与代理模式实现MyBatis Plugin？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/89 - 开源实战五（下）：总结MyBatis框架中用到的10种设计模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/90 - 项目实战一：设计实现一个支持各种算法的限流框架（分析）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/91 - 项目实战一：设计实现一个支持各种算法的限流框架（设计）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/92 - 项目实战一：设计实现一个支持各种算法的限流框架（实现）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/93 - 项目实战二：设计实现一个通用的接口幂等框架（分析）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/94 - 项目实战二：设计实现一个通用的接口幂等框架（设计）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/95 - 项目实战二：设计实现一个通用的接口幂等框架（实现）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/96 - 项目实战三：设计实现一个支持自定义规则的灰度发布组件（分析）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/97  - 项目实战三：设计实现一个支持自定义规则的灰度发布组件（设计）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/98 - 项目实战三：设计实现一个支持自定义规则的灰度发布组件（实现）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/99 - 总结回顾：在实际软件开发中常用的设计思想、原则和模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/100 - 如何将设计思想、原则、模式等理论知识应用到项目中？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/加餐一 - 用一篇文章带你了解专栏中用到的所有Java语法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/加餐二 - 设计模式、重构、编程规范等相关书籍推荐</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/春节特别加餐 - 王争：如何学习《设计模式之美》专栏？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/加餐三 - 聊一聊Google是如何做Code Review的</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/加餐四 - 聊一聊Google那些让我快速成长的地方</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/加餐五 - 听一听小争哥对Google工程师文化的解读</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/加餐六 - 什么才是所谓的编程能力？如何考察一个人的编程能力？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/加餐七 - 基础学科的知识如何转化成实际的技术生产力？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/加餐八 - 程序员怎么才能让自己走得更高、更远？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/加餐九 - 作为面试官或候选人，如何面试或回答设计模式问题？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/加餐十 - 如何接手一坨烂业务代码？如何在烂业务代码中成长？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/design-patterns/结束语  - 聊一聊机遇、方向、能力、努力！</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/designing-data-intensive-applications</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/designing-data-intensive-applications/chapter-01</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/Go语言核心36讲</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/开篇词 - 跟着学，你也能成为Go语言高手</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/导读 - 写给0基础入门的Go语言学习者</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/导读 - 学习专栏的正确姿势</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/01 - 工作区和GOPATH</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/02 - 命令源码文件</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/03 - 库源码文件</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/04 - 程序实体的那些事儿（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/05 - 程序实体的那些事儿（中）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/06 - 程序实体的那些事儿 （下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/07 - 数组和切片</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/08 - container包中的那些容器</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/09 - 字典的操作和约束</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/10 - 通道的基本操作</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/11 - 通道的高级玩法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/12 - 使用函数的正确姿势</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/13 - 结构体及其方法的使用法门</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/14 - 接口类型的合理运用</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/15 - 关于指针的有限操作</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/16 - go语句及其执行规则（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/17 - go语句及其执行规则（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/18 - if语句、for语句和switch语句</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/19 - 错误处理（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/20 - 错误处理 （下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/21 - panic函数、recover函数以及defer语句 （上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/22 - panic函数、recover函数以及defer语句（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/23 - 测试的基本规则和流程 （上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/24 - 测试的基本规则和流程（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/25 - 更多的测试手法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/26 - sync.Mutex与sync.RWMutex</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/27 - 条件变量sync.Cond （上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/28 - 条件变量sync.Cond （下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/29 - 原子操作（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/30 - 原子操作（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/31 - sync.WaitGroup和sync.Once</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/32 - context.Context类型</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/33 - 临时对象池sync.Pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/34 - 并发安全字典sync.Map （上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/35 - 并发安全字典sync.Map (下)</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/36 - unicode与字符编码</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/37 - strings包与字符串操作</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/38 - bytes包与字节串操作（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/39 - bytes包与字节串操作（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/40 - io包中的接口和工具 （上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/41 - io包中的接口和工具 （下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/42 - bufio包中的数据类型 （上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/43 - bufio包中的数据类型（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/44 - 使用os包中的API （上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/45 - 使用os包中的API （下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/46 - 访问网络服务</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/47 - 基于HTTP协议的网络服务</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/48 - 程序性能分析基础（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/49 - 程序性能分析基础（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/尾声 - 愿你披荆斩棘，所向无敌</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/新年彩蛋 - 完整版思考题答案</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/go-core-36/结课测试 - 这些Go语言的知识你都掌握了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/Java并发编程实战</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/开篇词 - 你为什么需要学习并发编程？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/学习攻略 - 如何才能学好并发编程？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/01 - 可见性、原子性和有序性问题：并发编程Bug的源头</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/02 - Java内存模型：看Java如何解决可见性和有序性问题</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/03 - 互斥锁（上）：解决原子性问题</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/04 - 互斥锁（下）：如何用一把锁保护多个资源？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/05 - 一不小心就死锁了，怎么办？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/06 - 用“等待-通知”机制优化循环等待</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/07 - 安全性、活跃性以及性能问题</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/08 - 管程：并发编程的万能钥匙</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/09 - Java线程（上）：Java线程的生命周期</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/10 - Java线程（中）：创建多少线程才是合适的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/11 - Java线程（下）：为什么局部变量是线程安全的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/12 - 如何用面向对象思想写好并发程序？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/13 - 理论基础模块热点问题答疑</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/14 - Lock和Condition（上）：隐藏在并发包中的管程</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/15 - Lock和Condition（下）：Dubbo如何用管程实现异步转同步？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/16 - Semaphore：如何快速实现一个限流器？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/17 - ReadWriteLock：如何快速实现一个完备的缓存？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/18 - StampedLock：有没有比读写锁更快的锁？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/19 - CountDownLatch和CyclicBarrier：如何让多线程步调一致？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/20 - 并发容器：都有哪些“坑”需要我们填？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/21 - 原子类：无锁工具类的典范</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/22 - Executor与线程池：如何创建正确的线程池？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/23 - Future：如何用多线程实现最优的“烧水泡茶”程序？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/24 - CompletableFuture：异步编程没那么难</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/25 - CompletionService：如何批量执行异步任务？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/26 - Fork-Join：单机版的MapReduce</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/27 - 并发工具类模块热点问题答疑</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/28 - Immutability模式：如何利用不变性解决并发问题？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/29 - Copy-on-Write模式：不是延时策略的COW</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/30 - 线程本地存储模式：没有共享，就没有伤害</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/31 - Guarded Suspension模式：等待唤醒机制的规范实现</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/32 - Balking模式：再谈线程安全的单例模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/33 - Thread-Per-Message模式：最简单实用的分工方法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/34 - Worker Thread模式：如何避免重复创建线程？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/35 - 两阶段终止模式：如何优雅地终止线程？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/36 - 生产者-消费者模式：用流水线思想提高效率</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/37 - 设计模式模块热点问题答疑</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/38 - 案例分析（一）：高性能限流器Guava RateLimiter</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/39 - 案例分析（二）：高性能网络应用框架Netty</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/40 - 案例分析（三）：高性能队列Disruptor</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/41 - 案例分析（四）：高性能数据库连接池HiKariCP</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/42 - Actor模型：面向对象原生的并发模型</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/43 - 软件事务内存：借鉴数据库的并发经验</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/44 - 协程：更轻量级的线程</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/45 - CSP模型：Golang的主力队员</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/结束语 - 十年之后，初心依旧</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/结课测试 - 这些Java并发编程实战的知识你都掌握了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/用户来信 - 真好，面试考到这些并发编程，我都答对了！</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/java-concurrency/3 个用户来信 - 打开一个新的并发世界</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/Kafka核心技术与实战</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/开篇词 - 为什么要学习Kafka？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/01 -  消息引擎系统ABC</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/02 - 一篇文章带你快速搞定Kafka术语</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/03 - Kafka只是消息引擎系统吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/04 - 我应该选择哪种Kafka？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/05 - 聊聊Kafka的版本号</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/06 - Kafka线上集群部署方案怎么做？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/07 - 最最最重要的集群参数配置（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/08 - 最最最重要的集群参数配置（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/09 -  生产者消息分区机制原理剖析</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/10 - 生产者压缩算法面面观</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/11 - 无消息丢失配置怎么实现？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/12 - 客户端都有哪些不常见但是很高级的功能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/13 -  Java生产者是如何管理TCP连接的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/14 - 幂等生产者和事务生产者是一回事吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/15 - 消费者组到底是什么？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/16 - 揭开神秘的“位移主题”面纱</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/17 - 消费者组重平衡能避免吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/18 - Kafka中位移提交那些事儿</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/19 - CommitFailedException异常怎么处理？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/20 - 多线程开发消费者实例</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/21 - Java 消费者是如何管理TCP连接的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/22 - 消费者组消费进度监控都怎么实现？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/23 - Kafka副本机制详解</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/24 - 请求是怎么被处理的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/25 - 消费者组重平衡全流程解析</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/26 - 你一定不能错过的Kafka控制器</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/27 - 关于高水位和Leader Epoch的讨论</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/28 - 主题管理知多少？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/29 - Kafka动态配置了解下？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/30 - 怎么重设消费者组位移？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/31 - 常见工具脚本大汇总</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/32 - KafkaAdminClient：Kafka的运维利器</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/33 - Kafka认证机制用哪家？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/34 - 云环境下的授权该怎么做？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/35 - 跨集群备份解决方案MirrorMaker</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/36 - 你应该怎么监控Kafka？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/37 - 主流的Kafka监控框架</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/38 - 调优Kafka，你做到了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/39 - 从0搭建基于Kafka的企业级实时日志流处理平台</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/40 - Kafka Streams与其他流处理平台的差异在哪里？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/41 - Kafka Streams DSL开发实例</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/42 - Kafka Streams在金融领域的应用</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/加餐 - 搭建开发环境、阅读源码方法、经典学习资料大揭秘</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/用户故事 - 黄云：行百里者半九十</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/结束语 - 以梦为马，莫负韶华！</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/kafka-core/期末测试 - 这些Kafka核心要点，你都掌握了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/从0开始学架构</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/旅程再启-架构师该如何适应新的技术浪潮？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/微服务架构技巧篇：接口类设计技巧</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/微服务架构技巧篇：分布式事务</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/微服务架构技巧篇：全局幂等</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/聊聊异地多活成熟的架构模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/云原生时代架构师的进化之道</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/AI时代架构师的进化</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/开篇词 - 照着做，你也能成为架构师！</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/01 - 架构到底是指什么？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/02 - 架构设计的历史背景</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/03 - 架构设计的目的</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/04 - 复杂度来源：高性能</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/05 - 复杂度来源：高可用</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/06 - 复杂度来源：可扩展性</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/07 - 复杂度来源：低成本、安全、规模</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/08 - 架构设计三原则</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/09 - 架构设计原则案例</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/10 - 架构设计流程：识别复杂度</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/11 - 架构设计流程：设计备选方案</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/12 - 架构设计流程：评估和选择备选方案</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/13 - 架构设计流程：详细方案设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/14 - 高性能数据库集群：读写分离</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/15 - 高性能数据库集群：分库分表</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/16 - 高性能NoSQL</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/17 - 高性能缓存架构</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/18 - 单服务器高性能模式：PPC与TPC</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/19 - 单服务器高性能模式：Reactor与Proactor</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/20 - 高性能负载均衡：分类及架构</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/21 - 高性能负载均衡：算法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/22 - 想成为架构师，你必须知道CAP理论</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/23 - 想成为架构师，你必须掌握的CAP细节</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/24 - FMEA方法，排除架构可用性隐患的利器</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/25 - 高可用存储架构：双机架构</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/26 - 高可用存储架构：集群和分区</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/27 - 如何设计计算高可用架构？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/28 - 业务高可用的保障：异地多活架构</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/29 - 异地多活设计4大技巧</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/30 - 异地多活设计4步走</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/31 - 如何应对接口级的故障？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/32 - 可扩展架构的基本思想和模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/33 - 传统的可扩展架构模式：分层架构和SOA</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/34 - 深入理解微服务架构：银弹 or 焦油坑？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/35 - 微服务架构最佳实践 - 方法篇</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/36 - 微服务架构最佳实践 - 基础设施篇</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/37 - 微内核架构详解</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/38 - 架构师应该如何判断技术演进的方向？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/39 - 互联网技术演进的模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/40 - 互联网架构模板：“存储层”技术</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/41 - 互联网架构模板：“开发层”和“服务层”技术</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/42 - 互联网架构模板：“网络层”技术</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/43 - 互联网架构模板：“用户层”和“业务层”技术</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/44 - 互联网架构模板：“平台”技术</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/45 - 架构重构内功心法第一式：有的放矢</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/46 - 架构重构内功心法第二式：合纵连横</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/47 - 架构重构内功心法第三式：运筹帷幄</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/48 - 再谈开源项目：如何选择、使用以及二次开发？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/49 - 谈谈App架构的演进</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/50 - 架构实战：架构设计文档模板</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/51 - 如何画出优秀的软件系统架构图？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/架构专栏特别放送 - “华仔，放学别走！”第1期</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/架构专栏特别放送 - “华仔，放学别走！” 第2期</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/如何高效地学习开源项目 - “华仔，放学别走！” 第3期</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/架构师成长之路 - “华仔，放学别走！” 第4期</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/架构师必读书单 - “华仔，放学别走！” 第5期</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/新书首发 - 《从零开始学架构》</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/致「从0开始学架构」专栏订阅用户</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/第二季回归 - 照着做，你也能顺利晋升！</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/加餐-单服务器高性能模式性能对比</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/加餐-扒一扒中台皇帝的外衣</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/加餐-业务架构实战营开营了</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/ChatGPT来临，架构师何去何从？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/结束语 - 坚持，成就你的技术梦想</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/learn-architecture-from-zero/结课测试-这些架构技能你都掌握了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/左耳听风</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/开篇词  -  洞悉技术的本质，享受科技的乐趣</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/01 - 程序员如何用技术变现？（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/02 - 程序员如何用技术变现？（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/03 - Equifax信息泄露始末</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/04 - 从Equifax信息泄露看数据安全</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/05 - 何为技术领导力？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/06 - 如何才能拥有技术领导力？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/07 - 推荐阅读：每个程序员都该知道的知识</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/08 - Go语言，Docker和新技术</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/09 - 答疑解惑：渴望、热情和选择</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/10 - 如何成为一个大家愿意追随的Leader？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/11 - 程序中的错误处理：错误返回码和异常捕捉</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/12 - 程序中的错误处理：异步编程以及我的最佳实践</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/13 - 魔数0x5f3759df</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/14 - 推荐阅读：机器学习101</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/15 - 时间管理：同扭曲时间的事儿抗争</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/16 - 时间管理：如何利用好自己的时间？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/17 - 故障处理最佳实践：应对故障</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/18 - 故障处理最佳实践：故障改进</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/19 - 答疑解惑：我们应该能够识别的表象和本质</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/20 - Git协同工作流，你该怎么选？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/21 - 分布式系统架构的冰与火</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/22 - 从亚马逊的实践，谈分布式系统的难点</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/23 - 分布式系统的技术栈</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/24 - 分布式系统关键技术：全栈监控</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/25 - 分布式系统关键技术：服务调度</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/26 - 分布式系统关键技术：流量与数据调度</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/27 - 洞悉PaaS平台的本质</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/28 - 推荐阅读：分布式系统架构经典资料</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/29 - 推荐阅读：分布式数据调度相关论文</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/30 - 编程范式：起源</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/31 - 编程范式：泛型编程</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/32 - 编程范式：类型系统和泛型的本质</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/33 - 编程范式：函数式编程</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/34 - 编程范式：修饰器模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/35 - 编程范式：面向对象编程</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/36 - 编程范式：基于原型的编程范式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/37 - 编程范式：Go语言的委托模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/38 - 编程范式：编程的本质</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/39 - 编程范式：逻辑编程范式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/40 - 程序世界里的编程范式总结</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/41 - 弹力设计：认识故障和弹力设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/42 - 弹力设计：隔离设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/43 - 弹力设计：异步通讯设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/44 - 弹力设计：幂等性设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/45 - 弹力设计：服务的状态</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/46 - 弹力设计：补偿事务</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/47 - 弹力设计：重试设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/48 - 弹力设计：熔断设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/49 - 弹力设计：限流设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/50 - 弹力设计：降级设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/51 - 弹力设计总结</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/52 - 管理设计：分布式锁</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/53 - 管理设计：配置中心</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/54 - 管理设计：边车模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/55 - 管理设计：服务网格</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/56 - 管理设计：网关模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/57 - 管理设计：部署升级策略</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/58 - 性能设计：缓存</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/59 - 性能设计：异步处理</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/60 - 性能设计：数据库扩展</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/61 - 性能设计：秒杀</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/62 - 性能设计：边缘计算</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/63 - 区块链技术的本质</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/64 - 区块链技术细节：哈希算法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/65 -  区块链技术细节：加密和挖矿</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/66 - 区块链技术细节：去中心化的共识机制</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/67 - 区块链技术细节：智能合约</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/68 - 谈谈传统金融和虚拟货币</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/69 - 程序员练级攻略：介绍</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/70 - 程序员练级攻略：零基础启蒙</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/71 - 程序员练级攻略：正式入门</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/72 - 程序员练级攻略：程序员修养</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/73 - 程序员练级攻略：编程语言</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/74 - 程序员练级攻略：理论学科</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/75 - 程序员练级攻略：系统知识</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/76 - 程序员练级攻略：软件设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/77 - 程序员练级攻略：Linux系统、内存和网络</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/78 - 程序员练级攻略：异步I-O模型和Lock-Free编程</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/79 - 程序员练级攻略：Java底层知识</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/80 - 程序员练级攻略：数据库</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/81 - 程序员练级攻略：分布式架构入门</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/82 - 程序员练级攻略：分布式架构经典图书和论文</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/83 - 程序员练级攻略：分布式架构工程设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/84 - 程序员练级攻略：微服务</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/85 - 程序员练级攻略：容器化和自动化运维</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/86 - 程序员练级攻略：机器学习和人工智能</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/87 - 程序员练级攻略：前端基础和底层原理</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/88 - 程序员练级攻略：前端性能优化和框架</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/89 - 程序员练级攻略：UI-UX设计</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/90 - 程序员练级攻略：技术资源集散地</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/91 - 程序员练级攻略的正确打开方式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/92 - 程序员面试攻略：面试前的准备</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/93 - 程序员面试攻略：面试中的技巧</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/94 - 程序员面试攻略：面试风格</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/95 - 程序员面试攻略：实力才是王中王</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/96 - 高效学习：端正学习态度</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/97 - 高效学习：源头、原理和知识地图</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/98 - 高效学习：深度、归纳和坚持实践</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/99 - 高效学习：如何学习和阅读代码？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/100 - 高效学习：如何面对枯燥和大量的知识？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/101 - 高效沟通：Talk和Code同等重要</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/102 - 高效沟通：沟通阻碍和应对方法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/103 - 高效沟通：沟通方式及技巧</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/104 - 高效沟通：沟通技术</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/105 - 高效沟通：好老板要善于提问</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/106 - 高效沟通：好好说话的艺术</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/107 - Go编程模式：切片、接口、时间和性能</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/108 - Go编程模式：错误处理</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/109 - Go编程模式：Functional Options</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/110 - Go编程模式：委托和反转控制</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/111 - Go编程模式：Map-Reduce</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/112 - Go编程模式：Go Generation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/113 - Go编程模式：修饰器</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/114 - Go编程模式：Pipeline</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/115 - Go编程模式：Kubernetes Visitor模式</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/结束语 - 业精于勤，行成于思</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/加餐 - 谈谈我的“三观”</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/left-ear-listen-wind/迭代-全新交付专栏全部音频</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/MySQL实战45讲</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/开篇词 - 这一次，让我们一起来搞懂MySQL</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/01 - 基础架构：一条SQL查询语句是如何执行的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/02  - 日志系统：一条SQL更新语句是如何执行的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/03 - 事务隔离：为什么你改了我还看不见？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/04 - 深入浅出索引（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/05 - 深入浅出索引（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/06 - 全局锁和表锁 ：给表加个字段怎么有这么多阻碍？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/07 - 行锁功过：怎么减少行锁对性能的影响？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/08 - 事务到底是隔离的还是不隔离的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/09 - 普通索引和唯一索引，应该怎么选择？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/10 - MySQL为什么有时候会选错索引？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/11 -  怎么给字符串字段加索引？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/12 - 为什么我的MySQL会“抖”一下？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/13 - 为什么表数据删掉一半，表文件大小不变？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/15 - 答疑文章（一）：日志和索引相关问题</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/16 - “order by”是怎么工作的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/17 - 如何正确地显示随机消息？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/18 - 为什么这些SQL语句逻辑相同，性能却差异巨大？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/19 - 为什么我只查一行的语句，也执行这么慢？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/20 - 幻读是什么，幻读有什么问题？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/21 - 为什么我只改一行的语句，锁这么多？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/22 - MySQL有哪些“饮鸩止渴”提高性能的方法？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/23 - MySQL是怎么保证数据不丢的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/24 - MySQL是怎么保证主备一致的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/25 - MySQL是怎么保证高可用的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/26 - 备库为什么会延迟好几个小时？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/27 - 主库出问题了，从库怎么办？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/28 - 读写分离有哪些坑？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/29 - 如何判断一个数据库是不是出问题了？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/30 - 答疑文章（二）：用动态的观点看加锁</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/31 - 误删数据后除了跑路，还能怎么办？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/32 - 为什么还有kill不掉的语句？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/33 - 我查这么多数据，会不会把数据库内存打爆？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/34 - 到底可不可以使用join？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/35 - join语句怎么优化？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/36 - 为什么临时表可以重名？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/37 - 什么时候会使用内部临时表？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/38 - 都说InnoDB好，那还要不要使用Memory引擎？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/39 - 自增主键为什么不是连续的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/40 - insert语句的锁为什么这么多？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/41 - 怎么最快地复制一张表？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/42 - grant之后要跟着flush privileges吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/43 - 要不要使用分区表？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/44 - 答疑文章（三）：说一说这些好问题</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/45 - 自增id用完怎么办？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/直播回顾 - 林晓斌：我的 MySQL 心路历程</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/结束语 - 点线网面，一起构建MySQL知识网络</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/结课测试-这些MySQL知识你都掌握了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-45/14 - count(_)这么慢，我该怎么办？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/MySQL 必知必会</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/开篇词 - 在实战中学习，是解锁MySQL技能的最佳方法</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/环境准备 - 带你安装MySQL和图形化管理工具Workbench</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/01 - 存储：一个完整的数据存储过程是怎样的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/02 - 字段：这么多字段类型，该怎么定义？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/03 - 表：怎么创建和修改数据表？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/04 - 增删改查：如何操作表中的数据？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/05 - 主键：如何正确设置主键？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/06 - 外键和连接：如何做关联查询？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/07 - 条件语句：WHERE 与 HAVING有什么不同？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/08 - 聚合函数：怎么高效地进行分组统计？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/09 - 时间函数：时间类数据，MySQL是怎么处理的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/10 - 如何进行数学计算、字符串处理和条件判断？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/11 - 索引：怎么提高查询的速度？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/12 - 事务：怎么确保关联操作正确执行？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/13 - 临时表：复杂查询，如何保存中间结果？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/14 - 视图：如何简化查询？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/15 - 存储过程：如何提高程序的性能和安全性？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/16 - 游标：对于数据集中的记录，该怎么逐条处理？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/17 - 触发器：如何让数据修改自动触发关联操作，确保数据一致性？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/18 - 权限管理：如何控制数据库访问，消除安全隐患？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/19 - 日志（上）：系统出现问题，如何及时发现？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/20 - 日志（下）：系统故障，如何恢复数据？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/21 - 数据备份：异常情况下，如何确保数据安全？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/22 - 范式：如何消除冗余，实现高效存取？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/23 - ER模型：如何理清数据库设计思路？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/24 - 查询有点慢，语句该如何写？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/25 - 表太大了，如何设计才能提高性能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/26 - 如何充分利用系统资源？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/27 - 手把手带你设计一个完整的连锁超市信息系统数据库（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/28 - 手把手带你设计一个完整的连锁超市信息系统数据库（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/特别发送（一） - 经典面试题讲解第一弹</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/特别放送（二）- 经典面试题讲解第二弹</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/特别放送（三）- MySQL 8 都有哪些新特征？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/特别放送（四）- 位置信息：如何进行空间定位？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/期末测试 - 一套习题，测出你的掌握程度</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/mysql-must-know/结束语 - 不盲从于群体思维，走一条适合自己的路</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/Python核心技术与实战</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/开篇词 - 从工程的角度深入理解Python</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/01 - 如何逐步突破，成为Python高手？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/02 - Jupyter Notebook为什么是现代Python的必学技术？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/03 - 列表和元组，到底用哪一个？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/04 - 字典、集合，你真的了解吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/05 - 深入浅出字符串</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/06 - Python “黑箱”：输入与输出</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/07 - 修炼基本功：条件与循环</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/08 - 异常处理：如何提高程序的稳定性？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/09 - 不可或缺的自定义函数</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/10 - 简约不简单的匿名函数</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/11 - 面向对象（上）：从生活中的类比说起</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/12 - 面向对象（下）：如何实现一个搜索引擎？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/13 - 搭建积木：Python 模块化</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/14 - 答疑（一）：列表和元组的内部实现是怎样的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/15 - Python对象的比较、拷贝</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/16 - 值传递，引用传递or其他，Python里参数是如何传递的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/17 - 强大的装饰器</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/18 - metaclass，是潘多拉魔盒还是阿拉丁神灯？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/19 - 深入理解迭代器和生成器</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/20 - 揭秘 Python 协程</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/21 - Python并发编程之Futures</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/22 - 并发编程之Asyncio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/23 - 你真的懂Python GIL（全局解释器锁）吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/24 - 带你解析 Python 垃圾回收机制</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/25 - 答疑（二）：GIL与多线程是什么关系呢？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/26 - 活都来不及干了，还有空注意代码风格？！</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/27 - 学会合理分解代码，提高代码可读性</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/28 - 如何合理利用assert？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/29 - 巧用上下文管理器和With语句精简代码</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/30 - 真的有必要写单元测试吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/31 - pdb &amp; cProfile：调试和性能分析的法宝</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/32 - 答疑（三）：如何选择合适的异常处理方式？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/33 - 带你初探量化世界</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/34 - RESTful &amp; Socket：搭建交易执行层核心</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/35 - RESTful &amp; Socket：行情数据对接和抓取</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/36 - Pandas &amp; Numpy：策略与回测系统</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/37 - Kafka &amp; ZMQ：自动化交易流水线</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/38 - MySQL：日志和数据存储系统</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/39 - Django：搭建监控平台</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/40 - 总结：Python中的数据结构与算法全景</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/41 - 硅谷一线互联网公司的工作体验</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/42 - 细数技术研发的注意事项</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/加餐 - 带你上手SWIG：一份清晰好用的SWIG编程实践指南</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/43 - Q&amp;A：聊一聊职业发展和选择</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/结束语 - 技术之外的几点成长建议</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/python-core/结课测试 - 关于Python的这些知识，你都掌握了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/Redis核心技术与实战</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/开篇词 - 这样学Redis，才能技高一筹</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/01 - 基本架构：一个键值数据库包含什么？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/02 - 数据结构：快速的Redis有哪些慢操作？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/03 - 高性能IO模型：为什么单线程Redis能那么快？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/04 - AOF日志：宕机了，Redis如何避免数据丢失？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/05 - 内存快照：宕机后，Redis如何实现快速恢复？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/06 - 数据同步：主从库如何实现数据一致？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/07 - 哨兵机制：主库挂了，如何不间断服务？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/08 - 哨兵集群：哨兵挂了，主从库还能切换吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/09 - 切片集群：数据增多了，是该加内存还是加实例？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/10 - 第1～9讲课后思考题答案及常见问题答疑</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/11 - “万金油”的String，为什么不好用了？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/12 - 有一亿个keys要统计，应该用哪种集合？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/13 - GEO是什么？还可以定义新的数据类型吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/14 - 如何在Redis中保存时间序列数据？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/15 - 消息队列的考验：Redis有哪些解决方案？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/16 - 异步机制：如何避免单线程模型的阻塞？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/17 - 为什么CPU结构也会影响Redis的性能？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/18 - 波动的响应延迟：如何应对变慢的Redis？（上）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/19 - 波动的响应延迟：如何应对变慢的Redis？（下）</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/20 - 删除数据后，为什么内存占用率还是很高？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/21 - 缓冲区：一个可能引发“惨案”的地方</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/22 - 第11～21讲课后思考题答案及常见问题答疑</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/23 - 旁路缓存：Redis是如何工作的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/24 - 替换策略：缓存满了怎么办？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/25 - 缓存异常（上）：如何解决缓存和数据库的数据不一致问题？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/26 - 缓存异常（下）：如何解决缓存雪崩、击穿、穿透难题？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/27 - 缓存被污染了，该怎么办？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/28 - Pika：如何基于SSD实现大容量Redis？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/29 - 无锁的原子操作：Redis如何应对并发访问？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/30 - 如何使用Redis实现分布式锁？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/31 - 事务机制：Redis能实现ACID属性吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/32 - Redis主从同步与故障切换，有哪些坑？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/33 - 脑裂：一次奇怪的数据丢失</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/34 - 第23~33讲课后思考题答案及常见问题答疑</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/35 - Codis VS Redis Cluster：我该选择哪一个集群方案？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/36 - Redis支撑秒杀场景的关键技术和实践都有哪些？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/37 - 数据分布优化：如何应对数据倾斜？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/38 - 通信开销：限制Redis Cluster规模的关键因素</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/期中测试题 - 一套习题，测出你的掌握程度</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/期中测试题答案 - 这些问题，你都答对了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/39 - Redis 6.0的新特性：多线程、客户端缓存与安全</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/40 - Redis的下一步：基于NVM内存的实践</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/41 -  第35～40讲课后思考题答案及常见问题答疑</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/加餐（一）- 经典的Redis学习资料有哪些？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/加餐（二）- 用户Kaito：我是如何学习Redis的？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/加餐（三）- 用户Kaito：我希望成为在压力中成长的人</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/加餐（四） - Redis客户端如何与服务器端交换命令和数据？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/加餐（五） - Redis有哪些好用的运维工具？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/加餐（六）-  Redis的使用规范小建议</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/加餐（七） - 从微博的Redis实践中，我们可以学到哪些经验？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/期末测试 - 这些Redis核心知识，你都掌握了吗？</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://guohuaijian.github.io/my-hugo-site/books/redis-core/结束语 - 从学习Redis到向Redis学习</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

@@ -6,6 +6,7 @@ import MarkdownRenderer from '../components/MarkdownRenderer.vue'
 import TableOfContents from '../components/TableOfContents.vue'
 import { useContentLoader } from '../composables/useContentLoader'
 import { renderMarkdown } from '../composables/useMarkdown'
+import { applyMeta } from '../composables/useMeta'
 import siteConfig from '../../content/site-config.json'
 
 const analytics = siteConfig.analytics || {}
@@ -59,6 +60,28 @@ function observeHeadings() {
   headings.forEach((heading) => observer.observe(heading))
 }
 
+const SITE_URL = 'https://guohuaijian.github.io/my-hugo-site'
+
+function updateMeta() {
+  const n = note.value
+  if (!n) return
+  const title = `${n.title} · 云边小卖部`
+  const description = n.summary || ''
+  const image = n.cover ? `${SITE_URL}${n.cover}` : `${SITE_URL}/favicon.png`
+  const url = `${SITE_URL}/notes/${n.slug}`
+  const jsonld = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: n.title,
+    description: n.summary || '',
+    author: { '@type': 'Person', name: n.author || '店主' },
+    datePublished: n.date || undefined,
+    image: n.cover ? `${SITE_URL}${n.cover}` : undefined,
+    url,
+  }
+  applyMeta({ title, description, url, image, type: 'article', jsonld })
+}
+
 onMounted(() => {
   loadArticle()
   recordPageView()
@@ -66,6 +89,9 @@ onMounted(() => {
 watch(() => route.params.slug, () => {
   loadArticle()
   recordPageView()
+})
+watch(note, (n) => {
+  if (n) updateMeta()
 })
 </script>
 

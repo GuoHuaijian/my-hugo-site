@@ -7,6 +7,7 @@ import SideNav from '../components/SideNav.vue'
 import TableOfContents from '../components/TableOfContents.vue'
 import { useContentLoader } from '../composables/useContentLoader'
 import { renderMarkdown } from '../composables/useMarkdown'
+import { applyMeta } from '../composables/useMeta'
 
 const route = useRoute()
 const router = useRouter()
@@ -44,8 +45,38 @@ function observeHeadings() {
   headings.forEach((heading) => observer.observe(heading))
 }
 
+const SITE_URL = 'https://guohuaijian.github.io/my-hugo-site'
+
+function updateMeta() {
+  const c = current.value
+  const p = page.value
+  if (!c) return
+  const title = p?.title
+    ? `${p.title} · ${c.title || c.name} · 云边小卖部`
+    : `${c.title || c.name} · 云边小卖部`
+  const description = c.description || c.quote || ''
+  const cover = c.cover || ''
+  const image = cover ? `${SITE_URL}${cover}` : `${SITE_URL}/favicon.png`
+  const url = `${SITE_URL}${route.fullPath}`
+  const type = route.meta.type === 'books' ? 'Book' : 'TechArticle'
+  const jsonld = {
+    '@context': 'https://schema.org',
+    '@type': type,
+    headline: title,
+    description: description.slice(0, 200),
+    url,
+    image: cover ? `${SITE_URL}${cover}` : undefined,
+  }
+  applyMeta({ title, description, url, image, type: 'article', jsonld })
+}
+
 onMounted(loadDoc)
 watch(() => route.fullPath, loadDoc)
+
+// Meta updates once content resolves
+watch([current, page], ([c, p]) => {
+  if (c && p !== undefined) updateMeta()
+})
 </script>
 
 <template>

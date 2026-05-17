@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guohuaijian.github.io/my-hugo-site/sitemap.xml

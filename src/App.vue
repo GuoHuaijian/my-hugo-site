@@ -1,7 +1,12 @@
 <script setup>
+import { onMounted } from 'vue'
 import BackToTop from './components/BackToTop.vue'
 import Navbar from './components/Navbar.vue'
 import SiteFooter from './components/SiteFooter.vue'
+import { useMeta } from './composables/useMeta'
+
+// Activates per-route meta tag updates (title, description, OG, canonical, JSON-LD)
+useMeta()
 </script>
 
 <template>
