@@ -1,0 +1,157 @@
+.markdown-body {
+  color: var(--color-text-primary);
+}
+
+.markdown-body h1 {
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 2rem;
+}
+
+.markdown-body h2 {
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-4);
+}
+
+.markdown-body h3 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-3);
+}
+
+.markdown-body p {
+  margin-bottom: var(--space-4);
+}
+
+.markdown-body a {
+  color: var(--color-accent);
+}
+
+.markdown-body a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.markdown-body blockquote {
+  margin: var(--space-6) 0;
+  padding: var(--space-4) var(--space-5);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  background: var(--color-accent-bg);
+  color: var(--color-text-quote);
+}
+
+.markdown-body code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+.markdown-body :not(pre) > code {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--color-inline-code-bg);
+  color: var(--color-inline-code);
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.markdown-body th,
+.markdown-body td {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+}
+
+.markdown-body th {
+  background: var(--color-bg-secondary);
+}
+
+/* ── 代码块（带头部） ── */
+.markdown-body .code-block {
+  margin: var(--space-6) 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-bg-code);
+}
+
+.markdown-body .code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px;
+  background: var(--color-overlay-light);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+  user-select: none;
+}
+
+.markdown-body .code-lang {
+  font-family: var(--font-mono);
+  text-transform: lowercase;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.markdown-body .code-copy-btn {
+  padding: 3px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.markdown-body .code-copy-btn:hover {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+
+.markdown-body .code-copy-btn.copied {
+  background: var(--color-success-bright);
+  color: white;
+  border-color: var(--color-success-bright);
+}
+
+.markdown-body .code-block pre {
+  margin: 0;
+  padding: var(--space-5);
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  overflow: auto;
+  line-height: 1.6;
+}
+
+.markdown-body .code-block code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+/* ── Mermaid 图表 ── */
+.markdown-body .mermaid {
+  overflow: auto;
+  margin: var(--space-6) 0;
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-card);
+  text-align: center;
+}
+
+.markdown-body .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+[data-theme="dark"] .markdown-body .mermaid {
+  background: var(--color-bg-code);
+}

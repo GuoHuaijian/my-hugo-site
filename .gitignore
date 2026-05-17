@@ -1,0 +1,10 @@
+node_modules
+dist
+public/content
+public/content-index.json
+public/content-index-dev.json
+tmp
+*.log
+.DS_Store
+.idea
+.npm-cache

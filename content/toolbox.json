@@ -1,0 +1,286 @@
+{
+  "categories": [
+    {
+      "name": "开发工具",
+      "items": [
+        {
+          "name": "IntelliJ IDEA",
+          "icon": "https://www.google.com/s2/favicons?domain=jetbrains.com&sz=64",
+          "description": "Java 开发首选 IDE，智能代码补全与重构",
+          "url": "https://www.jetbrains.com/idea/"
+        },
+        {
+          "name": "VS Code",
+          "icon": "https://www.google.com/s2/favicons?domain=code.visualstudio.com&sz=64",
+          "description": "轻快而强大的代码编辑器",
+          "url": "https://code.visualstudio.com"
+        },
+        {
+          "name": "Maven",
+          "icon": "https://www.google.com/s2/favicons?domain=maven.apache.org&sz=64",
+          "description": "Java 项目构建与依赖管理工具",
+          "url": "https://maven.apache.org/"
+        },
+        {
+          "name": "Gradle",
+          "icon": "https://www.google.com/s2/favicons?domain=gradle.org&sz=64",
+          "description": "灵活的构建自动化工具，支持多语言",
+          "url": "https://gradle.org/"
+        },
+        {
+          "name": "Spring Initializr",
+          "icon": "https://www.google.com/s2/favicons?domain=start.spring.io&sz=64",
+          "description": "快速生成 Spring Boot 项目脚手架",
+          "url": "https://start.spring.io/"
+        },
+        {
+          "name": "Postman",
+          "icon": "https://www.google.com/s2/favicons?domain=postman.com&sz=64",
+          "description": "API 调试与接口测试利器",
+          "url": "https://www.postman.com/"
+        },
+        {
+          "name": "JMeter",
+          "icon": "https://www.google.com/s2/favicons?domain=jmeter.apache.org&sz=64",
+          "description": "Java 编写的性能测试与压力测试工具",
+          "url": "https://jmeter.apache.org/"
+        },
+        {
+          "name": "Arthas",
+          "icon": "https://www.google.com/s2/favicons?domain=arthas.aliyun.com&sz=64",
+          "description": "阿里巴巴开源的 Java 诊断工具",
+          "url": "https://arthas.aliyun.com/"
+        },
+        {
+          "name": "JDK 版本速查",
+          "icon": "Coffee",
+          "description": "各版本 JDK 新特性对比与升级指南",
+          "file": "/content/toolbox/jdk-versions.md"
+        },
+        {
+          "name": "Chrome DevTools",
+          "icon": "https://www.google.com/s2/favicons?domain=developer.chrome.com&sz=64",
+          "description": "调试页面、性能和网络请求的日常工具",
+          "url": "https://developer.chrome.com/docs/devtools/"
+        }
+      ]
+    },
+    {
+      "name": "设计资源",
+      "items": [
+        {
+          "name": "Figma",
+          "icon": "https://www.google.com/s2/favicons?domain=figma.com&sz=64",
+          "description": "在线设计协作工具",
+          "url": "https://figma.com"
+        },
+        {
+          "name": "Google Fonts",
+          "icon": "https://www.google.com/s2/favicons?domain=fonts.google.com&sz=64",
+          "description": "开源字体收藏与预览",
+          "url": "https://fonts.google.com"
+        },
+        {
+          "name": "Iconfont",
+          "icon": "https://www.google.com/s2/favicons?domain=iconfont.cn&sz=64",
+          "description": "阿里巴巴矢量图标库，海量图标免费下载",
+          "url": "https://www.iconfont.cn/"
+        },
+        {
+          "name": "Unsplash",
+          "icon": "https://www.google.com/s2/favicons?domain=unsplash.com&sz=64",
+          "description": "高质量免费图片资源",
+          "url": "https://unsplash.com/"
+        },
+        {
+          "name": "配色方案速查",
+          "icon": "Droplets",
+          "description": "常用 UI 配色组合与对比度指南",
+          "file": "/content/toolbox/color-guide.md"
+        }
+      ]
+    },
+    {
+      "name": "效率工具",
+      "items": [
+        {
+          "name": "Notion",
+          "icon": "https://www.google.com/s2/favicons?domain=notion.so&sz=64",
+          "description": "笔记、文档与项目管理一体化",
+          "url": "https://www.notion.so/"
+        },
+        {
+          "name": "Snipaste",
+          "icon": "https://www.google.com/s2/favicons?domain=snipaste.com&sz=64",
+          "description": "截图 + 贴图，开发者的效率神器",
+          "url": "https://www.snipaste.com/"
+        },
+        {
+          "name": "Typora",
+          "icon": "https://www.google.com/s2/favicons?domain=typora.io&sz=64",
+          "description": "所见即所得的 Markdown 编辑器",
+          "url": "https://typora.io/"
+        },
+        {
+          "name": "uTools",
+          "icon": "https://www.google.com/s2/favicons?domain=u.tools&sz=64",
+          "description": "插件化的效率工具箱",
+          "url": "https://u.tools/"
+        },
+        {
+          "name": "Draw.io",
+          "icon": "https://www.google.com/s2/favicons?domain=draw.io&sz=64",
+          "description": "免费在线流程图、架构图绘制",
+          "url": "https://app.diagrams.net/"
+        },
+        {
+          "name": "Excalidraw",
+          "icon": "https://www.google.com/s2/favicons?domain=excalidraw.com&sz=64",
+          "description": "手绘风格的在线白板工具",
+          "url": "https://excalidraw.com/"
+        }
+      ]
+    },
+    {
+      "name": "AI 工具",
+      "items": [
+        {
+          "name": "Claude",
+          "icon": "https://www.google.com/s2/favicons?domain=claude.ai&sz=64",
+          "description": "强大的 AI 助手，代码生成与问题解答",
+          "url": "https://claude.ai/"
+        },
+        {
+          "name": "GitHub Copilot",
+          "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+          "description": "AI 结对编程助手，智能代码补全",
+          "url": "https://github.com/features/copilot"
+        },
+        {
+          "name": "Cursor",
+          "icon": "https://www.google.com/s2/favicons?domain=cursor.com&sz=64",
+          "description": "AI 驱动的新一代代码编辑器",
+          "url": "https://cursor.com/"
+        },
+        {
+          "name": "通义千问",
+          "icon": "https://www.google.com/s2/favicons?domain=tongyi.aliyun.com&sz=64",
+          "description": "阿里大模型，中文理解与代码能力优秀",
+          "url": "https://tongyi.aliyun.com/"
+        },
+        {
+          "name": "DeepSeek",
+          "icon": "https://www.google.com/s2/favicons?domain=deepseek.com&sz=64",
+          "description": "国产大模型，代码生成与推理能力强",
+          "url": "https://www.deepseek.com/"
+        },
+        {
+          "name": "v0",
+          "icon": "https://www.google.com/s2/favicons?domain=v0.dev&sz=64",
+          "description": "Vercel AI 前端生成工具，描述即代码",
+          "url": "https://v0.dev/"
+        }
+      ]
+    },
+    {
+      "name": "学习资源",
+      "items": [
+        {
+          "name": "Java 官方文档",
+          "icon": "https://www.google.com/s2/favicons?domain=docs.oracle.com&sz=64",
+          "description": "JDK API 参考与语言规范",
+          "url": "https://docs.oracle.com/en/java/"
+        },
+        {
+          "name": "Spring 官方文档",
+          "icon": "https://www.google.com/s2/favicons?domain=spring.io&sz=64",
+          "description": "Spring Framework / Boot 权威指南",
+          "url": "https://spring.io/projects"
+        },
+        {
+          "name": "Baeldung",
+          "icon": "https://www.google.com/s2/favicons?domain=baeldung.com&sz=64",
+          "description": "Java / Spring 生态高质量教程",
+          "url": "https://www.baeldung.com/"
+        },
+        {
+          "name": "掘金",
+          "icon": "https://www.google.com/s2/favicons?domain=juejin.cn&sz=64",
+          "description": "中文技术社区，Java 与前端内容优质",
+          "url": "https://juejin.cn/"
+        },
+        {
+          "name": "极客时间",
+          "icon": "https://www.google.com/s2/favicons?domain=time.geekbang.org&sz=64",
+          "description": "付费技术课程平台，体系化学习",
+          "url": "https://time.geekbang.org/"
+        },
+        {
+          "name": "MDN Web Docs",
+          "icon": "https://www.google.com/s2/favicons?domain=developer.mozilla.org&sz=64",
+          "description": "Web 技术权威文档，前端必备",
+          "url": "https://developer.mozilla.org/"
+        },
+        {
+          "name": "Java 并发编程指南",
+          "icon": "Cpu",
+          "description": "JUC 核心组件与并发模式总结",
+          "file": "/content/toolbox/java-concurrency.md"
+        }
+      ]
+    },
+    {
+      "name": "常用命令",
+      "items": [
+        {
+          "name": "Maven 常用命令",
+          "icon": "Terminal",
+          "description": "clean, install, package, deploy 等常用命令速查",
+          "file": "/content/toolbox/maven-commands.md"
+        },
+        {
+          "name": "Git 常用命令",
+          "icon": "GitBranch",
+          "description": "clone, commit, push, merge, rebase 等核心命令",
+          "file": "/content/toolbox/git-commands.md"
+        },
+        {
+          "name": "Docker 常用命令",
+          "icon": "Container",
+          "description": "run, ps, exec, logs, compose 等容器命令速查",
+          "file": "/content/toolbox/docker-commands.md"
+        },
+        {
+          "name": "Linux 常用命令",
+          "icon": "Terminal",
+          "description": "文件、权限、进程、网络等常用命令汇总",
+          "file": "/content/toolbox/linux-commands.md"
+        },
+        {
+          "name": "JVM 调优命令",
+          "icon": "Settings",
+          "description": "jps, jstat, jmap, jstack 等诊断命令",
+          "file": "/content/toolbox/jvm-commands.md"
+        },
+        {
+          "name": "Nginx 常用命令",
+          "icon": "Server",
+          "description": "启动、重载、日志查看与配置检查",
+          "file": "/content/toolbox/nginx-commands.md"
+        },
+        {
+          "name": "MySQL 常用命令",
+          "icon": "Database",
+          "description": "连接、备份、导入导出与性能分析",
+          "file": "/content/toolbox/mysql-commands.md"
+        },
+        {
+          "name": "Redis 常用命令",
+          "icon": "Zap",
+          "description": "连接、数据类型操作与持久化命令",
+          "file": "/content/toolbox/redis-commands.md"
+        }
+      ]
+    }
+  ]
+}
