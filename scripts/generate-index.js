@@ -295,11 +295,16 @@ const site = readJson(path.join(contentDir, 'site-config.json'), {})
 
 fs.writeFileSync(path.join(publicDir, 'content-index.json'), JSON.stringify({ notes, projects, books, toolbox, allTags, site }, null, 2), 'utf8')
 
-// Copy logo as favicon if missing
-const logoPath = path.join(root, 'src', 'assets', 'images', 'logo.png')
-const faviconPath = path.join(publicDir, 'favicon.png')
-if (!fs.existsSync(faviconPath) && fs.existsSync(logoPath)) {
-  fs.copyFileSync(logoPath, faviconPath)
-}
+// Generate compressed favicons from logo
+;(async () => {
+  const { default: sharp } = await import('sharp')
+  const logoWebp = path.join(root, 'src', 'assets', 'images', 'logo.webp')
+  if (fs.existsSync(logoWebp)) {
+    const favPng = path.join(publicDir, 'favicon.png')
+    const favWebp = path.join(publicDir, 'favicon.webp')
+    await sharp(logoWebp).resize(64, 64).png({ palette: true, colors: 64, compressionLevel: 9 }).toFile(favPng)
+    await sharp(logoWebp).resize(64, 64).webp({ quality: 80 }).toFile(favWebp)
+  }
+})()
 
 console.log(`Generated ${notes.length} notes, ${projects.length} projects, ${books.length} books.`)
