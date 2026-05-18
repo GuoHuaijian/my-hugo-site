@@ -75,10 +75,9 @@ async function optimize() {
   let refUpdated = 0
   for (const file of refFiles) {
     let content = fs.readFileSync(file, 'utf8')
-    // Replace .png references with .webp, but only in path-like contexts
-    const newContent = content.replace(/(["'\s])([\w./-]+)\.png(["'\s])/g, (match, before, path_part, after) => {
-      return `${before}${path_part}.webp${after}`
-    })
+    // Replace .png → .webp ONLY for local /content/ paths (covers, images in markdown)
+    // This avoids touching external URL images (geekbang, githubusercontent, etc.)
+    const newContent = content.replace(/("\/content\/[^"]+)\.png(")/g, '$1.webp$2')
     if (newContent !== content) {
       fs.writeFileSync(file, newContent, 'utf8')
       refUpdated++
