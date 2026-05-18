@@ -43,7 +43,7 @@ const routes = [
     meta: { title: routerConfig.pageTitles['book-pdf'], description: '', ogType: 'article' },
   },
   {
-    path: '/books/:slug/:page?', name: 'book-doc', component: () => import('../views/DocReader.vue'),
+    path: '/books/:slug/:page(.*)?', name: 'book-doc', component: () => import('../views/DocReader.vue'),
     meta: { type: 'books', title: routerConfig.pageTitles['book-doc'], description: '', ogType: 'article' },
   },
   {

@@ -3,6 +3,7 @@ title: "凤凰架构"
 author: "周志明"
 status: "在读"
 quote: "构建可靠的大型分布式系统，是衡量一个架构师是否成熟的重要标志。"
+cover: "/content/covers/awesome-fenix.png"
 rating: 5
 chapters:
       - title: "关于作者"

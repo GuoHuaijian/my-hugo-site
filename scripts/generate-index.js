@@ -213,16 +213,17 @@ function makeBooks() {
     const folder = path.join(dir, entry.name)
     const { data } = readMarkdown(path.join(folder, 'index.md'))
 
-    // Build chapter map from all markdown files
+    // Build chapter map from all markdown files (recursive, include subdirectories)
     const chapterMap = new Map()
-    for (const file of listMarkdown(folder)) {
+    for (const file of listMarkdownRecursive(folder)) {
       if (path.basename(file) === 'index.md') continue
       const { data: chapterData } = readMarkdown(file)
-      const basename = path.basename(file)
-      chapterMap.set(basename, {
+      const rel = path.relative(folder, file).replace(/\\/g, '/') // e.g. "introduction/about-me.md"
+      const basename = path.basename(file) // e.g. "about-me.md"
+      chapterMap.set(rel, {
         title: chapterData.title || basename.replace(/\.md$/, '').replace(/-/g, ' '),
-        slug: basename.replace(/\.md$/, ''),
-        file: `/content/books/${entry.name}/${basename}`,
+        slug: rel.replace(/\.md$/, ''), // e.g. "introduction/about-me"
+        file: `/content/books/${entry.name}/${rel.replace(/\\/g, '/')}`,
         type: 'md'
       })
     }

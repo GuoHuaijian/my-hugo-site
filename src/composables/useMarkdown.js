@@ -3,7 +3,7 @@ import hljs from 'highlight.js'
 import { parseFrontmatter } from '../utils/frontmatter'
 
 const md = new MarkdownIt({
-  html: false,
+  html: true,
   linkify: true,
   typographer: true
 })
