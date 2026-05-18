@@ -39,7 +39,7 @@
   "footer": {
     "_comment": "==================== 页脚配置 ====================",
 
-    "copyright": "2019-2026 云边小卖部 · Built with Vue & Vite on Cloudflare",
+    "copyright": "2019-2026 云边小卖部 · Powered by Cloudflare",
     "_copyright_desc": "版权信息。© 符号会自动添加，此处只填后面的内容。",
 
     "signature": "生活是甜的，像山顶的风。",

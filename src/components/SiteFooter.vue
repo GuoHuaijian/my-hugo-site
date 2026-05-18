@@ -1,13 +1,17 @@
 <script setup>
+import { computed } from 'vue'
 import siteConfig from '../../content/site-config.json'
 import VisitStats from './VisitStats.vue'
 const { footer } = siteConfig
+
+const year = new Date().getFullYear()
+const copyrightText = computed(() => footer.copyright.replace(/\d{4}(?!.*\d{4})/, String(year)))
 </script>
 
 <template>
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© {{ footer.copyright }}</p>
+      <p>© {{ copyrightText }}</p>
       <p class="quote">{{ footer.signature }}</p>
     </div>
     <div class="container footer-stats">
