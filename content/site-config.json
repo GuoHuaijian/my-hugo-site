@@ -30,7 +30,10 @@
     "_logoText_desc": "导航栏品牌文字。",
 
     "logoAlt": "云边小卖部 Logo",
-    "_logoAlt_desc": "Logo 图片的 alt 属性（无障碍）。"
+    "_logoAlt_desc": "Logo 图片的 alt 属性（无障碍）。",
+
+    "url": "https://slothcoder.cn",
+    "_url_desc": "站点部署地址。用于 SEO canonical、sitemap、Open Graph 等。末尾不加斜杠。"
   },
 
   "footer": {

@@ -3,7 +3,6 @@ import siteConfig from '../../content/site-config.json'
 import { applyMeta } from '../composables/useMeta'
 
 const { router: routerConfig, site, pages } = siteConfig
-const SITE_URL = 'https://slothcoder.cn'
 
 const PAGE_DESCRIPTIONS = {
   home: site.description || '贩卖代码、笔记与偶尔的胡思乱想。',
@@ -76,7 +75,7 @@ router.afterEach((to) => {
   applyMeta({
     title,
     description: to.meta.description || site.description || '贩卖代码、笔记与偶尔的胡思乱想。',
-    url: `${SITE_URL}${to.fullPath}`,
+    url: `${site.url}${to.fullPath}`,
     type: to.meta.ogType || 'website',
   })
 })

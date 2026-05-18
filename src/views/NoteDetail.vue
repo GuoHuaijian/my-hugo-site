@@ -8,6 +8,7 @@ import { useContentLoader } from '../composables/useContentLoader'
 import { renderMarkdown } from '../composables/useMarkdown'
 import { applyMeta } from '../composables/useMeta'
 import siteConfig from '../../content/site-config.json'
+const { site } = siteConfig
 
 const analytics = siteConfig.analytics || {}
 const API_BASE = analytics.baseApi || ''
@@ -60,12 +61,12 @@ function observeHeadings() {
   headings.forEach((heading) => observer.observe(heading))
 }
 
-const SITE_URL = 'https://slothcoder.cn'
+const SITE_URL = site.url
 
 function updateMeta() {
   const n = note.value
   if (!n) return
-  const title = `${n.title} · 云边小卖部`
+  const title = `${n.title} · ${site.name}`
   const description = n.summary || ''
   const image = n.cover ? `${SITE_URL}${n.cover}` : `${SITE_URL}/favicon.png`
   const url = `${SITE_URL}/notes/${n.slug}`

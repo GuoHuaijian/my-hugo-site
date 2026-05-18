@@ -8,6 +8,7 @@ import TableOfContents from '../components/TableOfContents.vue'
 import { useContentLoader } from '../composables/useContentLoader'
 import { renderMarkdown } from '../composables/useMarkdown'
 import { applyMeta } from '../composables/useMeta'
+import siteConfig from '../../content/site-config.json'
 
 const route = useRoute()
 const router = useRouter()
@@ -45,15 +46,15 @@ function observeHeadings() {
   headings.forEach((heading) => observer.observe(heading))
 }
 
-const SITE_URL = 'https://slothcoder.cn'
+const SITE_URL = siteConfig.site.url
 
 function updateMeta() {
   const c = current.value
   const p = page.value
   if (!c) return
   const title = p?.title
-    ? `${p.title} · ${c.title || c.name} · 云边小卖部`
-    : `${c.title || c.name} · 云边小卖部`
+    ? `${p.title} · ${c.title || c.name} · ${siteConfig.site.name}`
+    : `${c.title || c.name} · ${siteConfig.site.name}`
   const description = c.description || c.quote || ''
   const cover = c.cover || ''
   const image = cover ? `${SITE_URL}${cover}` : `${SITE_URL}/favicon.png`

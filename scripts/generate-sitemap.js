@@ -7,7 +7,10 @@ const publicDir = path.join(root, 'public')
 const indexFile = path.join(publicDir, 'content-index.json')
 const outFile = path.join(publicDir, 'sitemap.xml')
 
-const SITE_URL = 'https://slothcoder.cn'
+// Read URL from site config — single source of truth
+const configFile = path.join(root, 'content', 'site-config.json')
+const config = JSON.parse(fs.readFileSync(configFile, 'utf8'))
+const SITE_URL = config.site?.url || 'https://slothcoder.cn'
 
 // Priority map: home > list pages > detail pages
 const STATIC_ROUTES = [
