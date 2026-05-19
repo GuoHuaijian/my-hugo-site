@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { parseFrontmatter } from '../src/utils/frontmatter.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const contentDir = path.join(root, 'content')
@@ -20,71 +21,6 @@ function copyDir(src, dest) {
     if (entry.isDirectory()) copyDir(from, to)
     else fs.copyFileSync(from, to)
   }
-}
-
-function parseValue(value) {
-  const trimmed = value.trim()
-  if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
-    return trimmed.slice(1, -1).split(',').map((item) => item.trim().replace(/^["']|["']$/g, '')).filter(Boolean)
-  }
-  if (trimmed === 'true') return true
-  if (trimmed === 'false') return false
-  if (/^\d+(\.\d+)?$/.test(trimmed)) return Number(trimmed)
-  return trimmed.replace(/^["']|["']$/g, '')
-}
-
-function parseFrontmatter(raw) {
-  if (!raw.startsWith('---')) return { data: {}, body: raw }
-  const end = raw.indexOf('\n---', 3)
-  if (end === -1) return { data: {}, body: raw }
-  const lines = raw.slice(3, end).split(/\r?\n/)
-  const data = {}
-  let currentList = null
-  let currentListItem = null
-
-  for (const line of lines) {
-    // Check for list item: "  - something"
-    const listMatch = line.match(/^(\s*)-\s+(.+)$/)
-    if (listMatch) {
-      if (currentList) {
-        const content = listMatch[2].trim()
-        // Check if it's a key-value pair like "title: xxx"
-        const kvMatch = content.match(/^([\w-]+):\s*(.*)$/)
-        if (kvMatch) {
-          // Start a new list item object
-          currentListItem = {}
-          currentListItem[kvMatch[1]] = parseValue(kvMatch[2])
-          data[currentList].push(currentListItem)
-        } else {
-          // Simple list item
-          data[currentList].push(parseValue(content))
-          currentListItem = null
-        }
-      }
-      continue
-    }
-
-    // Check for nested key-value in a list item: "    file: xxx"
-    const nestedMatch = line.match(/^\s{4,}([\w-]+):\s*(.*)$/)
-    if (nestedMatch && currentListItem) {
-      currentListItem[nestedMatch[1]] = parseValue(nestedMatch[2])
-      continue
-    }
-
-    // Regular key-value pair
-    const match = line.match(/^([\w-]+):\s*(.*)$/)
-    if (!match) continue
-    currentList = null
-    currentListItem = null
-    const [, key, value] = match
-    if (value === '') {
-      data[key] = []
-      currentList = key
-    } else {
-      data[key] = parseValue(value)
-    }
-  }
-  return { data, body: raw.slice(end + 4).trim() }
 }
 
 function readingTime(text) {
@@ -297,15 +233,22 @@ const site = readJson(path.join(contentDir, 'site-config.json'), {})
 fs.writeFileSync(path.join(publicDir, 'content-index.json'), JSON.stringify({ notes, projects, books, toolbox, allTags, site }, null, 2), 'utf8')
 
 // Generate compressed favicons from logo
-;(async () => {
-  const { default: sharp } = await import('sharp')
-  const logoWebp = path.join(root, 'src', 'assets', 'images', 'logo.webp')
-  if (fs.existsSync(logoWebp)) {
-    const favPng = path.join(publicDir, 'favicon.png')
-    const favWebp = path.join(publicDir, 'favicon.webp')
-    await sharp(logoWebp).resize(64, 64).png({ palette: true, colors: 64, compressionLevel: 9 }).toFile(favPng)
-    await sharp(logoWebp).resize(64, 64).webp({ quality: 80 }).toFile(favWebp)
+async function generateFavicons() {
+  try {
+    const { default: sharp } = await import('sharp')
+    const logoWebp = path.join(root, 'src', 'assets', 'images', 'logo.webp')
+    if (fs.existsSync(logoWebp)) {
+      const favPng = path.join(publicDir, 'favicon.png')
+      const favWebp = path.join(publicDir, 'favicon.webp')
+      await sharp(logoWebp).resize(64, 64).png({ palette: true, colors: 64, compressionLevel: 9 }).toFile(favPng)
+      await sharp(logoWebp).resize(64, 64).webp({ quality: 80 }).toFile(favWebp)
+      console.log('[favicon] generated favicon.png + favicon.webp')
+    }
+  } catch (err) {
+    console.warn('[favicon] skipped (sharp not available or logo missing):', err.message)
   }
-})()
+}
+
+await generateFavicons()
 
 console.log(`Generated ${notes.length} notes, ${projects.length} projects, ${books.length} books.`)

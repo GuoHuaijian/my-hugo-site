@@ -1,3 +1,9 @@
+/**
+ * Parse YAML-like frontmatter from markdown content.
+ * Supports: key-value pairs, arrays (`[a, b]`), booleans, numbers,
+ * nested lists of objects (for docs/chapters frontmatter), and simple lists.
+ */
+
 export function parseFrontmatter(raw = '') {
   if (!raw.startsWith('---')) return { data: {}, body: raw }
   const end = raw.indexOf('\n---', 3)
@@ -7,7 +13,7 @@ export function parseFrontmatter(raw = '') {
   let currentListItem = null
 
   for (const line of raw.slice(3, end).split(/\r?\n/)) {
-    // Check for list item
+    // List item: "  - something"
     const listMatch = line.match(/^(\s*)-\s+(.+)$/)
     if (listMatch) {
       if (currentList) {
@@ -25,7 +31,7 @@ export function parseFrontmatter(raw = '') {
       continue
     }
 
-    // Check for nested key-value in a list item
+    // Nested key-value in a list item: "    file: xxx"
     const nestedMatch = line.match(/^\s{4,}([\w-]+):\s*(.*)$/)
     if (nestedMatch && currentListItem) {
       currentListItem[nestedMatch[1]] = cleanValue(nestedMatch[2])
@@ -45,14 +51,17 @@ export function parseFrontmatter(raw = '') {
       data[key] = cleanValue(value)
     }
   }
+
   return { data, body: raw.slice(end + 4).trim() }
 }
 
 function cleanValue(value) {
   const trimmed = value.trim()
   if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
-    return trimmed.slice(1, -1).split(',').map((part) => cleanValue(part)).filter(Boolean)
+    return trimmed.slice(1, -1).split(',').map((item) => cleanValue(item)).filter(Boolean)
   }
+  if (trimmed === 'true') return true
+  if (trimmed === 'false') return false
   if (/^\d+(\.\d+)?$/.test(trimmed)) return Number(trimmed)
   return trimmed.replace(/^["']|["']$/g, '')
 }

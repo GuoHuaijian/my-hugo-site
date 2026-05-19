@@ -1,6 +1,7 @@
 <script setup>
 import { Moon, Sun } from 'lucide-vue-next'
 import { onMounted, ref } from 'vue'
+import { applyHljsTheme } from '../composables/useHighlightTheme'
 
 const dark = ref(false)
 
@@ -17,7 +18,7 @@ function initTheme() {
 function toggle() {
   dark.value = !dark.value
   applyTheme()
-  window.__setHljsTheme?.(dark.value)
+  applyHljsTheme(dark.value)
 }
 
 function applyTheme() {
