@@ -10,6 +10,8 @@ const { index, loadIndex } = useContentLoader()
 const open = ref(false)
 const query = ref('')
 const inputRef = ref(null)
+const highlightIndex = ref(-1)
+const resultsRef = ref(null)
 
 const results = computed(() => {
   const q = query.value.trim().toLowerCase()
@@ -50,6 +52,11 @@ const results = computed(() => {
   return items.slice(0, 20)
 })
 
+// Reset highlight when results change
+watch(results, () => {
+  highlightIndex.value = results.value.length > 0 ? 0 : -1
+})
+
 function matchItem(item, q) {
   const fields = [item.title, item.name, item.summary, item.description, item.quote, ...(item.tags || [])]
   return fields.some((f) => f && f.toLowerCase().includes(q))
@@ -62,12 +69,14 @@ function matchTool(tool, q) {
 function openModal() {
   open.value = true
   query.value = ''
+  highlightIndex.value = -1
   setTimeout(() => inputRef.value?.focus(), 50)
 }
 
 function closeModal() {
   open.value = false
   query.value = ''
+  highlightIndex.value = -1
 }
 
 function navigateTo(slug) {
@@ -75,11 +84,42 @@ function navigateTo(slug) {
   router.push(slug)
 }
 
+function scrollIntoView() {
+  if (!resultsRef.value) return
+  const active = resultsRef.value.querySelector('.search-result-item.active')
+  if (active) active.scrollIntoView({ block: 'nearest' })
+}
+
 function onKeyDown(e) {
-  if (e.key === 'Escape' && open.value) closeModal()
+  if (e.key === 'Escape' && open.value) {
+    e.preventDefault()
+    closeModal()
+    return
+  }
   if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
     e.preventDefault()
     open.value ? closeModal() : openModal()
+    return
+  }
+
+  if (!open.value) return
+
+  // Keyboard navigation within results
+  if (e.key === 'ArrowDown') {
+    e.preventDefault()
+    if (results.value.length === 0) return
+    highlightIndex.value = (highlightIndex.value + 1) % results.value.length
+    scrollIntoView()
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault()
+    if (results.value.length === 0) return
+    highlightIndex.value = (highlightIndex.value - 1 + results.value.length) % results.value.length
+    scrollIntoView()
+  } else if (e.key === 'Enter') {
+    if (highlightIndex.value >= 0 && highlightIndex.value < results.value.length) {
+      e.preventDefault()
+      navigateTo(results.value[highlightIndex.value].slug)
+    }
   }
 }
 
@@ -119,7 +159,7 @@ defineExpose({ openModal })
             </button>
           </div>
 
-          <div class="search-results">
+          <div ref="resultsRef" class="search-results">
             <div v-if="query && results.length === 0" class="search-empty">
               <p>没有找到匹配「{{ query }}」的内容</p>
             </div>
@@ -132,8 +172,10 @@ defineExpose({ openModal })
               v-for="(item, i) in results"
               :key="i"
               class="search-result-item"
+              :class="{ active: i === highlightIndex }"
               type="button"
               @click="navigateTo(item.slug)"
+              @mouseenter="highlightIndex = i"
             >
               <span class="result-type">{{ item.type }}</span>
               <div class="result-body">
@@ -305,7 +347,8 @@ function highlight(q, text) {
   transition: background var(--transition-fast);
 }
 
-.search-result-item:hover {
+.search-result-item:hover,
+.search-result-item.active {
   background: var(--color-accent-light);
 }
 
