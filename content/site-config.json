@@ -161,6 +161,7 @@
       "_comment": "各路由对应页面标题（name 对应 route name）",
       "home": "",
       "notes": "笔记",
+      "archive": "笔记归档",
       "note-detail": "笔记详情",
       "projects": "项目",
       "project-doc": "项目文档",

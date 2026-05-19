@@ -66,6 +66,7 @@ function resolveCover(slug, dataCover) {
 }
 
 function makeNotes() {
+  const includeDrafts = process.argv.includes('--include-drafts')
   return listMarkdown(path.join(contentDir, 'notes')).map((file) => {
     const { data, body } = readMarkdown(file)
     const slug = path.basename(file, '.md')
@@ -78,9 +79,13 @@ function makeNotes() {
       cover: resolveCover(slug, data.cover),
       summary: data.summary || body.replace(/[#>*`-]/g, '').slice(0, 150),
       readingTime: data.readingTime || getReadingTime(body),
+      draft: data.draft === true,
+      series: data.series || '',
+      seriesOrder: data.seriesOrder || 0,
       file: `/content/notes/${slug}.md`
     }
-  }).sort((a, b) => new Date(b.date) - new Date(a.date))
+  }).filter((note) => includeDrafts || !note.draft)
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
 }
 
 function makeProjects() {
@@ -219,14 +224,35 @@ copyDir(contentDir, publicContentDir)
 const siteConfig = readJson(path.join(contentDir, 'site-config.json'), {})
 const defaultAuthor = siteConfig.notes?.defaultAuthor || '店主'
 
+function makeSeriesIndex(notes) {
+  const seriesMap = {}
+  for (const note of notes) {
+    if (!note.series) continue
+    if (!seriesMap[note.series]) seriesMap[note.series] = []
+    seriesMap[note.series].push({ slug: note.slug, title: note.title, date: note.date, seriesOrder: note.seriesOrder })
+  }
+  // Sort each series by seriesOrder, then by date
+  for (const key of Object.keys(seriesMap)) {
+    seriesMap[key].sort((a, b) => (a.seriesOrder || 999) - (b.seriesOrder || 999) || new Date(a.date) - new Date(b.date))
+  }
+  return seriesMap
+}
+
 const notes = makeNotes()
 const projects = makeProjects()
 const books = makeBooks()
 const allTags = [...new Set(notes.flatMap((note) => note.tags))]
+const seriesIndex = makeSeriesIndex(notes)
 const toolbox = readJson(path.join(contentDir, 'toolbox.json'), { categories: [] })
 const site = readJson(path.join(contentDir, 'site-config.json'), {})
 
-fs.writeFileSync(path.join(publicDir, 'content-index.json'), JSON.stringify({ notes, projects, books, toolbox, allTags, site }, null, 2), 'utf8')
+fs.writeFileSync(path.join(publicDir, 'content-index.json'), JSON.stringify({ notes, projects, books, toolbox, allTags, seriesIndex, site }, null, 2), 'utf8')
+
+// Generate series index for quick lookup
+if (Object.keys(seriesIndex).length > 0) {
+  fs.writeFileSync(path.join(publicDir, 'series-index.json'), JSON.stringify(seriesIndex, null, 2), 'utf8')
+  console.log(`[series] Indexed ${Object.keys(seriesIndex).length} series.`)
+}
 
 // Generate compressed favicons from logo
 async function generateFavicons() {
