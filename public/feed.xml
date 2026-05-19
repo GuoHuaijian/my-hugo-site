@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>云边小卖部</title>
+  <subtitle>贩卖代码、笔记与偶尔的胡思乱想</subtitle>
+  <link href="https://slothcoder.cn/feed.xml" rel="self" />
+  <link href="https://slothcoder.cn" />
+  <updated>2026-03-25T00:00:00.000Z</updated>
+  <id>https://slothcoder.cn/</id>
+  <author>
+    <name>店主</name>
+  </author>
+    <entry>
+      <id>https://slothcoder.cn/notes/2026-03-25-Agent 基础学习笔记</id>
+      <title>Agent 基础学习笔记</title>
+      <link href="https://slothcoder.cn/notes/2026-03-25-Agent 基础学习笔记" />
+      <published>2026-03-25T00:00:00.000Z</published>
+      <summary type="text">最近在系统学习 Agent 开发，这篇文章主要是把自己当前阶段的理解整理成一份基础笔记，方便后面继续查阅，也希望能给同样刚入门的朋友一个相对清晰的学习框架。
+
+本文偏“学习笔记”风格，不刻意追求特别完整，但会尽量把 Agent 开发里最核心、最容易混淆的内容梳理清楚。
+
+ 参考学习资料：  </summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2026-02-01-Claude Code 技能扩展指南让你</id>
+      <title>Claude Code 技能扩展指南：让你的 AI 编码助手更强大</title>
+      <link href="https://slothcoder.cn/notes/2026-02-01-Claude Code 技能扩展指南让你" />
+      <published>2026-02-01T00:00:00.000Z</published>
+      <summary type="text">在日常开发中，我尝试过不少AI编程工具——GitHub Copilot、Cursor、Trae、Kiro……每个都有自己的亮点：有的补全快如闪电，有的理解上下文很深，有的对中文场景特别友好。
+
+但用着用着，我发现一个关键真相：模型的原始能力很重要，但真正决定代码质量的，往往是配置的深度和上下文的</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2026-01-09-2026版Go语言基础学习指北</id>
+      <title>【2026版】Go语言基础学习指北</title>
+      <link href="https://slothcoder.cn/notes/2026-01-09-2026版Go语言基础学习指北" />
+      <published>2026-01-09T00:00:00.000Z</published>
+      <summary type="text"> 前言：一个 &quot;2026年&quot; 的 Flag
+
+实不相瞒，学了几年 Go 语言，每次都是花一天时间看完基础语法，然后就没有然后了。结果隔一段时间再看，又像从头来过。2026 年开年重新立个 flag😅
+
+新的一年我决定不再“从入门到放弃”，而是要彻底拿下这门云原生时代的 C 语言。
+
+为</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-12-25-Elasticsearch 入门到实战学</id>
+      <title>Elasticsearch 入门到实战学习指南</title>
+      <link href="https://slothcoder.cn/notes/2025-12-25-Elasticsearch 入门到实战学" />
+      <published>2025-12-25T00:00:00.000Z</published>
+      <summary type="text"> 📝 本文将带你从零开始学习 Elasticsearch，涵盖核心概念、集群架构、查询语法到实战应用，助你快速上手这款强大的分布式搜索引擎。
+
+
+
+ 一、开篇：为什么要学 Elasticsearch？
+
+ 1.1 什么是 Elasticsearch
+
+Elasticsearch（简</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-12-13-MySQL InnoDB 事务隔离实战篇</id>
+      <title>MySQL InnoDB 事务隔离实战篇</title>
+      <link href="https://slothcoder.cn/notes/2025-12-13-MySQL InnoDB 事务隔离实战篇" />
+      <published>2025-12-13T00:00:00.000Z</published>
+      <summary type="text">这篇是前一篇「原理篇」的 InnoDB 实战补充：不再只讲理论上的四个隔离级别，而是聚焦：
+
+ InnoDB 实际是怎么实现隔离的？
+ MySQL 的默认 Repeatable Read 跟教科书里的有什么不一样？
+ gap lock / nextkey lock、MVCC、Read Vie</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-12-12-数据库事务隔离性的实现机制</id>
+      <title>数据库事务隔离性的实现机制</title>
+      <link href="https://slothcoder.cn/notes/2025-12-12-数据库事务隔离性的实现机制" />
+      <published>2025-12-12T00:00:00.000Z</published>
+      <summary type="text"> 本文基于《凤凰架构》整理，结合个人理解深入探讨数据库事务隔离性的实现机制。
+
+
+
+很多人学事务隔离时，是这样记的：
+
+ Serializable 最安全、Repeatable Read 次之、Read Committed 再次、Read Uncommitted 最弱，
+
+ 然后死记</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-12-09-Spring IoC容器初始化与Bean</id>
+      <title>Spring IoC容器初始化与Bean生命周期</title>
+      <link href="https://slothcoder.cn/notes/2025-12-09-Spring IoC容器初始化与Bean" />
+      <published>2025-12-09T00:00:00.000Z</published>
+      <summary type="text"> 📚 一、IoC容器概述
+
+IoC（Inversion of Control，控制反转）是Spring框架的核心。简单来说，就是把对象的创建和管理权交给Spring容器，而不是由我们自己在代码中new对象。
+
+ 1.1 容器的两大家族
+
+mermaid
+graph TB
+
+   </summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-12-05-Kafka入门学习指南</id>
+      <title>Kafka入门学习指南</title>
+      <link href="https://slothcoder.cn/notes/2025-12-05-Kafka入门学习指南" />
+      <published>2025-12-05T00:00:00.000Z</published>
+      <summary type="text"> 1. Kafka 概述与应用场景
+
+ 1.1 什么是 Kafka？
+
+Apache Kafka 是由 LinkedIn 开发并开源的分布式流处理平台，最初被设计为一个高吞吐量的分布式消息系统。它具有以下核心特性：
+
+| 特性         | 说明                  </summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-12-04-MyBatis工作原理笔记</id>
+      <title>MyBatis工作原理笔记</title>
+      <link href="https://slothcoder.cn/notes/2025-12-04-MyBatis工作原理笔记" />
+      <published>2025-12-04T00:00:00.000Z</published>
+      <summary type="text"> 1. MyBatis 架构概述
+
+ 1.1 什么是 MyBatis
+
+MyBatis 是一款优秀的半自动化 ORM 框架，它避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集的工作。
+
+ 1.2 整体架构图
+
+mermaid
+flowchart TB
+    subg</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-12-02-深入理解Java并发编程从硬件原理到JM</id>
+      <title>深入理解Java并发编程：从硬件原理到JMM，彻底搞懂线程安全</title>
+      <link href="https://slothcoder.cn/notes/2025-12-02-深入理解Java并发编程从硬件原理到JM" />
+      <published>2025-12-02T00:00:00.000Z</published>
+      <summary type="text"> 为什么两个线程同时执行 count++ 一万次，结果却不是两万？为什么一个线程修改了共享变量，另一个线程却&quot;视而不见&quot;？为什么看起来顺序执行的代码，实际运行时却&quot;乱了套&quot;？
+
+ 这篇文章将带你从计算机硬件架构出发，深入理解Java内存模型（JMM），彻底搞懂并发编程中的&quot;三大恶魔&quot;——可见性、</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-12-02-理解 JVM 的类加载与对象创建</id>
+      <title>理解 JVM 的类加载与对象创建</title>
+      <link href="https://slothcoder.cn/notes/2025-12-02-理解 JVM 的类加载与对象创建" />
+      <published>2025-12-02T00:00:00.000Z</published>
+      <summary type="text">作为 Java 开发者，我们每天都在创建类和对象，但你是否真正理解过这些过程在 JVM 中是如何运作的？从编写代码到程序运行，JVM 在背后做了大量复杂而精妙的工作。本文将带你深入 JVM 内部，揭开类加载和对象创建的神秘面纱。
+
+
+
+ 一、类加载机制
+
+ 1.1 类的生命周期
+
+先</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-12-01-JVM 深度笔记深入理解 Java 虚拟</id>
+      <title>【JVM 深度笔记】深入理解 Java 虚拟机（第 3 版）</title>
+      <link href="https://slothcoder.cn/notes/2025-12-01-JVM 深度笔记深入理解 Java 虚拟" />
+      <published>2025-12-01T00:00:00.000Z</published>
+      <summary type="text"> 【JVM 深度笔记】《深入理解 Java 虚拟机》第 3 版 
+
+ 说明：这是一份「【JVM 深度笔记】」，基于周志明老师《深入理解 Java 虚拟机》第 3 版 + 自身实战经验 + 部分网络资料整理而成。  
+ 目标是做一份高密度、可落地、能反复查阅的 JVM 笔记，而不是逐章翻译原书。</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-11-28-今天我离开了奋斗五年的公司</id>
+      <title>今天，我离开了奋斗五年的公司</title>
+      <link href="https://slothcoder.cn/notes/2025-11-28-今天我离开了奋斗五年的公司" />
+      <published>2025-11-28T00:00:00.000Z</published>
+      <summary type="text">今天，2025 年 11 月 28 日，我交还了工卡，正式结束了在这家公司五年的职业生涯。
+
+走出写字楼的那一刻，成都的初冬已经有了些许寒意。回望身后的大楼，心情有些复杂。不仅是因为离开了熟悉的环境，更是因为这五年，恰恰是我从一个青涩的大学毕业生到如今“五年老兵”最黄金的时光。
+
+在这篇博客</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-11-21-深入理解ConcurrentHashMa</id>
+      <title>深入理解ConcurrentHashMap源码——从设计到实现</title>
+      <link href="https://slothcoder.cn/notes/2025-11-21-深入理解ConcurrentHashMa" />
+      <published>2025-11-21T00:00:00.000Z</published>
+      <summary type="text"> 本文基于 JDK 1.8 源码，系统分析 ConcurrentHashMap 的核心设计与关键源码实现。
+
+ConcurrentHashMap 是 Java 并发编程中最常被问到的类之一。
+面试里常见问题包括：
+
+ 为什么 ConcurrentHashMap 是线程安全的？
+ JDK </summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-09-26-从零开始学Java锁并发控制的基石</id>
+      <title>从零开始学Java锁：并发控制的基石</title>
+      <link href="https://slothcoder.cn/notes/2025-09-26-从零开始学Java锁并发控制的基石" />
+      <published>2025-09-26T00:00:00.000Z</published>
+      <summary type="text">在Java并发编程中，锁机制是确保线程安全和数据一致性的基石。本文将深入剖析Java锁的原理、实现与优化，结合实战案例，带你从理论到实践全面掌握并发控制的精髓。
+
+ 1. 引言
+
+ 1.1 并发编程中的挑战与锁的作用
+
+并发编程是现代软件开发中不可或缺的一部分，尤其在多核处理器和高并发场</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-06-12-深入学习网络编程与BIONIOAIO模型</id>
+      <title>深入学习网络编程与BIO、NIO、AIO模型</title>
+      <link href="https://slothcoder.cn/notes/2025-06-12-深入学习网络编程与BIONIOAIO模型" />
+      <published>2025-06-12T00:00:00.000Z</published>
+      <summary type="text">网络编程是高性能服务器开发的核心技术之一。本文将系统梳理网络通信的基本原理，深入剖析BIO、NIO、AIO三种主流模型的工作机制、优缺点及适用场景，帮助读者全面理解并灵活应用不同的网络编程模型。
+
+ 1. 引言
+
+ 1.1 为什么学习网络编程
+
+网络编程是现代软件开发的核心技能之一，它让</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-03-22-利用DeepSeek  Ollama  </id>
+      <title>利用DeepSeek + Ollama + Dify搭建本地知识库</title>
+      <link href="https://slothcoder.cn/notes/2025-03-22-利用DeepSeek  Ollama  " />
+      <published>2025-03-22T00:00:00.000Z</published>
+      <summary type="text">随着大语言模型 (LLM) 的开源化，我们有机会将 AI 的强大能力带到本地，打造一个完全掌控的知识管理系统。本文将详细指导你利用 DeepSeek（高性能开源 LLM）、Ollama（轻量模型运行工具）和 Dify（AI 应用开发平台），搭建一个离线的本地知识库，适用于个人笔记管理、专业文档查询或</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-03-03-MySQL数据查询之旅一条SQL背后的秘</id>
+      <title>MySQL数据查询之旅：一条SQL背后的秘密</title>
+      <link href="https://slothcoder.cn/notes/2025-03-03-MySQL数据查询之旅一条SQL背后的秘" />
+      <published>2025-03-03T00:00:00.000Z</published>
+      <summary type="text">你有没有想过，当你敲下一条简单的 SQL 查询，比如 SELECT  FROM T WHERE ID = 10，MySQL 是怎么在眨眼间从海量数据中找出结果的？表面上看，这不过是输入一行代码，输出几行数据，但背后却是一场精密的“接力赛”。在这篇文章中，我们将化身侦探，追踪一条查询的完整旅程，从敲下</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-02-28-Redis详解从入门到精通</id>
+      <title>Redis详解：从入门到精通</title>
+      <link href="https://slothcoder.cn/notes/2025-02-28-Redis详解从入门到精通" />
+      <published>2025-02-28T00:00:00.000Z</published>
+      <summary type="text">在现代软件开发的浩瀚星空里，有一颗名为 Redis 的明星，以其耀眼的速度和多才多艺的特性，点亮了无数应用的天空。它既是缓存的利器，又是数据处理的魔法师，从简单的键值存储到复杂的分布式系统，Redis 无处不在，却又低调内敛。你是否好奇，这颗“内存中的瑞士军刀”究竟藏着怎样的秘密？从单线程的极致优雅</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-02-24-Redis持久化机制AOF日志与RDB快</id>
+      <title>Redis持久化机制：AOF日志与RDB快照详解</title>
+      <link href="https://slothcoder.cn/notes/2025-02-24-Redis持久化机制AOF日志与RDB快" />
+      <published>2025-02-24T00:00:00.000Z</published>
+      <summary type="text">在高性能的缓存系统中，Redis 常常被用作数据存储。然而，一旦服务器宕机，内存中的数据将全部丢失。本文将详细介绍 Redis 两种主要的持久化机制 —— AOF 日志 与 RDB 快照，并讨论它们各自的实现原理、优缺点以及如何根据业务需求选择合适的方案。
+
+
+
+ 1. 引言
+
+当服务器</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-02-21-Redis数据存储和查询过程的详细分析</id>
+      <title>Redis数据存储和查询过程的详细分析</title>
+      <link href="https://slothcoder.cn/notes/2025-02-21-Redis数据存储和查询过程的详细分析" />
+      <published>2025-02-21T00:00:00.000Z</published>
+      <summary type="text">Redis 的底层实现非常高效，采用了多种数据结构来支持不同的使用场景。在 Redis 中，全局哈希表（用于存储键值对）是查询数据的核心，它包含多个哈希桶，每个桶内部可以使用不同的复杂数据结构（如 压缩列表（ZipList）、跳表（SkipList） 等）来存储数据。
+
+让我们详细探讨一下 全局</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-02-21-Redis数据结构底层实现原理与常用场景</id>
+      <title>Redis数据结构底层实现原理与常用场景</title>
+      <link href="https://slothcoder.cn/notes/2025-02-21-Redis数据结构底层实现原理与常用场景" />
+      <published>2025-02-21T00:00:00.000Z</published>
+      <summary type="text">Redis 是一个高效的内存数据存储系统，它提供了多种丰富的数据结构。每种数据结构的底层实现是其高性能的关键，理解这些实现有助于我们更好地利用 Redis 来优化我们的应用程序。
+
+![image20250206163018721](https://raw.githubusercontent.c</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-01-24-23种经典设计模式的原理背后的思想应用场</id>
+      <title>23种经典设计模式的原理、背后的思想、应用场景</title>
+      <link href="https://slothcoder.cn/notes/2025-01-24-23种经典设计模式的原理背后的思想应用场" />
+      <published>2025-01-24T00:00:00.000Z</published>
+      <summary type="text">23种经典设计模式共分为3种类型，分别是创建型、结构型和行为型。
+
+ 一、创建型设计模式
+
+创建型设计模式包括：单例模式、工厂模式、建造者模式、原型模式。它主要解决对象的创建问题，封装复杂的创建过程，解耦对象的创建代码和使用代码。
+
+ 1.单例模式
+
+单例模式用来创建全局唯一的对象。</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-01-24-算法与数据结构之美读书总结</id>
+      <title>算法与数据结构之美读书总结</title>
+      <link href="https://slothcoder.cn/notes/2025-01-24-算法与数据结构之美读书总结" />
+      <published>2025-01-24T00:00:00.000Z</published>
+      <summary type="text">在学习编程的过程中，算法与数据结构始终是绕不开的核心话题。它们不仅是计算机科学的基础，更是解决复杂问题的关键工具。最近，我读完了王争老师的《算法与数据结构之美》，这本书不仅让我对算法和数据结构有了更深入的理解，还让我感受到了它们背后的“美”。以下是我对这本书的总结和感悟。
+
+
+
+ 一、书籍概</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-01-24-网络包旅程</id>
+      <title>网络包旅程</title>
+      <link href="https://slothcoder.cn/notes/2025-01-24-网络包旅程" />
+      <published>2025-01-24T00:00:00.000Z</published>
+      <summary type="text">网络包的旅程指的是数据包从源设备到目标设备的整个传输过程。在现代计算机网络中，网络包会经历多个层级、协议和设备，每个环节都对数据的传输、可靠性和安全性起着至关重要的作用。以下是网络包从发送端到接收端的详细旅程：
+
+
+
+ 1. 数据封装与应用层
+
+ 应用层（Application Laye</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-01-24-面试攻略按知识点顺序整理</id>
+      <title>面试攻略：按知识点顺序整理</title>
+      <link href="https://slothcoder.cn/notes/2025-01-24-面试攻略按知识点顺序整理" />
+      <published>2025-01-24T00:00:00.000Z</published>
+      <summary type="text">这是一份给自己用的面试复习指南，记录了面试前的复习顺序和推荐的学习资料。目的是在面试前快速梳理重点，查漏补缺，确保自己能以最佳状态迎接面试。希望它能成为你面试前的“快速充电宝”
+
+ 1. 计算机基础
+
+ 操作系统：《鸟哥的私房菜》
+
+ 基本概念：
+
+  进程与线程：理解它们的区别，进</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2025-01-23-总结回顾面向对象设计原则编程规范与重构技</id>
+      <title>总结回顾：面向对象、设计原则、编程规范与重构技巧</title>
+      <link href="https://slothcoder.cn/notes/2025-01-23-总结回顾面向对象设计原则编程规范与重构技" />
+      <published>2025-01-23T00:00:00.000Z</published>
+      <summary type="text">在软件开发的世界里，代码的可维护性、可扩展性和可读性是衡量一个项目成功与否的关键因素。而面向对象编程（OOP）、设计原则、编程规范以及重构技巧正是实现这些目标的核心工具。
+
+ 一、代码质量评判标准
+
+如何评价代码质量的高低？
+
+代码质量的评价有很强的主观性，描述代码质量的词汇也有很多，比</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2023-09-16-Docker网络学习指南</id>
+      <title>Docker网络学习指南</title>
+      <link href="https://slothcoder.cn/notes/2023-09-16-Docker网络学习指南" />
+      <published>2023-09-16T00:00:00.000Z</published>
+      <summary type="text">Docker网络是容器化技术的关键一环，决定了容器如何通信与协作。本文将带你从零开始，全面掌握Docker网络的原理与实践。通过基础概念解析、五大网络模式详解、配置实战、优化技巧及真实案例，你将学会搭建高效的容器网络，解决通信难题，并为生产环境做好准备。无论你是初学者还是进阶用户，这篇指南都将为你提</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2021-08-08-Spring Security注解权限指</id>
+      <title>Spring Security注解权限指南</title>
+      <link href="https://slothcoder.cn/notes/2021-08-08-Spring Security注解权限指" />
+      <published>2021-08-08T00:00:00.000Z</published>
+      <summary type="text"> 1. 引言
+
+ 1.1 什么是Spring Security？
+
+Spring Security 是 Spring 生态系统中一个功能强大且高度可定制的安全框架，旨在为 Java 应用程序提供全面的安全解决方案。它最初作为 Spring Framework 的子项目（称为 Acegi Se</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2020-06-01-Redis详解从入门到精通构建高性能数据</id>
+      <title>Redis详解：从入门到精通，构建高性能数据解决方案</title>
+      <link href="https://slothcoder.cn/notes/2020-06-01-Redis详解从入门到精通构建高性能数据" />
+      <published>2020-06-01T00:00:00.000Z</published>
+      <summary type="text">引言
+
+在当今数据驱动的世界中，高性能、低延迟的数据访问至关重要。无论是构建实时应用、处理海量数据，还是提升网站性能，都需要强大的数据存储和处理技术作为支撑。Redis (Remote Dictionary Server) 正是这样一款杰出的工具，它以其卓越的性能、丰富的数据结构和灵活的应用场景</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2019-10-08-数据库查询一</id>
+      <title>数据库查询（一）</title>
+      <link href="https://slothcoder.cn/notes/2019-10-08-数据库查询一" />
+      <published>2019-10-08T00:00:00.000Z</published>
+      <summary type="text">所谓查询，就是对数据库中的数据进行检索，创建，修改或删除的特定请求。使用查询可以按照不同的方式查看，更改和分析数据。
+
+&lt;! more 
+
+ SELECT查询语法
+
+SELECT语句的语法的语法格式如下：
+
+SELECT{select_list [INTO new_table_nam</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2019-09-30-富文本编辑器踩坑</id>
+      <title>富文本编辑器踩坑</title>
+      <link href="https://slothcoder.cn/notes/2019-09-30-富文本编辑器踩坑" />
+      <published>2019-09-30T00:00:00.000Z</published>
+      <summary type="text">在js和css的路径正确的情况下无法加载富文本js和css, 导致富文本编辑器无法加载，用了两次富文本编辑器都出现了同样的问题。&lt;! more 第一次用百度的UEditor 出现了这样的情况我以为只是百度的富文本编辑器的bug,但是第二次用 wangEditor又出现了同样的情况，我将放富文本编辑器</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2019-09-24-Spring MVC 表单标签库</id>
+      <title>Spring MVC 表单标签库</title>
+      <link href="https://slothcoder.cn/notes/2019-09-24-Spring MVC 表单标签库" />
+      <published>2019-09-24T00:00:00.000Z</published>
+      <summary type="text">在使用 SpringMVC 的时候我们可以使用 Spring 封装的一系列表单标签，这些标签都可以访问到 ModelMap 中的内容。我们需要先在 JSP 中声明使用的标签，具体做法是在 JSP 文件的顶部加入以下指令： 
+
+&lt;! more 
+
+
+&lt;%@ taglib prefix=&quot;fo</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+    <entry>
+      <id>https://slothcoder.cn/notes/2019-09-23-一个菜鸟程序员的自我修养</id>
+      <title>一个菜鸟程序员的自我修养</title>
+      <link href="https://slothcoder.cn/notes/2019-09-23-一个菜鸟程序员的自我修养" />
+      <published>2019-09-23T00:00:00.000Z</published>
+      <summary type="text"> 不滞于物，不困于心，不乱于人
+
+&lt;! more 
+
+ 🎬 序章：梦开始的地方
+
+大二那年，年少无知的我在技术社区闲逛，发现一个真理：
+
+ 牛逼的大佬都有自己的博客。
+
+页面精美、特效炫酷、文章硬核，评论区还有一群小迷弟喊「大佬牛逼」。
+
+当时的我心想：
+
+tex
+我</summary>
+      <author>
+        <name>Guo</name>
+      </author>
+    </entry>
+</feed>

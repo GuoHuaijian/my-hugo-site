@@ -1,12 +1,10 @@
 <script setup>
-import { nextTick, watch } from 'vue'
-import mermaid from 'mermaid'
+import { nextTick, watch, onUnmounted } from 'vue'
 
 const props = defineProps({
   html: { type: String, default: '' }
 })
 
-let initialized = false
 let currentTheme = ''
 
 function getTheme() {
@@ -17,7 +15,7 @@ async function renderDiagrams() {
   if (!props.html) return
   await nextTick()
 
-  // Add lazy loading and bypass referrer for external images
+  // Add lazy loading and referrer policy for external images
   document.querySelectorAll('.markdown-body img').forEach((img) => {
     if (!img.hasAttribute('loading')) {
       img.setAttribute('loading', 'lazy')
@@ -28,27 +26,30 @@ async function renderDiagrams() {
   const elements = document.querySelectorAll('.mermaid')
   if (!elements.length) return
 
+  // Dynamically import mermaid only when needed
+  const mermaid = await import('mermaid')
+  const mermaidModule = mermaid.default || mermaid
+
   const theme = getTheme()
 
-  // 保存原始 mermaid 文本（只在首次渲染时）
+  // Save original mermaid source text
   elements.forEach((el) => {
     if (!el.hasAttribute('data-original')) {
       el.setAttribute('data-original', el.textContent)
     }
   })
 
-  if (!initialized || theme !== currentTheme) {
-    mermaid.initialize({
+  if (theme !== currentTheme) {
+    mermaidModule.initialize({
       startOnLoad: false,
       theme,
       securityLevel: 'loose'
     })
-    initialized = true
     currentTheme = theme
   }
 
   try {
-    await mermaid.run({ nodes: elements, suppressErrors: true })
+    await mermaidModule.run({ nodes: elements, suppressErrors: true })
   } catch (e) {
     console.warn('[Mermaid] render error:', e)
   }
@@ -56,60 +57,80 @@ async function renderDiagrams() {
 
 watch(() => props.html, renderDiagrams, { immediate: true })
 
-// 监听主题切换
-function onThemeChange() {
+// Listen for theme changes to re-render mermaid diagrams
+function handleThemeChange() {
   const theme = getTheme()
   if (theme === currentTheme) return
 
-  mermaid.initialize({
-    startOnLoad: false,
-    theme,
-    securityLevel: 'loose'
-  })
   currentTheme = theme
-
-  // 恢复原始文本并重新渲染
   const elements = document.querySelectorAll('.mermaid[data-original]')
-  elements.forEach((el) => {
-    el.removeAttribute('data-processed')
-    el.textContent = el.getAttribute('data-original')
-  })
+  if (!elements.length) return
 
-  if (elements.length > 0) {
-    mermaid.run({ nodes: elements, suppressErrors: true })
-  }
+  import('mermaid').then((mod) => {
+    const mermaid = mod.default || mod
+    mermaid.initialize({
+      startOnLoad: false,
+      theme,
+      securityLevel: 'loose'
+    })
+    elements.forEach((el) => {
+      el.removeAttribute('data-processed')
+      el.textContent = el.getAttribute('data-original')
+    })
+    mermaid.run({ nodes: elements, suppressErrors: true }).catch(() => {})
+  })
 }
 
-const observer = new MutationObserver(onThemeChange)
-observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] })
+const themeObserver = new MutationObserver((mutations) => {
+  for (const m of mutations) {
+    if (m.type === 'attributes' && m.attributeName === 'data-theme') {
+      handleThemeChange()
+      break
+    }
+  }
+})
+themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] })
 
-function handleCopyClick(e) {
+onUnmounted(() => themeObserver.disconnect())
+
+function handleContentClick(e) {
+  // Copy button
   const btn = e.target.closest('.code-copy-btn')
-  if (!btn) return
+  if (btn) {
+    const codeBlock = btn.closest('.code-block')
+    if (!codeBlock) return
+    const code = codeBlock.querySelector('code')
+    if (!code) return
+    const text = code.textContent
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = '已复制!'
+      btn.classList.add('copied')
+      setTimeout(() => {
+        btn.textContent = '复制'
+        btn.classList.remove('copied')
+      }, 2000)
+    }).catch(() => {
+      btn.textContent = '失败'
+      setTimeout(() => { btn.textContent = '复制' }, 1500)
+    })
+    return
+  }
 
-  const codeBlock = btn.closest('.code-block')
-  if (!codeBlock) return
-
-  const code = codeBlock.querySelector('code')
-  if (!code) return
-
-  const text = code.textContent
-  navigator.clipboard.writeText(text).then(() => {
-    btn.textContent = '已复制!'
-    btn.classList.add('copied')
-    setTimeout(() => {
-      btn.textContent = '复制'
-      btn.classList.remove('copied')
-    }, 2000)
-  }).catch(() => {
-    btn.textContent = '失败'
-    setTimeout(() => { btn.textContent = '复制' }, 1500)
-  })
+  // Image lightbox
+  const img = e.target.closest('.markdown-body img')
+  if (img && img.src && !img.closest('.code-block') && !img.closest('.mermaid')) {
+    // Skip small icons (avatars, favicons) and images inside code blocks
+    if (img.width > 40 || !img.naturalWidth) {
+      document.dispatchEvent(new CustomEvent('open-lightbox', {
+        detail: { src: img.src, alt: img.alt || '' }
+      }))
+    }
+  }
 }
 </script>
 
 <template>
-  <article class="markdown-body content-card" v-html="html" @click="handleCopyClick"></article>
+  <article class="markdown-body content-card" v-html="html" @click="handleContentClick"></article>
 </template>
 
 <style scoped>
