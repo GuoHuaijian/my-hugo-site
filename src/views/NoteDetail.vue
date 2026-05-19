@@ -3,10 +3,14 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import Comments from '../components/Comments.vue'
 import MarkdownRenderer from '../components/MarkdownRenderer.vue'
+import ReadingProgress from '../components/ReadingProgress.vue'
+import SkeletonLoader from '../components/SkeletonLoader.vue'
 import TableOfContents from '../components/TableOfContents.vue'
 import { useContentLoader } from '../composables/useContentLoader'
+import { useHeadingObserver } from '../composables/useHeadingObserver'
 import { renderMarkdown } from '../composables/useMarkdown'
 import { applyMeta } from '../composables/useMeta'
+import { getVisitorId } from '../utils/visitor'
 import siteConfig from '../../content/site-config.json'
 const { site } = siteConfig
 
@@ -23,19 +27,11 @@ function recordPageView() {
   }).catch(() => {})
 }
 
-function getVisitorId() {
-  let id = localStorage.getItem('visitor_id')
-  if (!id) {
-    id = 'v_' + Math.random().toString(36).slice(2) + Date.now().toString(36)
-    localStorage.setItem('visitor_id', id)
-  }
-  return id
-}
-
 const route = useRoute()
 const { index, loadIndex, loadText } = useContentLoader()
 const article = ref({ data: {}, html: '', toc: [] })
-const activeId = ref('')
+const loading = ref(true)
+const { activeId, observeHeadings } = useHeadingObserver()
 const note = computed(() => index.value?.notes?.find((item) => item.slug === route.params.slug))
 const notes = computed(() => index.value?.notes || [])
 const currentIndex = computed(() => notes.value.findIndex((item) => item.slug === route.params.slug))
@@ -43,22 +39,17 @@ const prev = computed(() => notes.value[currentIndex.value - 1])
 const next = computed(() => notes.value[currentIndex.value + 1])
 
 async function loadArticle() {
+  loading.value = true
   await loadIndex()
-  if (!note.value) return
-  const raw = await loadText(note.value.file)
-  article.value = renderMarkdown(raw)
-  activeId.value = article.value.toc[0]?.id || ''
-  requestAnimationFrame(observeHeadings)
-}
-
-function observeHeadings() {
-  const headings = [...document.querySelectorAll('.markdown-body h2, .markdown-body h3')]
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) activeId.value = entry.target.id
-    })
-  }, { rootMargin: '-20% 0px -70% 0px' })
-  headings.forEach((heading) => observer.observe(heading))
+  if (!note.value) { loading.value = false; return }
+  try {
+    const raw = await loadText(note.value.file)
+    article.value = renderMarkdown(raw)
+    activeId.value = article.value.toc[0]?.id || ''
+    requestAnimationFrame(observeHeadings)
+  } finally {
+    loading.value = false
+  }
 }
 
 const SITE_URL = site.url
@@ -76,8 +67,8 @@ function updateMeta() {
     headline: n.title,
     description: n.summary || '',
     author: { '@type': 'Person', name: n.author || '店主' },
-    datePublished: n.date || undefined,
-    image: n.cover ? `${SITE_URL}${n.cover}` : undefined,
+    ...(n.date ? { datePublished: n.date } : {}),
+    ...(n.cover ? { image: `${SITE_URL}${n.cover}` } : {}),
     url,
   }
   applyMeta({ title, description, url, image, type: 'article', jsonld })
@@ -98,6 +89,7 @@ watch(note, (n) => {
 
 <template>
   <section class="page-shell">
+    <ReadingProgress />
     <nav class="breadcrumb" aria-label="面包屑">
       <RouterLink to="/">首页</RouterLink>
       <span>/</span>
@@ -105,7 +97,10 @@ watch(note, (n) => {
       <span>/</span>
       <span>{{ note?.title }}</span>
     </nav>
-    <div class="reader-layout">
+    <div v-if="loading && !article.html" class="reader-layout">
+      <SkeletonLoader type="article" />
+    </div>
+    <div v-else class="reader-layout">
       <MarkdownRenderer :html="article.html" />
       <TableOfContents :items="article.toc" :active="activeId" />
     </div>

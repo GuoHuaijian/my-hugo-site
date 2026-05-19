@@ -3,9 +3,12 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import Comments from '../components/Comments.vue'
 import MarkdownRenderer from '../components/MarkdownRenderer.vue'
+import ReadingProgress from '../components/ReadingProgress.vue'
 import SideNav from '../components/SideNav.vue'
+import SkeletonLoader from '../components/SkeletonLoader.vue'
 import TableOfContents from '../components/TableOfContents.vue'
 import { useContentLoader } from '../composables/useContentLoader'
+import { useHeadingObserver } from '../composables/useHeadingObserver'
 import { renderMarkdown } from '../composables/useMarkdown'
 import { applyMeta } from '../composables/useMeta'
 import siteConfig from '../../content/site-config.json'
@@ -14,7 +17,8 @@ const route = useRoute()
 const router = useRouter()
 const { index, loadIndex, loadText } = useContentLoader()
 const article = ref({ data: {}, html: '', toc: [] })
-const activeId = ref('')
+const loading = ref(true)
+const { activeId, observeHeadings } = useHeadingObserver()
 const type = computed(() => route.meta.type)
 const collection = computed(() => index.value?.[type.value] || [])
 const current = computed(() => collection.value.find((item) => item.slug === route.params.slug))
@@ -24,26 +28,22 @@ const page = computed(() => docs.value.find((item) => item.slug === pageSlug.val
 const base = computed(() => `/${type.value}/${route.params.slug}`)
 
 async function loadDoc() {
+  loading.value = true
   await loadIndex()
   if (!route.params.page && docs.value[0]) {
+    loading.value = false
     router.replace(`${base.value}/${docs.value[0].slug}`)
     return
   }
-  if (!page.value) return
-  const raw = await loadText(page.value.file)
-  article.value = renderMarkdown(raw)
-  activeId.value = article.value.toc[0]?.id || ''
-  requestAnimationFrame(observeHeadings)
-}
-
-function observeHeadings() {
-  const headings = [...document.querySelectorAll('.markdown-body h2, .markdown-body h3')]
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) activeId.value = entry.target.id
-    })
-  }, { rootMargin: '-20% 0px -70% 0px' })
-  headings.forEach((heading) => observer.observe(heading))
+  if (!page.value) { loading.value = false; return }
+  try {
+    const raw = await loadText(page.value.file)
+    article.value = renderMarkdown(raw)
+    activeId.value = article.value.toc[0]?.id || ''
+    requestAnimationFrame(observeHeadings)
+  } finally {
+    loading.value = false
+  }
 }
 
 const SITE_URL = siteConfig.site.url
@@ -66,7 +66,7 @@ function updateMeta() {
     headline: title,
     description: description.slice(0, 200),
     url,
-    image: cover ? `${SITE_URL}${cover}` : undefined,
+    ...(cover ? { image: `${SITE_URL}${cover}` } : {}),
   }
   applyMeta({ title, description, url, image, type: 'article', jsonld })
 }
@@ -82,12 +82,17 @@ watch([current, page], ([c, p]) => {
 
 <template>
   <section class="page-shell">
+    <ReadingProgress />
     <header class="doc-heading">
       <p class="eyebrow">{{ type === 'books' ? 'BOOK NOTE' : 'PROJECT DOC' }}</p>
       <h1>{{ current?.title || current?.name }}</h1>
       <p class="muted">{{ current?.quote || current?.description }}</p>
     </header>
-    <div class="doc-layout">
+    <div v-if="loading && !article.html" class="doc-layout">
+      <div></div>
+      <SkeletonLoader type="article" />
+    </div>
+    <div v-else class="doc-layout">
       <SideNav :title="type === 'books' ? '章节' : '文档'" :items="docs" :base="base" :active="pageSlug" />
       <MarkdownRenderer :html="article.html" />
       <TableOfContents :items="article.toc" :active="activeId" />

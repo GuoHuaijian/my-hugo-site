@@ -1,6 +1,7 @@
 <script setup>
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import SkeletonLoader from '../components/SkeletonLoader.vue'
 import { useContentLoader } from '../composables/useContentLoader'
 
 const route = useRoute()
@@ -48,7 +49,9 @@ onMounted(async () => {
       <p class="muted">{{ currentPage?.title }}</p>
     </header>
     
-    <div v-if="loading" class="pdf-loading">加载中...</div>
+    <div v-if="loading" class="pdf-loading">
+      <SkeletonLoader type="card" />
+    </div>
     <div v-else-if="error" class="pdf-error">{{ error }}</div>
     <div v-else class="pdf-container">
       <iframe :src="pdfUrl" class="pdf-frame" title="PDF 阅读器"></iframe>

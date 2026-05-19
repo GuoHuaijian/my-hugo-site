@@ -2,14 +2,17 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import MarkdownRenderer from '../components/MarkdownRenderer.vue'
+import ReadingProgress from '../components/ReadingProgress.vue'
+import SkeletonLoader from '../components/SkeletonLoader.vue'
 import TableOfContents from '../components/TableOfContents.vue'
 import { useContentLoader } from '../composables/useContentLoader'
+import { useHeadingObserver } from '../composables/useHeadingObserver'
 import { renderMarkdown } from '../composables/useMarkdown'
 
 const route = useRoute()
 const { index, loadIndex, loadText } = useContentLoader()
 const article = ref({ data: {}, html: '', toc: [] })
-const activeId = ref('')
+const { activeId, observeHeadings } = useHeadingObserver()
 const loading = ref(true)
 const error = ref('')
 const docItem = ref(null)
@@ -63,16 +66,6 @@ async function loadDoc() {
   }
 }
 
-function observeHeadings() {
-  const headings = [...document.querySelectorAll('.markdown-body h2, .markdown-body h3')]
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) activeId.value = entry.target.id
-    })
-  }, { rootMargin: '-20% 0px -70% 0px' })
-  headings.forEach((heading) => observer.observe(heading))
-}
-
 onMounted(loadDoc)
 watch(() => route.params.doc, loadDoc)
 </script>
@@ -85,7 +78,10 @@ watch(() => route.params.doc, loadDoc)
       <p class="muted">{{ docItem?.description }}</p>
     </header>
     
-    <div v-if="loading" class="doc-loading">加载中...</div>
+    <div v-if="loading" class="doc-loading">
+      <ReadingProgress />
+      <SkeletonLoader type="article" />
+    </div>
     <div v-else-if="error" class="doc-error">{{ error }}</div>
     <div v-else class="doc-layout">
       <MarkdownRenderer :html="article.html" />
