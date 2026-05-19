@@ -12,7 +12,8 @@ export function parseFrontmatter(raw = '') {
   let currentList = null
   let currentListItem = null
 
-  for (const line of raw.slice(3, end).split(/\r?\n/)) {
+  for (let line of raw.slice(3, end).split(/\r?\n/)) {
+    line = line.replace(/\r$/, '')
     // List item: "  - something"
     const listMatch = line.match(/^(\s*)-\s+(.+)$/)
     if (listMatch) {
