@@ -28,7 +28,10 @@ onMounted(loadIndex)
         <h1>{{ siteConfig.pages.notes.title }}</h1>
         <p class="muted">{{ siteConfig.pages.notes.description }}</p>
       </div>
-      <p class="count">共 {{ filtered.length }} 篇</p>
+      <div class="notes-heading-right">
+        <RouterLink class="archive-link" to="/notes/archive">归档</RouterLink>
+        <p class="count">共 {{ filtered.length }} 篇</p>
+      </div>
     </header>
     <TagFilter v-model:active="activeTags" :tags="tags" />
     <div v-if="pagedItems.length" class="grid notes-grid">
@@ -48,6 +51,29 @@ onMounted(loadIndex)
   align-items: end;
   justify-content: space-between;
   gap: var(--space-5);
+}
+
+.notes-heading-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-shrink: 0;
+}
+
+.archive-link {
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  padding: 4px 12px;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.archive-link:hover {
+  background: var(--color-accent);
+  color: white;
+  text-decoration: none;
 }
 
 .count {
@@ -81,6 +107,11 @@ onMounted(loadIndex)
 @media (max-width: 640px) {
   .notes-heading {
     display: block;
+  }
+
+  .notes-heading-right {
+    margin-top: var(--space-3);
+    justify-content: flex-start;
   }
 
   .count {

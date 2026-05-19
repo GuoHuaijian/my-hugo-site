@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router'
 import Comments from '../components/Comments.vue'
 import MarkdownRenderer from '../components/MarkdownRenderer.vue'
 import ReadingProgress from '../components/ReadingProgress.vue'
+import SeriesNav from '../components/SeriesNav.vue'
 import SkeletonLoader from '../components/SkeletonLoader.vue'
 import TableOfContents from '../components/TableOfContents.vue'
 import { useContentLoader } from '../composables/useContentLoader'
@@ -37,6 +38,7 @@ const notes = computed(() => index.value?.notes || [])
 const currentIndex = computed(() => notes.value.findIndex((item) => item.slug === route.params.slug))
 const prev = computed(() => notes.value[currentIndex.value - 1])
 const next = computed(() => notes.value[currentIndex.value + 1])
+const isDraft = computed(() => note.value?.draft === true)
 
 async function loadArticle() {
   loading.value = true
@@ -97,6 +99,12 @@ watch(note, (n) => {
       <span>/</span>
       <span>{{ note?.title }}</span>
     </nav>
+    <!-- Draft indicator -->
+    <div v-if="isDraft" class="draft-banner">
+      <span class="draft-badge">草稿</span>
+      <span>此笔记为草稿，尚未正式发布。</span>
+    </div>
+
     <div v-if="loading && !article.html" class="reader-layout">
       <SkeletonLoader type="article" />
     </div>
@@ -104,6 +112,10 @@ watch(note, (n) => {
       <MarkdownRenderer :html="article.html" />
       <TableOfContents :items="article.toc" :active="activeId" />
     </div>
+
+    <!-- Series navigation -->
+    <SeriesNav v-if="note?.series" :series="note.series" :current-slug="route.params.slug" />
+
     <nav class="article-nav" aria-label="上一篇下一篇">
       <RouterLink v-if="prev" class="card" :to="`/notes/${prev.slug}`">上一篇：{{ prev.title }}</RouterLink>
       <span v-else></span>
@@ -131,6 +143,31 @@ watch(note, (n) => {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 220px;
   gap: var(--space-8);
+}
+
+.draft-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+  padding: var(--space-3) var(--space-4);
+  border: 1px dashed var(--color-inline-code);
+  border-radius: var(--radius-md);
+  background: rgba(239, 68, 68, 0.04);
+  color: var(--color-inline-code);
+  font-size: var(--text-sm);
+}
+
+.draft-badge {
+  display: inline-flex;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  background: var(--color-inline-code);
+  color: white;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .article-nav {
