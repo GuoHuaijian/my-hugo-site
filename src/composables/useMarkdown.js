@@ -1,6 +1,54 @@
 import MarkdownIt from 'markdown-it'
-import hljs from 'highlight.js'
+import hljs from 'highlight.js/lib/core'
 import { parseFrontmatter } from '../utils/frontmatter'
+import { slugify } from '../utils/slugify'
+
+// Register only the languages used in content/ — reduces bundle by ~100KB
+import bash from 'highlight.js/lib/languages/bash'
+import c from 'highlight.js/lib/languages/c'
+import diff from 'highlight.js/lib/languages/diff'
+import dockerfile from 'highlight.js/lib/languages/dockerfile'
+import go from 'highlight.js/lib/languages/go'
+import groovy from 'highlight.js/lib/languages/groovy'
+import ini from 'highlight.js/lib/languages/ini'
+import java from 'highlight.js/lib/languages/java'
+import javascript from 'highlight.js/lib/languages/javascript'
+import json from 'highlight.js/lib/languages/json'
+import lua from 'highlight.js/lib/languages/lua'
+import markdown from 'highlight.js/lib/languages/markdown'
+import nginx from 'highlight.js/lib/languages/nginx'
+import plaintext from 'highlight.js/lib/languages/plaintext'
+import properties from 'highlight.js/lib/languages/properties'
+import python from 'highlight.js/lib/languages/python'
+import shell from 'highlight.js/lib/languages/shell'
+import sql from 'highlight.js/lib/languages/sql'
+import latex from 'highlight.js/lib/languages/latex'
+import xml from 'highlight.js/lib/languages/xml'
+import yaml from 'highlight.js/lib/languages/yaml'
+
+hljs.registerLanguage('bash', bash)
+hljs.registerLanguage('c', c)
+hljs.registerLanguage('diff', diff)
+hljs.registerLanguage('dockerfile', dockerfile)
+hljs.registerLanguage('go', go)
+hljs.registerLanguage('groovy', groovy)
+hljs.registerLanguage('ini', ini)
+hljs.registerLanguage('java', java)
+hljs.registerLanguage('javascript', javascript)
+hljs.registerLanguage('json', json)
+hljs.registerLanguage('lua', lua)
+hljs.registerLanguage('markdown', markdown)
+hljs.registerLanguage('nginx', nginx)
+hljs.registerLanguage('plaintext', plaintext)
+hljs.registerLanguage('properties', properties)
+hljs.registerLanguage('python', python)
+hljs.registerLanguage('shell', shell)
+hljs.registerLanguage('sql', sql)
+hljs.registerLanguage('tex', latex)
+hljs.registerLanguage('xml', xml)
+hljs.registerLanguage('yaml', yaml)
+// Alias 'text' blocks to plaintext highlighter
+hljs.registerLanguage('text', plaintext)
 
 const md = new MarkdownIt({
   html: true,
@@ -22,6 +70,7 @@ md.renderer.rules.fence = (tokens, idx, options, env, self) => {
     try {
       highlighted = hljs.highlight(token.content, { language }).value
     } catch (e) {
+      console.warn('[Markdown] highlight error:', e)
       highlighted = md.utils.escapeHtml(token.content)
     }
   } else {
@@ -43,8 +92,7 @@ md.renderer.rules.fence = (tokens, idx, options, env, self) => {
 md.renderer.rules.heading_open = (tokens, idx, options, env, self) => {
   const token = tokens[idx]
   const title = tokens[idx + 1]?.content || ''
-  const slug = title.toLowerCase().trim().replace(/[^\w\u4e00-\u9fa5]+/g, '-').replace(/^-|-$/g, '')
-  token.attrSet('id', slug)
+  token.attrSet('id', slugify(title))
   return self.renderToken(tokens, idx, options)
 }
 
@@ -61,7 +109,7 @@ export function collectToc(markdown) {
     return {
       level: match[1].length,
       text,
-      id: text.toLowerCase().replace(/[^\w\u4e00-\u9fa5]+/g, '-').replace(/^-|-$/g, '')
+      id: slugify(text)
     }
   }).filter(Boolean)
 }
