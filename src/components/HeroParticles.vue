@@ -72,8 +72,20 @@ function onPointerMove(event) {
   pointer = { x: event.clientX - rect.left, y: event.clientY - rect.top }
 }
 
+let ctx = null
+
+function startAnimation() {
+  if (!ctx) return
+  cancelAnimationFrame(animation)
+  draw(ctx)
+}
+
+function stopAnimation() {
+  cancelAnimationFrame(animation)
+}
+
 onMounted(() => {
-  const ctx = canvas.value.getContext('2d')
+  ctx = canvas.value.getContext('2d')
   resize(ctx)
   makeParticles()
   draw(ctx)
@@ -81,9 +93,20 @@ onMounted(() => {
     resize(ctx)
     makeParticles()
   })
+  // Pause animation when page is hidden (e.g., tab switch)
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      stopAnimation()
+    } else {
+      startAnimation()
+    }
+  })
 })
 
-onUnmounted(() => cancelAnimationFrame(animation))
+onUnmounted(() => {
+  cancelAnimationFrame(animation)
+  document.removeEventListener('visibilitychange', startAnimation)
+})
 </script>
 
 <template>

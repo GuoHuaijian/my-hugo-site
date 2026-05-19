@@ -10,7 +10,7 @@
 |------|------|
 | 框架 | Vue 3 + Vite 6 |
 | 路由 | Vue Router 4 |
-| 渲染 | Markdown → marked + 自定义 Markdown 渲染器 |
+| 渲染 | Markdown → markdown-it + highlight.js + 自定义渲染器 |
 | 图表 | Mermaid.js（流程图、时序图、架构图等） |
 | 字体 | 霞鹜文楷（正文）+ JetBrains Mono（代码） |
 | 评论 | Giscus（GitHub Discussions） |

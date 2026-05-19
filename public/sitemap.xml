@@ -445,7 +445,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/introduction/_private/cv</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/introduction/about-me</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -455,72 +455,52 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/introduction/about-me</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://slothcoder.cn/books/awesome-fenix/introduction/about-the-fenix-project</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-framework/j2ee-base-arch</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/SUMMARY</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-framework/kubernetes-base-arch</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/guide/quick-start</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-framework/README</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-framework/serverless-arch-knative</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/fenix-bookstore-frontend</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-framework/serverless-arch-kubeless</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/monolithic_arch_springboot</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-framework/servicemesh-lstio-arch</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/microservice_arch_springcloud</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-framework/springboot-base-arch</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/microservice_arch_kubernetes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-framework/springcloud-base-arch</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/servicemesh_arch_istio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-history/microservices</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-history/monolithic</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-history/post-microservices</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-history/primitive-distribution</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/serverless_arch</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -530,7 +510,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-history/serverless</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-history/primitive-distribution</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-history/monolithic</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -540,7 +525,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/api-style/mq</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-history/microservices</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-history/post-microservices</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architecture/architect-history/serverless</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -550,47 +545,42 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/api-style/rest</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/api-style/rpc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/concurrent/hardware-concurrent</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/api-style/rest</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/concurrent/process-thread-coroutine</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/transaction/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/concurrent/README</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/transaction/local</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/concurrent/synchronization</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/transaction/global</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/concurrent/thread-safe</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/transaction/share</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/diversion-system/cache-middleware</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/transaction/distributed</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/diversion-system/cdn</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/diversion-system/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -605,32 +595,27 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/diversion-system/load-balancing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/diversion-system/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/diversion-system/scalability</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/diversion-system/transmission-optimization</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/README</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/diversion-system/cdn</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/scalability/README</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/diversion-system/load-balancing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/diversion-system/cache-middleware</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/system-security/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -645,22 +630,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/system-security/confidentiality</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/system-security/credentials</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/system-security/exploit</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/system-security/README</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/system-security/confidentiality</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -675,42 +650,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/transaction/distributed</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/consensus/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/transaction/global</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/consensus/paxos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/transaction/local</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/consensus/raft</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/transaction/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/architect-perspective/general-architecture/transaction/share</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/connect/composer</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/connect/configuration</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/connect/load-balancing</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/consensus/gossip</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -730,72 +685,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/consensus/gossip</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/consensus/paxos</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/consensus/raft</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/consensus/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/observability/logging</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/observability/metrics</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/observability/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/observability/tracing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/secure/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/secure/service-security</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/secure/zero-trust</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/traffic-management/exception-inject</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/traffic-management/failure</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/traffic-management/qos</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/connect/load-balancing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -805,12 +695,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/traffic-management/service-downgrade</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/traffic-management/timeout</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/traffic-management/failure</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -820,37 +705,37 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/container/application-centric</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/secure/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/container/container-build-system</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/secure/zero-trust</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/container/history</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/secure/service-security</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/container/README</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/observability/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/mesh/communication</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/observability/logging</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/mesh/ecosystems</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/observability/tracing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/mesh/README</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/distribution/observability/metrics</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -860,17 +745,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/network/cni</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/container/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/network/linux-vnet</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/container/history</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/network/plugin</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/container/container-build-system</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/container/application-centric</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -880,22 +770,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/network/strategy</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/network/linux-vnet</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/schedule/hardware-schedule</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/schedule/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/storage/csi</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/network/cni</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -910,22 +790,32 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/storage/storage-plugins</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/storage/csi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/forward-msa/governance</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/schedule/hardware-schedule</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/forward-msa/granularity</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/mesh/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/forward-msa/measurement</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/mesh/communication</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://slothcoder.cn/books/awesome-fenix/immutable-infrastructure/mesh/ecosystems</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/forward-msa/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -940,87 +830,62 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/forward-msa/README</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/forward-msa/granularity</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/pattern/afk</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/forward-msa/governance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/pattern/events/cep</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/pattern/events/cqrs</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/graal-compiler</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/pattern/events/es</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/substratevm</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/pattern/events/README</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/graalvm-native</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/methodology/pattern/orchestration</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/spring-over-graal</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/guide/quick-start</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/java-crisis/qcon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/fenix-bookstore-frontend</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/openjdk-for-dummies/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/microservice_arch_kubernetes</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/geekbang</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/microservice_arch_springcloud</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/fenix-cli/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/monolithic_arch_springboot</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/serverless_arch</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/exploration/projects/servicemesh_arch_istio</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/appendix/build-script</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/appendix/continuous-integration</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/arch/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1045,12 +910,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/appendix/deployment-env-setup/setup-kubernetes/setup-minikube</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/appendix/deployment-env-setup/setup-kubernetes/setup-rancher</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/appendix/deployment-env-setup/setup-kubernetes/setup-rancher</loc>
+    <loc>https://slothcoder.cn/books/awesome-fenix/appendix/deployment-env-setup/setup-kubernetes/setup-minikube</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1066,111 +931,6 @@
   </url>
   <url>
     <loc>https://slothcoder.cn/books/awesome-fenix/appendix/operation-env-setup/prometheus-setup</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/appendix/operation-env-setup/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/graal-compiler</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/graalvm-native</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/spring-over-graal</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/substratevm</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/graalvm/video</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2020/java-crisis/qcon</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/arch/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/fenix-cli/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/geekbang</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/jdkbuild/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/k3s/apiserver/bootstrap</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/k3s/apiserver/env</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/k3s/apiserver/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/k3s/build</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/k3s/kubectl/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/k3s/kubelet/bootstrap</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/k3s/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/openjdk-for-dummies/README</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://slothcoder.cn/books/awesome-fenix/tricks/2021/README</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
