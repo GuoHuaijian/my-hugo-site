@@ -12,8 +12,20 @@ const query = ref('')
 const inputRef = ref(null)
 const highlightIndex = ref(-1)
 const resultsRef = ref(null)
+const activeFilter = ref('全部')
 
-const results = computed(() => {
+const FILTERS = ['全部', '笔记', '项目', '读书', '工具']
+
+function matchItem(item, q) {
+  const fields = [item.title, item.name, item.summary, item.description, item.quote, ...(item.tags || [])]
+  return fields.some((f) => f && f.toLowerCase().includes(q))
+}
+
+function matchTool(tool, q) {
+  return [tool.name, tool.desc, tool.url].some((f) => f && f.toLowerCase().includes(q))
+}
+
+const allResults = computed(() => {
   const q = query.value.trim().toLowerCase()
   if (!q || !index.value) return []
 
@@ -21,6 +33,7 @@ const results = computed(() => {
 
   // Search notes
   for (const note of index.value.notes || []) {
+    if (note.draft) continue
     if (matchItem(note, q)) {
       items.push({ type: '笔记', title: note.title, summary: note.summary || '', slug: `/notes/${note.slug}`, tags: note.tags })
     }
@@ -49,7 +62,12 @@ const results = computed(() => {
     }
   }
 
-  return items.slice(0, 20)
+  return items
+})
+
+const results = computed(() => {
+  if (activeFilter.value === '全部') return allResults.value
+  return allResults.value.filter((item) => item.type === activeFilter.value)
 })
 
 // Reset highlight when results change
@@ -57,18 +75,15 @@ watch(results, () => {
   highlightIndex.value = results.value.length > 0 ? 0 : -1
 })
 
-function matchItem(item, q) {
-  const fields = [item.title, item.name, item.summary, item.description, item.quote, ...(item.tags || [])]
-  return fields.some((f) => f && f.toLowerCase().includes(q))
-}
-
-function matchTool(tool, q) {
-  return [tool.name, tool.desc, tool.url].some((f) => f && f.toLowerCase().includes(q))
+function setFilter(filter) {
+  activeFilter.value = filter
+  highlightIndex.value = results.value.length > 0 ? 0 : -1
 }
 
 function openModal() {
   open.value = true
   query.value = ''
+  activeFilter.value = '全部'
   highlightIndex.value = -1
   setTimeout(() => inputRef.value?.focus(), 50)
 }
@@ -76,6 +91,7 @@ function openModal() {
 function closeModal() {
   open.value = false
   query.value = ''
+  activeFilter.value = '全部'
   highlightIndex.value = -1
 }
 
@@ -133,6 +149,15 @@ onUnmounted(() => document.removeEventListener('keydown', onKeyDown))
 defineExpose({ openModal })
 </script>
 
+<script>
+function highlight(q, text) {
+  if (!q || !text) return text || ''
+  const escaped = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const regex = new RegExp(`(${escaped})`, 'gi')
+  return text.replace(regex, '<mark>$1</mark>')
+}
+</script>
+
 <template>
   <button class="search-trigger" type="button" aria-label="搜索内容" @click="openModal">
     <Search :size="18" aria-hidden="true" />
@@ -159,9 +184,26 @@ defineExpose({ openModal })
             </button>
           </div>
 
+          <!-- Type filter tabs -->
+          <div v-if="query" class="search-filters">
+            <button
+              v-for="filter in FILTERS"
+              :key="filter"
+              type="button"
+              class="search-filter-btn"
+              :class="{ active: activeFilter === filter }"
+              @click="setFilter(filter)"
+            >
+              {{ filter }}
+            </button>
+          </div>
+
           <div ref="resultsRef" class="search-results">
             <div v-if="query && results.length === 0" class="search-empty">
               <p>没有找到匹配「{{ query }}」的内容</p>
+              <p v-if="activeFilter !== '全部'" class="search-empty-hint">
+                试试切换到「全部」查看所有类型的结果
+              </p>
             </div>
 
             <div v-else-if="!query" class="search-empty">
@@ -180,7 +222,10 @@ defineExpose({ openModal })
               <span class="result-type">{{ item.type }}</span>
               <div class="result-body">
                 <span class="result-title" v-html="highlight(query, item.title)"></span>
-                <span v-if="item.summary" class="result-summary">{{ item.summary.slice(0, 80) }}</span>
+                <span v-if="item.summary" class="result-summary" v-html="highlight(query, item.summary.slice(0, 100))"></span>
+                <span v-if="item.tags?.length" class="result-tags">
+                  <span v-for="tag in item.tags.slice(0, 3)" :key="tag" class="result-tag">{{ tag }}</span>
+                </span>
               </div>
             </button>
           </div>
@@ -189,24 +234,13 @@ defineExpose({ openModal })
             <span><kbd>↑↓</kbd> 导航</span>
             <span><kbd>↵</kbd> 打开</span>
             <span><kbd>ESC</kbd> 关闭</span>
+            <span v-if="query" class="search-footer-count">{{ results.length }} 条结果</span>
           </div>
         </div>
       </div>
     </Transition>
   </Teleport>
 </template>
-
-<script>
-function highlight(q, text) {
-  if (!q || !text) return text || ''
-  const idx = text.toLowerCase().indexOf(q.toLowerCase())
-  if (idx === -1) return text
-  const before = text.slice(0, idx)
-  const match = text.slice(idx, idx + q.length)
-  const after = text.slice(idx + q.length)
-  return `${before}<mark>${match}</mark>${after}`
-}
-</script>
 
 <style scoped>
 .search-trigger {
@@ -319,10 +353,48 @@ function highlight(q, text) {
   color: var(--color-accent);
 }
 
+/* Type filters */
+.search-filters {
+  display: flex;
+  gap: 6px;
+  padding: 8px 18px;
+  border-bottom: 1px solid var(--color-border);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.search-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.search-filter-btn {
+  flex: 0 0 auto;
+  padding: 4px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-text-tertiary);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.search-filter-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.search-filter-btn.active {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: white;
+}
+
 /* Results */
 .search-results {
   overflow-y: auto;
-  max-height: 52vh;
+  max-height: 44vh;
   padding: 8px;
 }
 
@@ -331,6 +403,13 @@ function highlight(q, text) {
   text-align: center;
   color: var(--color-text-tertiary);
   font-size: var(--text-sm);
+}
+
+.search-empty-hint {
+  margin-top: var(--space-2);
+  color: var(--color-text-tertiary);
+  font-size: var(--text-xs);
+  opacity: 0.7;
 }
 
 .search-result-item {
@@ -391,6 +470,29 @@ function highlight(q, text) {
   white-space: nowrap;
 }
 
+.result-summary :deep(mark) {
+  background: rgba(var(--color-accent-rgb), 0.15);
+  color: var(--color-accent);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.result-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.result-tag {
+  display: inline-flex;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--color-bg-secondary);
+  color: var(--color-text-tertiary);
+  font-size: 10px;
+}
+
 /* Footer */
 .search-footer {
   display: flex;
@@ -408,6 +510,10 @@ function highlight(q, text) {
   border-radius: 3px;
   background: var(--color-overlay-light);
   font-size: 11px;
+}
+
+.search-footer-count {
+  margin-left: auto;
 }
 
 /* Transitions */
