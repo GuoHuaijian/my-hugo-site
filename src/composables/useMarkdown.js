@@ -55,7 +55,7 @@ export function renderMarkdown(raw) {
 
 export function collectToc(markdown) {
   return markdown.split(/\r?\n/).map((line) => {
-    const match = line.match(/^(#{2,3})\s+(.+)$/)
+    const match = line.match(/^(#{2,4})\s+(.+)$/)
     if (!match) return null
     const text = match[2].trim()
     return {

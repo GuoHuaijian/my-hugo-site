@@ -1,22 +1,44 @@
 <script setup>
-defineProps({
+const props = defineProps({
   tags: { type: Array, default: () => [] },
-  active: { type: String, default: '全部' }
+  active: { type: Array, default: () => [] }
 })
 
-defineEmits(['update:active'])
+const emit = defineEmits(['update:active'])
+
+function toggleTag(tag) {
+  if (tag === '全部') {
+    emit('update:active', [])
+    return
+  }
+  const current = [...props.active]
+  const idx = current.indexOf(tag)
+  if (idx >= 0) {
+    current.splice(idx, 1)
+  } else {
+    current.push(tag)
+  }
+  emit('update:active', current)
+}
 </script>
 
 <template>
-  <div class="tag-filter" aria-label="标签过滤">
+  <div class="tag-filter" role="group" aria-label="标签过滤">
     <button
-      v-for="tag in ['全部', ...tags]"
+      type="button"
+      :class="{ active: active.length === 0 }"
+      @click="toggleTag('全部')"
+    >
+      全部
+    </button>
+    <button
+      v-for="tag in tags"
       :key="tag"
       type="button"
-      :class="{ active: active === tag }"
-      @click="$emit('update:active', tag)"
+      :class="{ active: active.includes(tag) }"
+      @click="toggleTag(tag)"
     >
-      {{ tag }}
+      {{ tag }}<span v-if="active.includes(tag)" class="tag-remove" aria-hidden="true"> ×</span>
     </button>
   </div>
 </template>
@@ -53,5 +75,9 @@ button.active {
 
 button:active {
   transform: scale(0.97);
+}
+
+.tag-remove {
+  font-weight: 700;
 }
 </style>

@@ -49,12 +49,6 @@ const linkText = computed(() => {
   padding: var(--space-5);
   min-height: 200px;
   overflow: hidden;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
-}
-
-.book-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 20px var(--color-shadow-hover);
 }
 
 .cover {

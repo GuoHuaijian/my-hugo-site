@@ -8,11 +8,13 @@ import { usePagination } from '../composables/usePagination'
 
 import siteConfig from '../../content/site-config.json'
 const pageSize = siteConfig.notes.perPage
-const activeTag = ref('全部')
+const activeTags = ref([])
 const { index, loadIndex } = useContentLoader()
 const notes = computed(() => index.value?.notes || [])
 const tags = computed(() => index.value?.allTags || [])
-const filtered = computed(() => activeTag.value === '全部' ? notes.value : notes.value.filter((note) => note.tags.includes(activeTag.value)))
+const filtered = computed(() => activeTags.value.length === 0 ? notes.value : notes.value.filter((note) =>
+  activeTags.value.some((tag) => note.tags.includes(tag))
+))
 const { page, totalPages, pagedItems } = usePagination(filtered, pageSize)
 
 onMounted(loadIndex)
@@ -28,7 +30,7 @@ onMounted(loadIndex)
       </div>
       <p class="count">共 {{ filtered.length }} 篇</p>
     </header>
-    <TagFilter v-model:active="activeTag" :tags="tags" />
+    <TagFilter v-model:active="activeTags" :tags="tags" />
     <div v-if="pagedItems.length" class="grid notes-grid">
       <NoteCard v-for="(note, i) in pagedItems" :key="note.slug" :note="note" :index="i" />
     </div>

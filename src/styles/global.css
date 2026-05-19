@@ -58,7 +58,7 @@ button {
 .page-shell {
   width: min(100% - 40px, var(--max-width));
   margin: 0 auto;
-  padding: 112px 0 72px;
+  padding: var(--page-shell-padding-top) 0 var(--page-shell-padding-bottom);
 }
 
 .page-heading {

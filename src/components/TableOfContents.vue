@@ -50,6 +50,12 @@ a.level-3 {
   font-size: var(--text-xs);
 }
 
+a.level-4 {
+  padding-left: 34px;
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+}
+
 a.active,
 a:hover {
   border-left-color: var(--color-accent);
