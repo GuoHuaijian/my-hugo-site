@@ -1,15 +1,13 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { loadConfig, getPublicDir } from './shared/config.js'
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const publicDir = path.join(root, 'public')
+const publicDir = getPublicDir()
 const indexFile = path.join(publicDir, 'content-index.json')
 const outFile = path.join(publicDir, 'sitemap.xml')
 
 // Read URL from site config — single source of truth
-const configFile = path.join(root, 'content', 'site-config.json')
-const config = JSON.parse(fs.readFileSync(configFile, 'utf8'))
+const config = loadConfig()
 const SITE_URL = config.site?.url || 'https://slothcoder.cn'
 
 // Priority map: home > list pages > detail pages

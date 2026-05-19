@@ -1,11 +1,12 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
 import { parseFrontmatter } from '../src/utils/frontmatter.js'
+import { getReadingTime } from '../src/utils/readingTime.js'
+import { getRoot, getContentDir, getPublicDir } from './shared/config.js'
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const contentDir = path.join(root, 'content')
-const publicDir = path.join(root, 'public')
+const root = getRoot()
+const contentDir = getContentDir()
+const publicDir = getPublicDir()
 const publicContentDir = path.join(publicDir, 'content')
 
 function ensureDir(dir) {
@@ -21,11 +22,6 @@ function copyDir(src, dest) {
     if (entry.isDirectory()) copyDir(from, to)
     else fs.copyFileSync(from, to)
   }
-}
-
-function readingTime(text) {
-  const words = text.replace(/\s+/g, '').length
-  return Math.max(1, Math.ceil(words / 300))
 }
 
 function readMarkdown(file) {
@@ -81,7 +77,7 @@ function makeNotes() {
       tags: data.tags || [],
       cover: resolveCover(slug, data.cover),
       summary: data.summary || body.replace(/[#>*`-]/g, '').slice(0, 150),
-      readingTime: data.readingTime || readingTime(body),
+      readingTime: data.readingTime || getReadingTime(body),
       file: `/content/notes/${slug}.md`
     }
   }).sort((a, b) => new Date(b.date) - new Date(a.date))
@@ -116,8 +112,8 @@ function makeProjects() {
       }).filter(Boolean)
       // Add any docs not in the list
       const listedFiles = new Set(data.docs.map(d => d.file))
-      for (const [name, doc] of docMap) {
-        if (!listedFiles.has(name)) docs.push(doc)
+      for (const [filePath, doc] of docMap) {
+        if (!listedFiles.has(filePath)) docs.push(doc)
       }
     } else {
       docs = [...docMap.values()].sort((a, b) => a.slug.localeCompare(b.slug))

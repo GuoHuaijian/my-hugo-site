@@ -1,14 +1,12 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { loadConfig, getPublicDir } from './shared/config.js'
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const publicDir = path.join(root, 'public')
+const publicDir = getPublicDir()
 const indexFile = path.join(publicDir, 'content-index.json')
 const outFile = path.join(publicDir, 'feed.xml')
 
-const configFile = path.join(root, 'content', 'site-config.json')
-const config = JSON.parse(fs.readFileSync(configFile, 'utf8'))
+const config = loadConfig()
 const SITE_URL = config.site?.url || 'https://slothcoder.cn'
 const SITE_NAME = config.site?.name || '云边小卖部'
 const SITE_DESC = config.site?.description || '贩卖代码、笔记与偶尔的胡思乱想'
