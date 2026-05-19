@@ -96,9 +96,41 @@ md.renderer.rules.heading_open = (tokens, idx, options, env, self) => {
   return self.renderToken(tokens, idx, options)
 }
 
+/**
+ * Convert admonition blocks (:::tip / :::warning / :::danger / :::info / :::center)
+ * and other ::: blocks (:::right, :::quote, etc.) to HTML.
+ *
+ * - Known types get styled admonition boxes with emoji + title.
+ * - :::center renders as centered wrapper, no emoji/title.
+ * - Unknown types render as plain wrapper (hides ::: syntax, no emoji/title).
+ */
+const ADMONITION_TYPES = { tip: '💡', warning: '⚠️', danger: '🚨', info: 'ℹ️' }
+
+function renderAdmonitions(body) {
+  return body.replace(/^:::(\w+)\s*(.*)$\n?([\s\S]*?)^:::$/gm, (_, type, title, content) => {
+    const innerHtml = md.render(content.trim())
+    // center: just center the content, no emoji/title
+    if (type === 'center') {
+      return `<div class="text-center">${innerHtml}</div>`
+    }
+    // Known admonition types: styled box with emoji + title
+    if (ADMONITION_TYPES[type]) {
+      const emoji = ADMONITION_TYPES[type]
+      const displayTitle = title || type.charAt(0).toUpperCase() + type.slice(1)
+      return `<div class="admonition admonition-${type}">
+        <p class="admonition-title">${emoji} ${displayTitle}</p>
+        ${innerHtml}
+      </div>`
+    }
+    // Unknown type (e.g. :::right, :::quote): plain wrapper, no emoji/title
+    return `<div class="admonition-unknown">${innerHtml}</div>`
+  })
+}
+
 export function renderMarkdown(raw) {
   const { data, body } = parseFrontmatter(raw)
-  return { data, body, html: md.render(body), toc: collectToc(body) }
+  const processed = renderAdmonitions(body)
+  return { data, body, html: md.render(processed), toc: collectToc(body) }
 }
 
 export function collectToc(markdown) {

@@ -161,3 +161,77 @@
 [data-theme="dark"] .markdown-body .mermaid {
   background: var(--color-bg-code);
 }
+
+/* ── Admonition 提示块 ── */
+.markdown-body .admonition {
+  margin: var(--space-6) 0;
+  padding: var(--space-5);
+  border-left: 4px solid;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  background: var(--color-bg-warm);
+}
+
+.markdown-body .admonition-title {
+  margin: 0 0 var(--space-3);
+  font-weight: 700;
+  font-size: var(--text-base);
+  line-height: 1.5;
+}
+
+.markdown-body .admonition p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body .admonition-tip {
+  border-left-color: #22c55e;
+  background: rgba(34, 197, 94, 0.06);
+}
+
+.markdown-body .admonition-tip .admonition-title {
+  color: #22c55e;
+}
+
+.markdown-body .admonition-warning {
+  border-left-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.06);
+}
+
+.markdown-body .admonition-warning .admonition-title {
+  color: #f59e0b;
+}
+
+.markdown-body .admonition-danger {
+  border-left-color: #ef4444;
+  background: rgba(239, 68, 68, 0.06);
+}
+
+.markdown-body .admonition-danger .admonition-title {
+  color: #ef4444;
+}
+
+.markdown-body .admonition-info {
+  border-left-color: var(--color-accent);
+  background: var(--color-accent-light);
+}
+
+.markdown-body .admonition-info .admonition-title {
+  color: var(--color-accent);
+}
+
+/* ── Center 居中容器 ── */
+.markdown-body .text-center {
+  text-align: center;
+}
+
+.markdown-body .text-center img {
+  display: inline-block;
+}
+
+.markdown-body .text-center br + br {
+  display: none;
+}
+
+/* ── Unknown Admonition (:::right / :::quote etc.) ── */
+.markdown-body .admonition-unknown {
+  margin: var(--space-4) 0;
+}
