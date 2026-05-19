@@ -10,7 +10,7 @@ chapters:
         file: "introduction/about-me.md"
       - title: "关于纸质书"
         file: "introduction/about-book.md"
-      - title: "什么是\"凤凰架构\""
+      - title: "什么是凤凰架构"
         file: "introduction/about-the-fenix-project.md"
       - title: "更新日志"
         file: "SUMMARY.md"
