@@ -1,6 +1,6 @@
 <script setup>
-import { onMounted } from 'vue'
 import BackToTop from './components/BackToTop.vue'
+import ImageLightbox from './components/ImageLightbox.vue'
 import Navbar from './components/Navbar.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import { useMeta } from './composables/useMeta'
@@ -20,4 +20,5 @@ useMeta()
   </main>
   <SiteFooter />
   <BackToTop />
+  <ImageLightbox />
 </template>

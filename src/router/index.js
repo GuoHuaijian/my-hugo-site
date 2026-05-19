@@ -58,6 +58,10 @@ const routes = [
     path: '/about', name: 'about', component: () => import('../views/About.vue'),
     meta: { title: routerConfig.pageTitles.about, description: PAGE_DESCRIPTIONS.about, ogType: 'website' },
   },
+  {
+    path: '/:pathMatch(.*)*', name: 'not-found', component: () => import('../views/NotFound.vue'),
+    meta: { title: '页面未找到', description: '你找的页面不存在。', ogType: 'website' },
+  },
 ]
 
 const router = createRouter({
