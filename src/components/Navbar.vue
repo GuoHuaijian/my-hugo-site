@@ -38,7 +38,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
         />
         <span>{{ site.logoText }}</span>
       </RouterLink>
-      <button class="menu-btn" type="button" :aria-expanded="open" aria-label="打开导航菜单" @click="open = !open">
+      <button class="menu-btn" type="button" :aria-expanded="open" :aria-label="open ? '关闭导航菜单' : '打开导航菜单'" @click="open = !open">
         <X v-if="open" :size="22" aria-hidden="true" />
         <Menu v-else :size="22" aria-hidden="true" />
       </button>
