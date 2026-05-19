@@ -1,14 +1,23 @@
 <script setup>
-import { nextTick, watch, onUnmounted } from 'vue'
+import { nextTick, onMounted, onUnmounted, watch } from 'vue'
 
 const props = defineProps({
   html: { type: String, default: '' }
 })
 
 let currentTheme = ''
+let themeObserver = null
+let mermaidPromise = null
 
 function getTheme() {
   return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+}
+
+function loadMermaid() {
+  if (!mermaidPromise) {
+    mermaidPromise = import('mermaid')
+  }
+  return mermaidPromise
 }
 
 async function renderDiagrams() {
@@ -26,9 +35,9 @@ async function renderDiagrams() {
   const elements = document.querySelectorAll('.mermaid')
   if (!elements.length) return
 
-  // Dynamically import mermaid only when needed
-  const mermaid = await import('mermaid')
-  const mermaidModule = mermaid.default || mermaid
+  // Dynamically import mermaid only when needed (cached after first load)
+  const mod = await loadMermaid()
+  const mermaidModule = mod.default || mod
 
   const theme = getTheme()
 
@@ -58,7 +67,7 @@ async function renderDiagrams() {
 watch(() => props.html, renderDiagrams, { immediate: true })
 
 // Listen for theme changes to re-render mermaid diagrams
-function handleThemeChange() {
+async function handleThemeChange() {
   const theme = getTheme()
   if (theme === currentTheme) return
 
@@ -66,32 +75,42 @@ function handleThemeChange() {
   const elements = document.querySelectorAll('.mermaid[data-original]')
   if (!elements.length) return
 
-  import('mermaid').then((mod) => {
-    const mermaid = mod.default || mod
-    mermaid.initialize({
-      startOnLoad: false,
-      theme,
-      securityLevel: 'loose'
-    })
-    elements.forEach((el) => {
-      el.removeAttribute('data-processed')
-      el.textContent = el.getAttribute('data-original')
-    })
-    mermaid.run({ nodes: elements, suppressErrors: true }).catch(() => {})
+  const mod = await loadMermaid()
+  const mermaid = mod.default || mod
+  mermaid.initialize({
+    startOnLoad: false,
+    theme,
+    securityLevel: 'loose'
   })
+  elements.forEach((el) => {
+    el.removeAttribute('data-processed')
+    el.textContent = el.getAttribute('data-original')
+  })
+  try {
+    await mermaid.run({ nodes: elements, suppressErrors: true })
+  } catch (e) {
+    console.warn('[Mermaid] re-render error on theme change:', e)
+  }
 }
 
-const themeObserver = new MutationObserver((mutations) => {
-  for (const m of mutations) {
-    if (m.type === 'attributes' && m.attributeName === 'data-theme') {
-      handleThemeChange()
-      break
+onMounted(() => {
+  themeObserver = new MutationObserver((mutations) => {
+    for (const m of mutations) {
+      if (m.type === 'attributes' && m.attributeName === 'data-theme') {
+        handleThemeChange()
+        break
+      }
     }
+  })
+  themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] })
+})
+
+onUnmounted(() => {
+  if (themeObserver) {
+    themeObserver.disconnect()
+    themeObserver = null
   }
 })
-themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] })
-
-onUnmounted(() => themeObserver.disconnect())
 
 function handleContentClick(e) {
   // Copy button

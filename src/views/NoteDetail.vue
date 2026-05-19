@@ -24,7 +24,7 @@ function recordPageView() {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ page, visitorId: getVisitorId() })
-  }).catch(() => {})
+  }).catch((err) => console.warn('[analytics] page view failed:', err))
 }
 
 const route = useRoute()
