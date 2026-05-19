@@ -23,6 +23,10 @@ const routes = [
     meta: { title: routerConfig.pageTitles.notes, description: PAGE_DESCRIPTIONS.notes, ogType: 'website' },
   },
   {
+    path: '/notes/archive', name: 'archive', component: () => import('../views/Archive.vue'),
+    meta: { title: routerConfig.pageTitles.archive, description: '按时间归档浏览所有笔记。', ogType: 'website' },
+  },
+  {
     path: '/notes/:slug', name: 'note-detail', component: () => import('../views/NoteDetail.vue'),
     meta: { title: routerConfig.pageTitles['note-detail'], description: '', ogType: 'article' },
   },
