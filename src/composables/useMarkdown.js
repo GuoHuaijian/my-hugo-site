@@ -82,6 +82,11 @@ md.renderer.rules.fence = (tokens, idx, options, env, self) => {
 
   return `<div class="code-block">
     <div class="code-header">
+      <div class="code-dots">
+        <span class="code-dot code-dot--red"></span>
+        <span class="code-dot code-dot--yellow"></span>
+        <span class="code-dot code-dot--green"></span>
+      </div>
       <span class="code-lang">${langLabel}</span>
       <button class="code-copy-btn" type="button">复制</button>
     </div>

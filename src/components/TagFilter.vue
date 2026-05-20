@@ -46,19 +46,22 @@ function toggleTag(tag) {
 <style scoped>
 .tag-filter {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  overflow-x: auto;
-  padding-bottom: 6px;
+  padding: 12px 16px;
   margin-bottom: var(--space-8);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border, rgba(0, 0, 0, 0.08));
+  border-radius: var(--radius-lg);
 }
 
 button {
   flex: 0 0 auto;
   min-height: 40px;
   padding: 0 14px;
-  border: 1px solid transparent;
+  border: 1px solid var(--color-border, rgba(0, 0, 0, 0.12));
   border-radius: var(--radius-md);
-  background: var(--color-bg-secondary);
+  background: transparent;
   color: var(--color-text-secondary);
   transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
 }

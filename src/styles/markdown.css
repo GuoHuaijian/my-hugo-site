@@ -78,7 +78,7 @@
   background: var(--color-bg-secondary);
 }
 
-/* ── 代码块（带头部） ── */
+/* ── 代码块（macOS 终端样式） ── */
 .markdown-body .code-block {
   margin: var(--space-6) 0;
   border: 1px solid var(--color-border);
@@ -90,13 +90,39 @@
 .markdown-body .code-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 6px 16px;
+  gap: 12px;
+  padding: 10px 16px;
   background: var(--color-overlay-light);
   border-bottom: 1px solid var(--color-border);
   font-size: 12px;
   color: var(--color-text-tertiary);
   user-select: none;
+}
+
+.markdown-body .code-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.markdown-body .code-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.markdown-body .code-dot--red {
+  background: #ff5f57;
+}
+
+.markdown-body .code-dot--yellow {
+  background: #febc2e;
+}
+
+.markdown-body .code-dot--green {
+  background: #28c840;
 }
 
 .markdown-body .code-lang {
@@ -107,6 +133,7 @@
 }
 
 .markdown-body .code-copy-btn {
+  margin-left: auto;
   padding: 3px 10px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);

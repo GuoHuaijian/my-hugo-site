@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import { Home, ArrowLeft, Search } from 'lucide-vue-next'
+import { Home, ArrowLeft, FileText, Archive } from 'lucide-vue-next'
 import siteConfig from '../../content/site-config.json'
 
 const floatOffset = ref(0)
@@ -26,15 +26,15 @@ onMounted(() => {
       <p class="muted">你找的页面可能被搬走了，或者从来没有存在过。</p>
       <div class="not-found-actions">
         <RouterLink class="btn" to="/">
-          <ArrowLeft :size="18" aria-hidden="true" />
+          <Home :size="18" aria-hidden="true" />
           回到首页
         </RouterLink>
         <RouterLink class="btn primary" to="/notes">
-          <Home :size="18" aria-hidden="true" />
+          <FileText :size="18" aria-hidden="true" />
           去笔记看看
         </RouterLink>
         <RouterLink class="btn" to="/notes/archive">
-          <Search :size="18" aria-hidden="true" />
+          <Archive :size="18" aria-hidden="true" />
           文章归档
         </RouterLink>
       </div>
