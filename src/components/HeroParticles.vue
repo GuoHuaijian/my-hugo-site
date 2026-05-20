@@ -86,6 +86,19 @@ function stopAnimation() {
 
 onMounted(() => {
   ctx = canvas.value.getContext('2d')
+
+  // Respect prefers-reduced-motion — skip animation entirely
+  const motionMedia = window.matchMedia('(prefers-reduced-motion: reduce)')
+  if (motionMedia.matches) {
+    // Draw a static frame so it's not completely blank
+    resize(ctx)
+    makeParticles()
+    draw(ctx)
+    // Freeze: don't start the rAF loop
+    // Keep one frame via manual draw above
+    return
+  }
+
   resize(ctx)
   makeParticles()
   draw(ctx)

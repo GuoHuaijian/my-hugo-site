@@ -7,6 +7,15 @@ import siteConfig from '../../content/site-config.json'
 const { index, loadIndex } = useContentLoader()
 const notes = computed(() => index.value?.notes || [])
 
+const uniqueYears = computed(() => {
+  const years = new Set()
+  for (const note of notes.value) {
+    if (note.draft) continue
+    if (note.date) years.add(note.date.slice(0, 4))
+  }
+  return [...years].sort((a, b) => b - a)
+})
+
 const archive = computed(() => {
   const groups = {}
   for (const note of notes.value) {
@@ -33,6 +42,11 @@ const archive = computed(() => {
 
 const totalNotes = computed(() => notes.value.filter((n) => !n.draft).length)
 
+function scrollToYear(year) {
+  const el = document.getElementById(`archive-year-${year}`)
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+
 onMounted(loadIndex)
 </script>
 
@@ -42,6 +56,12 @@ onMounted(loadIndex)
       <p class="eyebrow">ARCHIVE</p>
       <h1>笔记归档</h1>
       <p class="muted">共 {{ totalNotes }} 篇笔记，按时间排列。</p>
+      <nav v-if="uniqueYears.length > 1" class="archive-year-nav" aria-label="按年份跳转">
+        <span class="archive-year-nav-label">跳至：</span>
+        <a v-for="year in uniqueYears" :key="year" :href="`#archive-year-${year}`" @click.prevent="scrollToYear(year)">
+          {{ year }}
+        </a>
+      </nav>
     </header>
 
     <div v-if="archive.length === 0" class="empty card">
@@ -51,7 +71,7 @@ onMounted(loadIndex)
 
     <div v-else class="archive-timeline">
       <div v-for="group in archive" :key="group.label" class="archive-group">
-        <div class="archive-group-header">
+        <div :id="`archive-year-${group.year}`" class="archive-group-header">
           <CalendarDays :size="18" aria-hidden="true" />
           <h2>{{ group.label }}</h2>
           <span class="archive-count">{{ group.items.length }} 篇</span>
@@ -187,6 +207,48 @@ onMounted(loadIndex)
 .archive-tags .tag {
   font-size: 11px;
   padding: 1px 6px;
+}
+
+.archive-year-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: rgba(var(--color-bg-card-rgb), 0.55);
+  font-size: var(--text-sm);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.archive-year-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.archive-year-nav-label {
+  flex-shrink: 0;
+  color: var(--color-text-tertiary);
+  font-size: var(--text-xs);
+  font-family: var(--font-mono);
+}
+
+.archive-year-nav a {
+  flex-shrink: 0;
+  padding: 3px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-accent);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.archive-year-nav a:hover {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+  text-decoration: none;
 }
 
 @media (max-width: 640px) {

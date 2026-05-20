@@ -27,6 +27,8 @@ function formatNumber(value) {
 
 async function loadGithubStats() {
   if (!repoPath.value) return
+  // Skip runtime fetch if build-time data is already populated (stars > 0)
+  if (props.project.stars > 0) return
   try {
     const response = await fetch(`https://api.github.com/repos/${repoPath.value}`)
     if (!response.ok) return

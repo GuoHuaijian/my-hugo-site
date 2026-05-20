@@ -13,7 +13,7 @@ useMeta()
   <Navbar />
   <main id="main-content" class="app-main">
     <RouterView v-slot="{ Component }">
-      <Transition name="page" mode="out-in">
+      <Transition name="page" mode="in-out">
         <component :is="Component" />
       </Transition>
     </RouterView>

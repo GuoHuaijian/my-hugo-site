@@ -47,9 +47,15 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
           <RouterLink v-for="link in links" :key="link.path" :to="link.path" @click="open = false">
             {{ link.label }}
           </RouterLink>
+          <div class="nav-links-actions">
+            <SearchModal />
+            <ThemeToggle />
+          </div>
         </div>
-        <SearchModal />
-        <ThemeToggle />
+        <div class="nav-desktop-actions">
+          <SearchModal />
+          <ThemeToggle />
+        </div>
       </div>
     </nav>
   </header>
@@ -183,8 +189,12 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
     place-items: center;
   }
 
+  .nav-desktop-actions {
+    display: none;
+  }
+
   .nav-right {
-    gap: 8px;
+    gap: 0;
   }
 
   .nav-links {
@@ -209,6 +219,25 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+  }
+
+  .nav-links-actions {
+    display: flex;
+    gap: 8px;
+    padding: 10px 12px 4px;
+    margin-top: 4px;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .nav-links-actions .search-trigger {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links-actions {
+    display: none;
   }
 }
 </style>

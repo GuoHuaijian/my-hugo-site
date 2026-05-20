@@ -7,6 +7,9 @@ import { useContentLoader } from '../composables/useContentLoader'
 const router = useRouter()
 const { index, loadIndex } = useContentLoader()
 
+const INDEX_CACHE_KEY = 'cloud-edge-blog-index'
+const INDEX_VERSION_KEY = 'cloud-edge-blog-index-version'
+
 const open = ref(false)
 const query = ref('')
 const inputRef = ref(null)

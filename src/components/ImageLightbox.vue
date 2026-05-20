@@ -4,6 +4,7 @@ import { onMounted, onUnmounted, ref } from 'vue'
 const active = ref(false)
 const src = ref('')
 const alt = ref('')
+const touchStartY = ref(0)
 
 function openImage(imgSrc, imgAlt) {
   src.value = imgSrc
@@ -26,6 +27,16 @@ function onLightboxEvent(e) {
   openImage(e.detail.src, e.detail.alt)
 }
 
+function onTouchStart(e) {
+  touchStartY.value = e.touches[0].clientY
+}
+
+function onTouchEnd(e) {
+  const deltaY = e.changedTouches[0].clientY - touchStartY.value
+  // Swipe down more than 80px → close
+  if (deltaY > 80) close()
+}
+
 onMounted(() => {
   document.addEventListener('keydown', onKeyDown)
   document.addEventListener('open-lightbox', onLightboxEvent)
@@ -43,7 +54,7 @@ defineExpose({ openImage })
 <template>
   <Teleport to="body">
     <Transition name="lightbox">
-      <div v-if="active" class="lightbox-overlay" @click.self="close" role="dialog" aria-modal="true" aria-label="图片预览">
+      <div v-if="active" class="lightbox-overlay" @click.self="close" @touchstart.passive="onTouchStart" @touchend.passive="onTouchEnd" role="dialog" aria-modal="true" aria-label="图片预览">
         <button class="lightbox-close" type="button" aria-label="关闭预览" @click="close">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M18 6L6 18M6 6l12 12"/>

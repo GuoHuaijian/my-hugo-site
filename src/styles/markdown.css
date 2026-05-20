@@ -1,5 +1,7 @@
 .markdown-body {
   color: var(--color-text-primary);
+  max-width: 720px;
+  margin-inline: auto;
 }
 
 .markdown-body h1 {

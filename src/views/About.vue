@@ -873,6 +873,7 @@ const contacts = [
 @media (max-width: 720px) {
   .intro-aside {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .profile-tags {
@@ -881,15 +882,22 @@ const contacts = [
 
   .facts-strip {
     grid-template-columns: 1fr;
+    gap: 0;
+    padding: 4px 0;
   }
 
-  .fact-item,
-  .fact-item:nth-last-child(-n + 2) {
+  .fact-item {
+    border-right: 0;
     border-bottom: 1px solid var(--color-border);
+    padding: 16px 0;
   }
 
   .fact-item:last-child {
     border-bottom: 0;
+  }
+
+  .intro-columns p {
+    line-height: 1.9;
   }
 
   .timeline-item {

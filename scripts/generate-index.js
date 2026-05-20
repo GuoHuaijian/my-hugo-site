@@ -88,10 +88,34 @@ function makeNotes() {
     .sort((a, b) => new Date(b.date) - new Date(a.date))
 }
 
-function makeProjects() {
+/**
+ * Fetch GitHub repository stats at build time to avoid runtime API rate limits.
+ * Falls back to frontmatter values if GitHub is unreachable.
+ */
+async function fetchGithubStats(githubUrl) {
+  const match = githubUrl?.match(/github\.com\/([^/\s]+)\/([^/#?\s]+)/)
+  if (!match) return { stars: 0, forks: 0 }
+  const repo = `${match[1]}/${match[2].replace(/\.git$/, '')}`
+  try {
+    const res = await fetch(`https://api.github.com/repos/${repo}`, {
+      headers: { 'User-Agent': 'cloud-edge-blog/1.0' }
+    })
+    if (!res.ok) return { stars: 0, forks: 0 }
+    const data = await res.json()
+    return {
+      stars: data.stargazers_count ?? 0,
+      forks: data.forks_count ?? 0
+    }
+  } catch {
+    return { stars: 0, forks: 0 }
+  }
+}
+
+async function makeProjects() {
   const dir = path.join(contentDir, 'projects')
   if (!fs.existsSync(dir)) return []
-  return fs.readdirSync(dir, { withFileTypes: true }).filter((entry) => entry.isDirectory()).map((entry) => {
+  const results = []
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true }).filter((e) => e.isDirectory())) {
     const folder = path.join(dir, entry.name)
     const { data, body } = readMarkdown(path.join(folder, 'index.md'))
 
@@ -127,20 +151,24 @@ function makeProjects() {
     // Resolve cover: frontmatter first, then auto-detect
     const cover = resolveCover(entry.name, data.cover)
 
-    return {
+    // Fetch build-time GitHub stats for projects with a GitHub URL
+    const ghStats = data.githubUrl ? await fetchGithubStats(data.githubUrl) : { stars: 0, forks: 0 }
+
+    results.push({
       slug: entry.name,
       name: data.name || data.title || entry.name,
       description: data.description || body.replace(/[#>*`-]/g, '').slice(0, 130),
       tags: data.tags || [],
       cover,
       status: data.status || '维护中',
-      stars: data.stars || 0,
-      forks: data.forks || 0,
+      stars: ghStats.stars || data.stars || 0,
+      forks: ghStats.forks || data.forks || 0,
       liveUrl: data.liveUrl || '',
       githubUrl: data.githubUrl || '',
       docs
-    }
-  })
+    })
+  }
+  return results
 }
 
 function makeBooks() {
@@ -239,7 +267,7 @@ function makeSeriesIndex(notes) {
 }
 
 const notes = makeNotes()
-const projects = makeProjects()
+const projects = await makeProjects()
 const books = makeBooks()
 const allTags = [...new Set(notes.flatMap((note) => note.tags))]
 const seriesIndex = makeSeriesIndex(notes)

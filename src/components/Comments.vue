@@ -86,9 +86,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <section v-if="enable" class="comments" aria-label="评论区">
+    <section v-if="enable" class="comments" aria-label="评论区">
     <h2>评论</h2>
     <div ref="containerRef" class="giscus-container">
+      <div v-if="!giscusLoaded" class="giscus-loading" aria-label="评论加载中">
+        <div class="giscus-skeleton-line"></div>
+        <div class="giscus-skeleton-line w-70"></div>
+        <div class="giscus-skeleton-line w-50"></div>
+      </div>
       <noscript>
         <p class="noscript-msg">请启用 JavaScript 以加载 Giscus 评论。</p>
       </noscript>
@@ -112,6 +117,33 @@ onMounted(() => {
 
 .giscus-container {
   min-height: 200px;
+}
+
+.giscus-loading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: var(--space-6);
+}
+
+.giscus-skeleton-line {
+  height: 14px;
+  border-radius: 6px;
+  background: linear-gradient(90deg,
+    var(--color-bg-secondary) 25%,
+    rgba(var(--color-accent-rgb), 0.08) 50%,
+    var(--color-bg-secondary) 75%
+  );
+  background-size: 200% 100%;
+  animation: giscus-shimmer 1.6s ease-in-out infinite;
+}
+
+.giscus-skeleton-line.w-70 { width: 70%; }
+.giscus-skeleton-line.w-50 { width: 50%; }
+
+@keyframes giscus-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 
 .comments.disabled {

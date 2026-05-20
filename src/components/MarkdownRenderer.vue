@@ -122,15 +122,17 @@ function handleContentClick(e) {
     if (!code) return
     const text = code.textContent
     navigator.clipboard.writeText(text).then(() => {
-      btn.textContent = '已复制!'
+      const originalText = btn.textContent
+      btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 已复制'
       btn.classList.add('copied')
       setTimeout(() => {
-        btn.textContent = '复制'
+        btn.innerHTML = originalText
         btn.classList.remove('copied')
       }, 2000)
     }).catch(() => {
+      const originalText = btn.textContent
       btn.textContent = '失败'
-      setTimeout(() => { btn.textContent = '复制' }, 1500)
+      setTimeout(() => { btn.textContent = originalText }, 1500)
     })
     return
   }
