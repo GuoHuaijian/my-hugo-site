@@ -56,6 +56,7 @@
       { "path": "/projects", "label": "项目" },
       { "path": "/books", "label": "读书" },
       { "path": "/toolbox", "label": "百宝箱" },
+      { "path": "/guestbook", "label": "信箱" },
       { "path": "/about", "label": "关于" }
     ]
   },
@@ -91,6 +92,12 @@
     "about": {
       "title": "关于",
       "_title_desc": "关于页 h1"
+    },
+    "guestbook": {
+      "title": "云边信箱",
+      "_title_desc": "信箱页面 h1",
+      "description": "路过云边，留张字条再走吧。",
+      "_description_desc": "信箱页面描述"
     }
   },
 
@@ -170,7 +177,8 @@
       "book-doc": "读书笔记",
       "toolbox": "百宝箱",
       "toolbox-doc": "命令文档",
-      "about": "关于"
+      "about": "关于",
+      "guestbook": "信箱"
     }
   }
 }

@@ -10,6 +10,7 @@ const PAGE_DESCRIPTIONS = {
   projects: pages?.projects?.description || '有趣的开源项目与实验。',
   books: pages?.books?.description || '书架上的折角、摘录与读后感。',
   toolbox: pages?.toolbox?.description || '收藏的工具、资源与奇妙链接。',
+  guestbook: pages?.guestbook?.description || '路过云边，留张字条再走吧。',
   about: '关于云边小卖部和它的店主。',
 }
 
@@ -57,6 +58,10 @@ const routes = [
   {
     path: '/toolbox/:doc', name: 'toolbox-doc', component: () => import('../views/ToolboxDoc.vue'),
     meta: { title: routerConfig.pageTitles['toolbox-doc'], description: '', ogType: 'article' },
+  },
+  {
+    path: '/guestbook', name: 'guestbook', component: () => import('../views/Guestbook.vue'),
+    meta: { title: routerConfig.pageTitles.guestbook, description: PAGE_DESCRIPTIONS.guestbook, ogType: 'website' },
   },
   {
     path: '/about', name: 'about', component: () => import('../views/About.vue'),
