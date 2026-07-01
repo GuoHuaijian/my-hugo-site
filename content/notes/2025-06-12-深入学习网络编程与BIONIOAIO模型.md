@@ -1,8 +1,9 @@
 ---
 title: "深入学习网络编程与BIO、NIO、AIO模型"
 date: "2025-06-12"
-author: "Guo"
-tags: []
+author: "刘十三"
+tags: ["网络编程", "NIO", "IO"]
+category: "技术专栏"
 cover: "/content/covers/2025-06-12-深入学习网络编程与BIONIOAIO模型.png"
 ---
 

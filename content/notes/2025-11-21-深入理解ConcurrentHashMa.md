@@ -1,8 +1,9 @@
 ---
 title: "深入理解ConcurrentHashMap源码——从设计到实现"
 date: "2025-11-21"
-author: "Guo"
+author: "刘十三"
 tags: ["学习笔记", "并发"]
+category: "技术专栏"
 cover: "/content/covers/2025-11-21-深入理解ConcurrentHashMa.png"
 ---
 

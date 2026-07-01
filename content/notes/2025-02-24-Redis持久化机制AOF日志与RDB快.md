@@ -1,8 +1,9 @@
 ---
 title: "Redis持久化机制：AOF日志与RDB快照详解"
 date: "2025-02-24"
-author: "Guo"
+author: "刘十三"
 tags: ["学习笔记", "Redis"]
+category: "技术专栏"
 cover: "/content/covers/2025-02-24-Redis持久化机制AOF日志与RDB快.png"
 ---
 

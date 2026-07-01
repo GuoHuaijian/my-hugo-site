@@ -1,8 +1,9 @@
 ---
 title: "Claude Code 技能扩展指南：让你的 AI 编码助手更强大"
 date: "2026-02-01"
-author: "Guo"
+author: "刘十三"
 tags: ["Claude Code", "Skills", "工具"]
+category: "技术专栏"
 cover: "/content/covers/2026-02-01-Claude Code 技能扩展指南让你.png"
 ---
 
@@ -447,8 +448,8 @@ description: 阿里巴巴 Java 开发规范。当编写、修改或审查任何 
 - 类必须包含 Javadoc：说明、@author、@date
 - 公共方法必须包含 Javadoc：说明、@param、@return、@throws
 - 修改代码时同步更新相关注释
-- 使用 `// TODO yyyy-MM-dd author: 描述` 格式标记待办
-- 使用 `// FIXME yyyy-MM-dd author: 描述` 格式标记缺陷
+- 使用 `// TODO yyyy-MM-dd author: "刘十三"` 格式标记待办
+- 使用 `// FIXME yyyy-MM-dd author: "刘十三"` 格式标记缺陷
 - 删除无用代码而非注释掉
 
 ## 异常

@@ -28,6 +28,10 @@ const routes = [
     meta: { title: routerConfig.pageTitles.archive, description: '按时间归档浏览所有笔记。', ogType: 'website' },
   },
   {
+    path: '/notes/tags', name: 'tags', component: () => import('../views/Tags.vue'),
+    meta: { title: routerConfig.pageTitles.tags, description: '按标签分类浏览所有笔记。', ogType: 'website' },
+  },
+  {
     path: '/notes/:slug', name: 'note-detail', component: () => import('../views/NoteDetail.vue'),
     meta: { title: routerConfig.pageTitles['note-detail'], description: '', ogType: 'article' },
   },

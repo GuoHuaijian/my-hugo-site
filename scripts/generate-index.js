@@ -75,6 +75,7 @@ function makeNotes() {
       title: data.title || slug,
       author: data.author || defaultAuthor,
       date: data.date || '',
+      category: data.category || '',
       tags: data.tags || [],
       cover: resolveCover(slug, data.cover),
       summary: data.summary || body.replace(/[#>*`-]/g, '').slice(0, 150),

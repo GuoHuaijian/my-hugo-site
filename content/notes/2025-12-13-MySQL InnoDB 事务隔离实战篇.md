@@ -1,8 +1,9 @@
 ---
 title: "MySQL InnoDB 事务隔离实战篇"
 date: "2025-12-13"
-author: "Guo"
+author: "刘十三"
 tags: ["学习笔记", "数据库", "InnoDB"]
+category: "技术专栏"
 cover: "/content/covers/2025-12-13-MySQL InnoDB 事务隔离实战篇.png"
 ---
 

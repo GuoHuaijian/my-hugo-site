@@ -1,8 +1,9 @@
 ---
 title: "Spring IoC容器初始化与Bean生命周期"
 date: "2025-12-09"
-author: "Guo"
+author: "刘十三"
 tags: ["学习笔记", "Spring"]
+category: "技术专栏"
 cover: "/content/covers/2025-12-09-Spring IoC容器初始化与Bean.png"
 ---
 

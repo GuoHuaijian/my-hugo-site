@@ -1,8 +1,9 @@
 ---
 title: "Elasticsearch 入门到实战学习指南"
 date: "2025-12-25"
-author: "Guo"
+author: "刘十三"
 tags: ["学习笔记", "搜索", "Elasticsearch"]
+category: "技术专栏"
 cover: "/content/covers/2025-12-25-Elasticsearch 入门到实战学.png"
 ---
 

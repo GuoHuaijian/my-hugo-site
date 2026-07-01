@@ -5,6 +5,8 @@
  */
 
 export function parseFrontmatter(raw = '') {
+  // Strip UTF-8 BOM if present
+  if (raw.charCodeAt(0) === 0xFEFF) raw = raw.slice(1)
   if (!raw.startsWith('---')) return { data: {}, body: raw }
   const end = raw.indexOf('\n---', 3)
   if (end < 0) return { data: {}, body: raw }

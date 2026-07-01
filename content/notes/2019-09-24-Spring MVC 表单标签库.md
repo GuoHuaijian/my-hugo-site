@@ -1,8 +1,9 @@
 ---
 title: "Spring MVC 表单标签库"
 date: "2019-09-24"
-author: "Guo"
+author: "刘十三"
 tags: ["学习笔记", "Spring MVC"]
+category: "技术专栏"
 cover: "/content/covers/2019-09-24-Spring MVC 表单标签库.png"
 ---
 

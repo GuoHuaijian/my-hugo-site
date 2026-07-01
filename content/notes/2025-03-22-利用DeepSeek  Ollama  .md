@@ -1,8 +1,9 @@
 ---
 title: "利用DeepSeek + Ollama + Dify搭建本地知识库"
 date: "2025-03-22"
-author: "Guo"
+author: "刘十三"
 tags: ["学习笔记", "AI"]
+category: "技术专栏"
 cover: "/content/covers/2025-03-22-利用DeepSeek  Ollama  .png"
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: "Spring Security注解权限指南"
 date: "2021-08-08"
-author: "Guo"
+author: "刘十三"
 tags: ["学习笔记", "Spring"]
+category: "技术专栏"
 cover: "/content/covers/2021-08-08-Spring Security注解权限指.png"
 ---
 
