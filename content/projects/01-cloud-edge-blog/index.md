@@ -6,7 +6,7 @@ status: "维护中"
 cover: "/content/covers/cloud-edge-blog.png"
 stars: 0
 forks: 0
-liveUrl: "https://example.com"
+liveUrl: "https://slothcoder.cn"
 githubUrl: "https://github.com/GuoHuaijian"
 docs:
   - title: "项目概述"
