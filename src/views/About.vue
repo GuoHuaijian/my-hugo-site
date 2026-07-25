@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import {
   BookOpen,
   BriefcaseBusiness,
@@ -14,23 +14,26 @@ import {
 
 import portraitImage from '../assets/images/portrait.webp'
 
-const profileTags = ['全栈开发', '云边小卖部', '夜晚写代码']
+const profileTags = ['全栈开发', '云边小卖部', '小镇青年']
 
 const profileNotes = [
   ['常驻时段', '夜里'],
   ['偏爱工具', 'IDEA / Claude Code'],
-  ['最近状态', '慢慢搭建']
+  ['最近状态', '搬砖中']
 ]
-
-const introLead =
-    '我不是刘十三，只是一个在现实里认真生活、在代码里慢慢搭建自己世界的人。平时写代码、看书、发呆，也会在忙碌的间隙想一想，什么才是自己真正想去的远方。'
 
 const introParagraphs = [
-  '搭建这个博客的时候，我正在读《云边有个小卖部》。书里有个外婆叫王莺莺。开着拖拉机，抽烟，打麻将，守着山边那间小卖部。读着读着，我想起了自己的外婆。不是因为外婆像王莺莺，而是外婆离开后，我才明白——原来每个人心里，都有一个再也回不去的“云边”。',
-  '外婆一辈子节约。中学时家里困难，外婆靠卖菜接济我读书。天不亮下山，背篓装满蔬菜，走很远的山路到街上。蹲一整天，舍不得买一口吃的，饿着肚子，直到下午才走回家吃饭。一张张皱巴巴的纸币，攒够了就偷偷塞给我妈，变成我的学费、生活费。后来外婆病了，她怕花钱，一直不肯去医院。高二那年，外婆化作云朵走了。',
-  '后来我也像刘十三一样，从小镇到城市，念书，工作，写代码。再回去，小镇还是那个小镇，老屋还是那间老屋，只是推开门，外婆不在了。',
-  '所以我愿意把这里叫作云边小卖部。安静、缓慢、永远亮着灯。这里装着外婆教会我的东西，装着那条卖菜的山路，装着旧木门前昏黄的灯光，也装着不肯熄灭的一点念想。'
+  '山里的黄昏容易让人想起旧事。',
+  '每个人都会经过这个阶段，见到一座山，就想知道山后面是什么。可能翻过山后面，你会发现没什么特别。回望之下，可能会觉得这一边更好。',
+  '人最大的烦恼就是记性太好。如果可以把所有东西忘掉，以后的每一天将会是一个新的开始，那你说会有多开心。',
+  '你越想知道自己是不是忘记的时候，你反而记得越清楚。曾经听人说过，当你不能够再拥有，你唯一可以做的，就是让自己不要忘记。',
+  '那年开始，我忘记了很多事情。唯一有印象的，就是我爱桃花。',
+  '每个人都会坚持自己的信念，在别人看来是浪费时间，她却觉得重要。有些路只能一个人走，走着走着，也就习惯了。',
+  '人一旦离开，就只留下为别人制造的回忆。',
+  '所有的记忆都是潮湿的。有些事，想想，说人生无悔，都是赌气的话。人生若无悔，那该多无趣啊。就这样吧，天要黑了。'
 ]
+
+
 
 const techStack = [
   'Java',
@@ -107,25 +110,11 @@ const contacts = [
       </aside>
 
       <div class="intro-main">
-        <p class="section-kicker">关于小卖部 · 与外婆</p>
+        <p class="section-kicker">关于小卖部 · 与黄昏</p>
         <h2>你好呀，欢迎来到我的小卖部。</h2>
-        <p class="intro-lead">{{ introLead }}</p>
-
-        <div class="intro-columns">
-          <p v-for="(paragraph, index) in introParagraphs" :key="index">
-            {{ paragraph }}
-          </p>
+        <div class="intro-lead">
+          <p v-for="(paragraph, index) in introParagraphs" :key="index">{{ paragraph }}</p>
         </div>
-
-        <blockquote class="story-quote">
-          <p>
-            无论身在何方，我们终将在云边重逢。<br />
-            山这边是刘十三的童年，山那边是外婆的海。<br />
-            我不是刘十三，但我也有自己的云边、自己的外婆、自己的小卖部。<br />
-            这里装着我的来处，也装着我正在走向的远方；装着少年时的想象，也装着长大以后仍然不肯熄灭的一点微光。
-          </p>
-          <footer>—— 写给来处，也写给所有心里有“云边”的人</footer>
-        </blockquote>
       </div>
     </section>
 
@@ -403,61 +392,19 @@ const contacts = [
   letter-spacing: 0.02em;
 }
 
-/* 统一三部分的宽度 */
-.intro-lead,
-.intro-columns,
-.story-quote {
-  max-width: 680px;
-}
-
+/* 宽度限制 */
 .intro-lead {
-  margin: 0 0 24px;
-  color: var(--color-text-primary);
-  font-size: 1.0625rem;
-  line-height: 2;
-  letter-spacing: 0.02em;
-}
-
-.story-quote {
-  margin: 32px 0 0 0;
-  padding: 24px 28px;
-  border-left: 3px solid var(--color-accent);
-  border-radius: 0 16px 16px 0;
-  background: linear-gradient(
-      180deg,
-      var(--color-bg-secondary) 0%,
-      rgba(var(--color-bg-secondary-rgb), 0.6) 100%
-  );
-  animation: fadeUp 400ms var(--transition-base) both;
-  animation-delay: 120ms;
-}
-
-.story-quote p {
-  margin: 0;
-  color: var(--color-text-quote);
-  font-size: 1rem;
-  line-height: 2.1;
-  letter-spacing: 0.04em;
-}
-
-.story-quote footer {
-  margin-top: 14px;
-  color: var(--color-text-tertiary);
-  font-size: var(--text-sm);
-  letter-spacing: 0.06em;
-}
-
-.intro-columns {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 680px;
 }
 
-.intro-columns p {
+.intro-lead p {
   margin: 0;
-  color: var(--color-text-secondary);
-  font-size: 1rem;
-  line-height: 2.1;
+  color: var(--color-text-primary);
+  font-size: 1.0625rem;
+  line-height: 2;
   letter-spacing: 0.02em;
 }
 
@@ -894,10 +841,6 @@ const contacts = [
 
   .fact-item:last-child {
     border-bottom: 0;
-  }
-
-  .intro-columns p {
-    line-height: 1.9;
   }
 
   .timeline-item {
