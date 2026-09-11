@@ -1,7 +1,50 @@
 .markdown-body {
   color: var(--color-text-primary);
-  max-width: 720px;
+  max-width: var(--reading-measure);
   margin-inline: auto;
+  min-width: 0;
+  font-size: 1.0625rem;
+  line-height: 1.9;
+}
+
+.markdown-body p {
+  text-wrap: pretty;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  scroll-margin-top: calc(var(--navbar-height) + 24px);
+}
+
+/* 锚点跳转后的目标标题短暂高亮 */
+@keyframes target-flash {
+  0%,
+  30% {
+    background: rgba(var(--color-accent-rgb), 0.14);
+  }
+
+  100% {
+    background: transparent;
+  }
+}
+
+.markdown-body h1:target,
+.markdown-body h2:target,
+.markdown-body h3:target,
+.markdown-body h4:target {
+  animation: target-flash 1.8s ease forwards;
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .markdown-body h1:target,
+  .markdown-body h2:target,
+  .markdown-body h3:target,
+  .markdown-body h4:target {
+    animation: none;
+  }
 }
 
 .markdown-body h1 {
@@ -12,17 +55,17 @@
 }
 
 .markdown-body h2 {
-  margin-top: var(--space-12);
-  margin-bottom: var(--space-4);
+  margin-top: var(--space-16);
+  margin-bottom: var(--space-5);
 }
 
 .markdown-body h3 {
-  margin-top: var(--space-8);
+  margin-top: var(--space-10);
   margin-bottom: var(--space-3);
 }
 
 .markdown-body p {
-  margin-bottom: var(--space-4);
+  margin-bottom: 1.4em;
 }
 
 .markdown-body img {
@@ -33,6 +76,24 @@
 
 .markdown-body a {
   color: var(--color-accent);
+}
+
+/* 正文行内链接加下划线提示,与导航类链接区分 */
+.markdown-body p a,
+.markdown-body li a,
+.markdown-body td a,
+.markdown-body blockquote a {
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--color-accent-rgb), 0.45);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.markdown-body p a:hover,
+.markdown-body li a:hover,
+.markdown-body td a:hover,
+.markdown-body blockquote a:hover {
+  text-decoration-color: currentColor;
 }
 
 .markdown-body a:hover {
@@ -64,8 +125,68 @@
 .markdown-body table {
   width: 100%;
   border-collapse: collapse;
-  overflow: hidden;
   border-radius: var(--radius-md);
+}
+
+.markdown-body .table-wrap {
+  margin: var(--space-5) 0;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  -webkit-overflow-scrolling: touch;
+}
+
+.markdown-body .table-wrap table {
+  margin: 0;
+  border: none;
+}
+
+.markdown-body .table-wrap th,
+.markdown-body .table-wrap td {
+  white-space: nowrap;
+}
+
+.markdown-body .table-wrap tbody tr:nth-child(even) {
+  background: var(--color-overlay-light);
+}
+
+.markdown-body .table-wrap tbody tr {
+  transition: background var(--transition-fast);
+}
+
+.markdown-body .table-wrap tbody tr:hover {
+  background: rgba(var(--color-accent-rgb), 0.06);
+}
+
+/* ── 标题锚点(悬停显示) ── */
+.markdown-body .heading-anchor {
+  margin-left: 8px;
+  color: var(--color-accent);
+  text-decoration: none;
+  opacity: 0;
+  font-weight: 400;
+  transition: opacity var(--transition-fast);
+}
+
+.markdown-body h1:hover .heading-anchor,
+.markdown-body h2:hover .heading-anchor,
+.markdown-body h3:hover .heading-anchor,
+.markdown-body h4:hover .heading-anchor,
+.markdown-body .heading-anchor:focus-visible {
+  opacity: 0.6;
+}
+
+@media (hover: none) {
+  .markdown-body .heading-anchor {
+    display: none;
+  }
+}
+
+.markdown-body hr {
+  margin: var(--space-8) 0;
+  border: none;
+  height: 1px;
+  background: var(--color-border);
 }
 
 .markdown-body th,

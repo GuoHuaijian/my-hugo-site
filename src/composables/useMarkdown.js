@@ -101,6 +101,23 @@ md.renderer.rules.heading_open = (tokens, idx, options, env, self) => {
   return self.renderToken(tokens, idx, options)
 }
 
+// Wide tables must scroll horizontally instead of squeezing or overflowing
+md.renderer.rules.table_open = () => '<div class="table-wrap"><table>'
+md.renderer.rules.table_close = () => '</table></div>'
+
+// 外部链接新标签打开,站内/锚点链接保持当前页
+const defaultLinkOpen =
+  md.renderer.rules.link_open || ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
+
+md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+  const href = tokens[idx].attrGet('href') || ''
+  if (/^https?:\/\//i.test(href) && !href.includes('slothcoder.cn')) {
+    tokens[idx].attrSet('target', '_blank')
+    tokens[idx].attrSet('rel', 'noopener noreferrer')
+  }
+  return defaultLinkOpen(tokens, idx, options, env, self)
+}
+
 /**
  * Convert admonition blocks (:::tip / :::warning / :::danger / :::info / :::center)
  * and other ::: blocks (:::right, :::quote, etc.) to HTML.
@@ -135,7 +152,11 @@ function renderAdmonitions(body) {
 export function renderMarkdown(raw) {
   const { data, body } = parseFrontmatter(raw)
   const processed = renderAdmonitions(body)
-  return { data, body, html: md.render(processed), toc: collectToc(body) }
+  const html = md.render(processed).replace(
+    /<(h[1-4]) id="([^"]+)">/g,
+    '<$1 id="$2"><a class="heading-anchor" href="#$2" aria-label="链接到此标题">#</a>'
+  )
+  return { data, body, html, toc: collectToc(body) }
 }
 
 export function collectToc(markdown) {

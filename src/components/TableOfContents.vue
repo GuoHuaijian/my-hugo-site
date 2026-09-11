@@ -1,12 +1,18 @@
 <script setup>
 defineProps({
   items: { type: Array, default: () => [] },
-  active: { type: String, default: '' }
+  active: { type: String, default: '' },
+  variant: { type: String, default: '' }
 })
 </script>
 
 <template>
-  <aside v-if="items.length" class="toc" aria-label="文章目录">
+  <aside
+    v-if="items.length"
+    class="toc"
+    :class="{ 'toc--drawer': variant === 'drawer' }"
+    aria-label="文章目录"
+  >
     <p>目录</p>
     <a
       v-for="item in items"
@@ -24,8 +30,12 @@ defineProps({
   position: sticky;
   top: 88px;
   align-self: start;
+  max-height: calc(100dvh - 120px);
+  overflow-y: auto;
   padding-left: var(--space-5);
   border-left: 1px solid var(--color-border);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
 }
 
 p {
@@ -33,6 +43,10 @@ p {
   color: var(--color-text-secondary);
   font-size: var(--text-sm);
   font-weight: 700;
+}
+
+.toc--drawer p {
+  display: none;
 }
 
 a {
@@ -65,6 +79,14 @@ a:hover {
 @media (max-width: 1024px) {
   .toc {
     display: none;
+  }
+
+  .toc--drawer {
+    display: block;
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding-left: var(--space-4);
   }
 }
 </style>

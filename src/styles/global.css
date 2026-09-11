@@ -43,6 +43,10 @@ button {
   outline-offset: 3px;
 }
 
+::selection {
+  background: rgba(var(--color-accent-rgb), 0.22);
+}
+
 .app-main {
   flex: 1 0 auto;
   min-height: 0;
@@ -174,6 +178,59 @@ h3 {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── 打印:纯阅读版式 ── */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .navbar,
+  .site-footer,
+  .reading-progress,
+  .back-to-top,
+  .toc-fab,
+  .toc,
+  .doc-side,
+  .breadcrumb,
+  .article-nav,
+  .doc-nav,
+  .comments,
+  .draft-banner {
+    display: none !important;
+  }
+
+  .page-shell,
+  .reader-composite,
+  .doc-composite {
+    width: auto;
+    max-width: none;
+    padding: 0;
+  }
+
+  .doc-layout {
+    display: block;
+  }
+
+  .markdown-body {
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+    background: none;
+    font-size: 12pt;
+  }
+
+  .markdown-body a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .markdown-body .code-copy-btn,
+  .markdown-body .heading-anchor {
+    display: none !important;
   }
 }
 

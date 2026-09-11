@@ -156,7 +156,7 @@ function handleContentClick(e) {
 
 <style scoped>
 .content-card {
-  padding: clamp(22px, 4vw, 44px);
+  padding: clamp(24px, 4vw, 48px);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: rgba(var(--color-bg-card-rgb), 0.86);

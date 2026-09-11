@@ -41,7 +41,7 @@
   --color-overlay-light: rgba(0, 0, 0, 0.04);
 
   /* ── 字体 ── */
-  --font-sans: "LXGW WenKai", "Noto Serif SC", "Songti SC", serif;
+  --font-sans: "LXGW WenKai Screen", "LXGW WenKai", "Noto Serif SC", "Songti SC", serif;
   --font-mono: "JetBrains Mono", "Fira Code", Consolas, monospace;
   --font-en: Inter, "SF Pro Text", Arial, sans-serif;
 
@@ -78,6 +78,10 @@
   --max-width: 1200px;
   --navbar-height: 64px;
   --footer-height: 60px;
+  /* 阅读版式:正文测量宽度与辅助栏 */
+  --reading-measure: 760px;
+  --reader-sidenav-width: 200px;
+  --reader-toc-width: 240px;
   --page-shell-padding-top: 112px;
   --page-shell-padding-bottom: 72px;
   --section-gap: var(--space-10);
